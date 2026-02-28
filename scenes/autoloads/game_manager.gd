@@ -14,4 +14,8 @@ func _process(delta: float) -> void:
 		if Input.is_action_just_pressed("use"):
 			_message_manager.scroll_text()
 		if Input.is_action_just_pressed("test_message"):
-			_message_manager.play_text("Hello world", "Hope you have a great day!") # temp string
+			create_message_popup("Hello world", "Hope you have a great day!") # temp string
+
+func create_message_popup(...messages):
+	if _message_manager:
+		_message_manager.play_text(messages)
