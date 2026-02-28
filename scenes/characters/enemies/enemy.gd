@@ -7,4 +7,4 @@ func _ready() -> void:
 	_interactable_component.interacted.connect(_on_interacted)
 
 func _on_interacted(collider):
-	print("Interacted")
+	print("Interacted with ", collider)

@@ -3,7 +3,7 @@ extends StaticBody2D
 
 signal interacted(collider)
 
-@export var collidable: bool = true
+@export var is_collidable: bool = true
 
 func interact(collider):
 	interacted.emit(collider)

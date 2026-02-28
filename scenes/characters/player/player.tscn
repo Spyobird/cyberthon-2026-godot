@@ -26,7 +26,7 @@ shape = SubResource("RectangleShape2D_vqa02")
 
 [node name="RayCast2D" type="RayCast2D" parent="TileBasedMovementComponent" unique_id=2066792928]
 position = Vector2(8, 8)
-target_position = Vector2(0, 8)
+target_position = Vector2(0, 16)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1182303739]
 position = Vector2(8, 8)
