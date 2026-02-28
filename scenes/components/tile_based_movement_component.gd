@@ -32,10 +32,21 @@ func _process_player_input():
 		_is_moving = true
 
 func _is_next_tile_blocked() -> bool:
-	var target_tile = _input_direction * tile_size / 2
+	var target_tile = _input_direction * (tile_size / 2)
 	_ray.target_position = target_tile
 	_ray.force_raycast_update()
-	return _ray.is_colliding()
+	var collider = _ray.get_collider()
+	return _check_collider(collider)
+
+func _check_collider(collider) -> bool:
+	if collider is TileMapLayer:
+		return true
+	if collider is InteractableComponent:
+		# collision callback happens in check, consider changing
+		collider.interact(_parent)
+		if collider.collidable:
+			return true
+	return false
 
 func _move(delta: float) -> void:
 	if _is_next_tile_blocked():
