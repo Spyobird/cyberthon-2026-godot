@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b2pfiuisk4j5t"]
+
+[ext_resource type="Script" uid="uid://025ns8kiglbm" path="res://scenes/ui/message_manager.gd" id="1_84ee0"]
+[ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="1_gxlwh"]
+
+[node name="MessageManager" type="CanvasLayer" unique_id=712240846]
+script = ExtResource("1_84ee0")
+
+[node name="Control" type="Control" parent="." unique_id=65485325]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=1104371976]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01875
+anchor_top = 0.023611112
+anchor_right = 0.98125
+anchor_bottom = 0.3638889
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gxlwh")
+region_rect = Rect2(0, 0, 64, 20)
+patch_margin_left = 5
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect" unique_id=1724464050]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.029220778
+anchor_top = 0.118367344
+anchor_right = 0.97077924
+anchor_bottom = 0.8979592
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Placeholder"
+metadata/_edit_use_anchors_ = true
