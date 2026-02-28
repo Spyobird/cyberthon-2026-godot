@@ -10,15 +10,17 @@ signal message_box_closed
 var is_scrolling: bool = false
 var _messages: Array[String] = []
 
-func play_text(payload: Array[String]):
+func _ready() -> void:
+	GameManager.register_message_manager(self) # register with game manager
+
+func play_text(...messages):
 	if is_reading():
 		return
-	if len(payload) == 0:
+	if len(messages) == 0:
 		return
 	
 	message_box_opened.emit()
-	
-	_messages = payload
+	_messages.assign(messages.filter(func(x): return x is String))
 	scroll_text()
 
 func is_reading() -> bool:
