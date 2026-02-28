@@ -18,4 +18,4 @@ func _process(delta: float) -> void:
 
 func create_message_popup(...messages):
 	if _message_manager:
-		_message_manager.play_text(messages)
+		_message_manager.play_text.callv(messages)

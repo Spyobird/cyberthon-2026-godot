@@ -13,7 +13,7 @@ var _messages: Array[String] = []
 func _ready() -> void:
 	GameManager.register_message_manager(self) # register with game manager
 
-func play_text(...messages):
+func play_text(... messages):
 	if is_reading():
 		return
 	if len(messages) == 0:
@@ -27,6 +27,8 @@ func is_reading() -> bool:
 	return _box.visible
 
 func scroll_text():
+	if is_scrolling:
+		return
 	if not is_reading():
 		_box.visible = true
 	if len(_messages) == 0:
