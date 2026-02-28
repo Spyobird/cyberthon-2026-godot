@@ -2,3 +2,4 @@
 .godot/
 /android/
 addons/godot-git-plugin/
+.DS_Store
