@@ -18,6 +18,7 @@ hframes = 4
 vframes = 5
 
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("2_cowpe")]
+is_collidable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
 position = Vector2(8, 8)

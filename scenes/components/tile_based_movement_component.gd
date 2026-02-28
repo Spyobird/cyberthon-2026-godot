@@ -13,7 +13,7 @@ func init(parent: Node) -> void:
 	_parent = parent
 
 func process_movement(delta: float):
-	if not is_moving:
+	if not is_moving and not GameManager.is_player_movement_disabled:
 		_process_player_input()
 	if _input_direction != Vector2.ZERO:
 		_move(delta)

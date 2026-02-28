@@ -8,3 +8,4 @@ func _ready() -> void:
 
 func _on_interacted(collider):
 	print("Interacted with ", collider)
+	GameManager.create_message_popup("This is an interactive popup!")
