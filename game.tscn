@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dqc7ls362yi8y" path="res://assets/atlas_walls_low-16x16.png" id="2_xutd4"]
 [ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="3_ahv6m"]
 [ext_resource type="PackedScene" uid="uid://b2pfiuisk4j5t" path="res://scenes/ui/message_manager.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="5_7jktm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mgqyd"]
 texture = ExtResource("1_einx0")
@@ -170,3 +171,6 @@ tile_set = SubResource("TileSet_h2vnc")
 [node name="Player" parent="." unique_id=485389286 instance=ExtResource("3_ahv6m")]
 
 [node name="MessageManager" parent="." unique_id=712240846 instance=ExtResource("4_fc0e3")]
+
+[node name="Enemy" parent="." unique_id=536498216 instance=ExtResource("5_7jktm")]
+position = Vector2(0, -128)

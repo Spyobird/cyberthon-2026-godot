@@ -15,8 +15,7 @@ func _ready() -> void:
 	_inventory.load_items(["magic wand"])
 
 func _physics_process(delta: float) -> void:
-	if not GameManager.is_player_movement_disabled: # TODO: handle here or in component?
-		_movement_component.process_movement(delta)
+	_movement_component.process_movement(delta)
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("test_api"):
