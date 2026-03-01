@@ -1,5 +1,5 @@
-class_name PlayerStateLoader
+@abstract class_name PlayerStateLoader
 extends Node
 
-func load_player_state():
-	pass
+@abstract
+func load_player_state() -> PlayerState

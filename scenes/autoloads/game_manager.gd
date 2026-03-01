@@ -19,3 +19,4 @@ func _process(delta: float) -> void:
 func create_message_popup(...messages):
 	if _message_manager:
 		_message_manager.play_text.callv(messages)
+	return _message_manager.message_box_closed

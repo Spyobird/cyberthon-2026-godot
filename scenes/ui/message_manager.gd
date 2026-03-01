@@ -12,6 +12,8 @@ var _messages: Array[String] = []
 
 func _ready() -> void:
 	GameManager.register_message_manager(self) # register with game manager
+	
+	_label.bbcode_enabled = true
 
 func play_text(... messages):
 	if is_reading():
@@ -37,10 +39,12 @@ func scroll_text():
 		return
 	
 	is_scrolling = true
-	_label.text = ""
+	_label.text = _messages[0]
+	_label.visible_characters = 0 # Hide everything initially
 	
-	for character in _messages[0]:
-		_label.text += character
+	var total_chars = _label.get_total_character_count()
+	for i in range(total_chars):
+		_label.visible_characters += 1
 		await get_tree().create_timer(delay_ms/1000).timeout
 	
 	_messages.pop_front()

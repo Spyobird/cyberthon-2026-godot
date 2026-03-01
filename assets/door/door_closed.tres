@@ -1,0 +1,6 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://cxf5w2qbp6yj4"]
+
+[ext_resource type="Texture2D" uid="uid://dnku3ao8sxe4s" path="res://assets/door/doors_leaf_closed.png" id="1_gjl7i"]
+
+[resource]
+atlas = ExtResource("1_gjl7i")
