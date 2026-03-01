@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://c8gtfuerchmhf"]
+
+[ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="1_dn72j"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mgoel"]
+load_path = "res://.godot/imported/Ash - old wooden flooring 250x250.jpg-fa33856c9f5031832b353e8c08eb72dc.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_dn72j"]
+font_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_th188"]
+font_size = 8
+
+[node name="Battle" type="Node2D" unique_id=1810615026]
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=139307253]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer" unique_id=114466530]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_mgoel")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=2100884831]
+
+[node name="Control" type="Control" parent="BattleUI" unique_id=317673665]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBars" type="Control" parent="BattleUI/Control" unique_id=1565089053]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 9.0
+offset_right = -14.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnemyBar" type="PanelContainer" parent="BattleUI/Control/HealthBars" unique_id=1908548090]
+layout_mode = 1
+offset_right = 108.0
+offset_bottom = 36.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleUI/Control/HealthBars/EnemyBar" unique_id=765780441]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="NameLabel" type="Label" parent="BattleUI/Control/HealthBars/EnemyBar/VBoxContainer" unique_id=2082635666]
+layout_mode = 2
+text = "ENEMY"
+label_settings = SubResource("LabelSettings_dn72j")
+
+[node name="HPBar" type="ProgressBar" parent="BattleUI/Control/HealthBars/EnemyBar/VBoxContainer" unique_id=2060895478]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+value = 30.0
+show_percentage = false
+
+[node name="PlayerBar" type="PanelContainer" parent="BattleUI/Control/HealthBars" unique_id=800435958]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleUI/Control/HealthBars/PlayerBar" unique_id=2071069212]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="NameLabel" type="Label" parent="BattleUI/Control/HealthBars/PlayerBar/VBoxContainer" unique_id=764596028]
+layout_mode = 2
+text = "PLAYER"
+label_settings = SubResource("LabelSettings_dn72j")
+
+[node name="HPBar" type="ProgressBar" parent="BattleUI/Control/HealthBars/PlayerBar/VBoxContainer" unique_id=596964099]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+value = 30.0
+show_percentage = false
+
+[node name="HPLabel" type="Label" parent="BattleUI/Control/HealthBars/PlayerBar/VBoxContainer" unique_id=493328868]
+layout_mode = 2
+text = "30/100"
+label_settings = SubResource("LabelSettings_th188")
+horizontal_alignment = 2
+
+[node name="Menu" type="NinePatchRect" parent="BattleUI/Control" unique_id=1366806381]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -62.0
+offset_right = 151.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_dn72j")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleUI/Control/Menu" unique_id=1058621681]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = -9.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Options" type="HBoxContainer" parent="BattleUI/Control/Menu/MarginContainer" unique_id=7705947]
+visible = false
+layout_mode = 2
+
+[node name="MovesLabel" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Options" unique_id=1004062576]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MOVES"
+
+[node name="RunLabel" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Options" unique_id=374002327]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RUN"
+
+[node name="Moves" type="GridContainer" parent="BattleUI/Control/Menu/MarginContainer" unique_id=2008060656]
+layout_mode = 2
+columns = 2
+
+[node name="Move1" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Moves" unique_id=1639282669]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 1"
+
+[node name="Move2" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Moves" unique_id=416392799]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 2"
+
+[node name="Move3" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Moves" unique_id=97260638]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 3"
+
+[node name="Move4" type="Button" parent="BattleUI/Control/Menu/MarginContainer/Moves" unique_id=1924833753]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 4"
+
+[node name="EnemyPos" type="Marker2D" parent="." unique_id=656607851]
+position = Vector2(256, 26)
+
+[node name="PlayerPos" type="Marker2D" parent="." unique_id=1584348503]
+position = Vector2(80, 90)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=944846935]

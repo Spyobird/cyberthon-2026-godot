@@ -10,7 +10,7 @@ func _ready() -> void:
 	
 	overlay_2d_scene("res://scenes/game.tscn")
 
-func overlay_2d_scene(new_scene: String):
+func overlay_2d_scene(new_scene: String) -> Error:
 	if len(_current_2d_scenes) > 0:
 		var current_scene = _current_2d_scenes.back()
 		current_scene.process_mode = PROCESS_MODE_DISABLED
@@ -20,7 +20,7 @@ func overlay_2d_scene(new_scene: String):
 	world_2d.add_child(new)
 	return OK
 
-func pop_2d_scene():
+func pop_2d_scene() -> Error:
 	if len(_current_2d_scenes) <= 0: # cannot pop if there is only 1 scene
 		return FAILED
 	var current_scene = _current_2d_scenes.pop_back()
