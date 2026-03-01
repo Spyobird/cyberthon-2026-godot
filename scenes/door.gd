@@ -29,7 +29,9 @@ func _on_interact(player):
 		# open the door
 		_is_open = true
 		_interactable_component.is_collidable = false
+		_interactable_component.interacted.disconnect(_on_interact)
 		_door_sprite.texture = _DOOR_SPRITES[1]
+		
 	else:
 		GameManager.create_message_popup(
 			"Hmm... This door seems to be locked.",

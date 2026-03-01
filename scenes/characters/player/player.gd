@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("test_api"):
 		var result = await _player_state_loader.load_player_state()
-		print(result)
+		_inventory.load_items(result.inventory) # load player inventory
 
 func has_item(item: String) -> bool:
 	return _inventory.has_item(item)
