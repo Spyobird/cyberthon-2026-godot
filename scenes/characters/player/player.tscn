@@ -11,6 +11,7 @@ size = Vector2(16, 16)
 script = ExtResource("1_d5o5k")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=466841590]
+y_sort_enabled = true
 texture = ExtResource("1_4krpc")
 centered = false
 offset = Vector2(-2, -4)

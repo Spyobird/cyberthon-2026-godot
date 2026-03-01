@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cuq5cixqusipv"]
+
+[ext_resource type="Script" uid="uid://dr84q4idqgicg" path="res://scenes/scene_controller.gd" id="1_ywrif"]
+
+[node name="SceneController" type="Node" unique_id=976134247]
+script = ExtResource("1_ywrif")
+
+[node name="World2D" type="Node2D" parent="." unique_id=1616535049]

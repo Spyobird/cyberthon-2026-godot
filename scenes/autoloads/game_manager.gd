@@ -1,6 +1,7 @@
 extends Node
 
 var _message_manager: MessageManager
+var scene_controller: SceneController
 var is_player_movement_disabled: bool = false
 
 func register_message_manager(message_manager: MessageManager):
