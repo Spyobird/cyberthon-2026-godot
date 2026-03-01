@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://btamts4mw3lhu"]
+
+[ext_resource type="Script" uid="uid://dhu5316ep8gkp" path="res://scenes/door.gd" id="1_18pbm"]
+[ext_resource type="Texture2D" uid="uid://gc6yyc2t7m5b" path="res://assets/door/doors_frame_left.png" id="1_la1wf"]
+[ext_resource type="Texture2D" uid="uid://bc4wpx5r7fx4g" path="res://assets/door/doors_frame_right.png" id="2_18pbm"]
+[ext_resource type="Texture2D" uid="uid://dnku3ao8sxe4s" path="res://assets/door/doors_leaf_closed.png" id="3_q5w8r"]
+[ext_resource type="Script" uid="uid://cl013yx1tmuuv" path="res://scenes/components/interactable_component.gd" id="4_t58dd"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ju5n0"]
+load_path = "res://.godot/imported/doors_frame_top.png-aa80d99e7afa61696868fd451b6f5351.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgbum"]
+atlas = ExtResource("1_la1wf")
+region = Rect2(8, 0, 8, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pg2b6"]
+atlas = ExtResource("2_18pbm")
+region = Rect2(0, 0, 8, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ey00f"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ayau"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41c0y"]
+size = Vector2(16, 16)
+
+[node name="Door" type="Node2D" unique_id=1270764413]
+script = ExtResource("1_18pbm")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=537089378]
+
+[node name="FrameTop" type="Sprite2D" parent="Sprites" unique_id=1859310936]
+z_index = 10
+position = Vector2(8, -16)
+texture = SubResource("CompressedTexture2D_ju5n0")
+centered = false
+
+[node name="FrameLeft" type="Sprite2D" parent="Sprites" unique_id=159963189]
+texture = SubResource("AtlasTexture_kgbum")
+centered = false
+
+[node name="FrameRight" type="Sprite2D" parent="Sprites" unique_id=824241161]
+position = Vector2(40, 0)
+texture = SubResource("AtlasTexture_pg2b6")
+centered = false
+
+[node name="DoorSprite" type="Sprite2D" parent="Sprites" unique_id=743010830]
+position = Vector2(8, 0)
+texture = ExtResource("3_q5w8r")
+centered = false
+
+[node name="InteractableComponent" type="StaticBody2D" parent="." unique_id=874572983]
+script = ExtResource("4_t58dd")
+metadata/_custom_type_script = "uid://cl013yx1tmuuv"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=784090181]
+position = Vector2(24, 24)
+shape = SubResource("RectangleShape2D_ey00f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2021197470]
+
+[node name="LeftCollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1898866407]
+position = Vector2(8, 24)
+shape = SubResource("RectangleShape2D_4ayau")
+
+[node name="RightCollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=353575867]
+position = Vector2(40, 24)
+shape = SubResource("RectangleShape2D_41c0y")
