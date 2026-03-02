@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://dmr2qiy4oniuq"]
+
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_jwjgq"]
+[ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_4yt4v"]
+
+[resource]
+script = ExtResource("2_4yt4v")
+name = "Enemy"
+metadata/_custom_type_script = "uid://c0orf3oqqw51l"
