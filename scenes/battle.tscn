@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c8gtfuerchmhf"]
 
 [ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="1_dn72j"]
+[ext_resource type="Script" uid="uid://dh75343vp8c7m" path="res://scenes/battle.gd" id="1_th188"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mgoel"]
 load_path = "res://.godot/imported/Ash - old wooden flooring 250x250.jpg-fa33856c9f5031832b353e8c08eb72dc.ctex"
@@ -12,6 +13,7 @@ font_size = 8
 font_size = 8
 
 [node name="Battle" type="Node2D" unique_id=1810615026]
+script = ExtResource("1_th188")
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=139307253]
 layer = -1
