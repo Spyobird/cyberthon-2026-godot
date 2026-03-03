@@ -5,4 +5,9 @@
 
 [resource]
 script = ExtResource("2_vbono")
+name = "Boss"
+max_hp = 360
+attack = 160
+defense = 120
+type = 4
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"
