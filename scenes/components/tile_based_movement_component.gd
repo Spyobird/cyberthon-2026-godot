@@ -78,10 +78,7 @@ func _snap_position_to_grid():
 	)
 	
 func _animation(delta):
-	# Gravity
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-		
+
 	# Read 2D input
 	var input_vector := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 

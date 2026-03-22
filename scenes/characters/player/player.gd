@@ -2,9 +2,11 @@ class_name Player
 extends Node2D
 
 @onready var _movement_component = $TileBasedMovementComponent
+@onready var animated_sprite = $AnimatedSprite2D
 
 var _player_state_loader: PlayerStateLoader
 var _inventory: Inventory
+var _input_direction: Vector2 = Vector2.ZERO # consider moving input out
 
 func _ready() -> void:
 	_player_state_loader = MockPlayerStateLoader.new()
