@@ -142,21 +142,21 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Player" type="Node2D" unique_id=714559960]
+[node name="Player" type="Node2D" unique_id=346545495]
 script = ExtResource("1_d5o5k")
 
 [node name="TileBasedMovementComponent" type="CharacterBody2D" parent="." unique_id=926794285]
 script = ExtResource("2_pt8ch")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileBasedMovementComponent" unique_id=1316950446]
-position = Vector2(8, 8)
-shape = SubResource("RectangleShape2D_vqa02")
-
 [node name="RayCast2D" type="RayCast2D" parent="TileBasedMovementComponent" unique_id=2066792928]
 position = Vector2(8, 8)
 target_position = Vector2(0, 16)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileBasedMovementComponent" unique_id=1947676708]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileBasedMovementComponent" unique_id=1316950446]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_vqa02")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1947676708]
 position = Vector2(8, 8)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_i1nod")
