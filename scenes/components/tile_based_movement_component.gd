@@ -4,11 +4,11 @@ extends CharacterBody2D
 @export var tile_size: int = 16
 @export var walk_speed: float = 4.0
 @onready var _ray: RayCast2D = $RayCast2D
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var _animated_sprite = $AnimatedSprite2D
 var _input_direction: Vector2 = Vector2.ZERO # consider moving input out
 var _target_position: Vector2 = Vector2.ZERO
 var _parent: Node2D
-var last_direction := Vector2.RIGHT
+var _last_direction: Vector2 = Vector2.RIGHT
 var is_moving: bool = false
 
 const SPEED = 150.0
@@ -21,7 +21,7 @@ func process_movement(delta: float):
 		_process_player_input()
 	if _input_direction != Vector2.ZERO:
 		_move(delta)
-		_animation(delta)
+		_animate(delta)
 
 ### Input processing ###
 func _process_player_input():
@@ -49,8 +49,10 @@ func _check_collider(collider) -> bool:
 	if collider is InteractableComponent:
 		# collision callback happens in check, consider moving elsewhere if not clean
 		collider.interact(_parent)
-		if collider.is_collidable:
-			return true
+		return collider.is_collidable
+	if collider is StaticBody2D:
+		# catch all generic static bodies
+		return true
 	return false
 
 ### Movement ###
@@ -77,38 +79,35 @@ func _snap_position_to_grid():
 		roundf(_parent.position.y / tile_size) * tile_size
 	)
 	
-func _animation(delta):
+func _animate(delta):
 
 	# Read 2D input
 	var input_vector := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-
-	# Horizontal movement
-	velocity.x = input_vector.x * SPEED
 		
 	# Choose animation
 	if input_vector != Vector2.ZERO:
-		last_direction = input_vector
+		_last_direction = input_vector
 
 		if abs(input_vector.y) > abs(input_vector.x):
 			if input_vector.y < 0:
-				if animated_sprite.animation != "up":
-					animated_sprite.play("up")
+				if _animated_sprite.animation != "up":
+					_animated_sprite.play("up")
 			else:
-				if animated_sprite.animation != "down":
-					animated_sprite.play("down")
+				if _animated_sprite.animation != "down":
+					_animated_sprite.play("down")
 		else:
-			if animated_sprite.animation != "walk":
-				animated_sprite.play("walk")
-			animated_sprite.flip_h = input_vector.x < 0
+			if _animated_sprite.animation != "walk":
+				_animated_sprite.play("walk")
+			_animated_sprite.flip_h = input_vector.x < 0
 	else:
-		if abs(last_direction.y) > abs(last_direction.x):
-			if last_direction.y < 0:
-				if animated_sprite.animation != "up":
-					animated_sprite.play("up")
+		if abs(_last_direction.y) > abs(_last_direction.x):
+			if _last_direction.y < 0:
+				if _animated_sprite.animation != "up":
+					_animated_sprite.play("up")
 			else:
-				if animated_sprite.animation != "down":
-					animated_sprite.play("down")
+				if _animated_sprite.animation != "down":
+					_animated_sprite.play("down")
 		else:
-			if animated_sprite.animation != "idle":
-				animated_sprite.play("idle")
-			animated_sprite.flip_h = last_direction.x < 0
+			if _animated_sprite.animation != "idle":
+				_animated_sprite.play("idle")
+			_animated_sprite.flip_h = _last_direction.x < 0
