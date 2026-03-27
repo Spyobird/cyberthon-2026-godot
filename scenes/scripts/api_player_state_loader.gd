@@ -1,17 +1,17 @@
 class_name APIPlayerStateLoader
 extends PlayerStateLoader
 
-const BASE_URL = "http://127.0.0.1:9000"
+const BASE_URL = "http://127.0.0.1:8000"
 
 var _http_request: HTTPRequest
 
 func _ready() -> void:
 	_http_request = HTTPRequest.new()
 	add_child(_http_request)
-	_http_request.timeout = 1.0
+	_http_request.timeout = 10.0
 
 func _make_request():
-	var error = _http_request.request(BASE_URL)
+	var error = _http_request.request(BASE_URL + "/read_game_data")
 	return error
 
 func _handle_request_completed(result, response_code, headers, body):
@@ -29,19 +29,23 @@ func _handle_request_completed(result, response_code, headers, body):
 		print("HTTP error: ", response_code)
 		return null
 	
-	var json = JSON.parse_string(body.get_string_from_utf8())
+	var body_string = body.get_string_from_utf8()
+	print("Raw response: ", body_string)
+	var json = JSON.parse_string(body_string)
 	if !json:
 		print("JSON parse error")
 		return null
-	
-	var messages = json.get("messages", {})
+
+	print("Parsed JSON: ", json)
+	var messages = json.get("message", {})
+	print("Message: ", messages)
 	return messages
 
 func _parse_player_state(data: Dictionary) -> PlayerState:
-	var inventory = data.get("inventory", [])
-	var stats = data.get("stats", [])
-	stats = Vector3i(stats.get(0), stats.get(1), stats.get(2))
-	var moves = data.get("moves", [])
+	var inventory: Array[String] = Array(data.get("inventory", []), TYPE_STRING, "", null)
+	var stats_raw = data.get("stats", [])
+	var stats = Vector3i(stats_raw[0], stats_raw[1], stats_raw[2])
+	var moves: Array[String] = Array(data.get("moves", []), TYPE_STRING, "", null)
 	return PlayerState.new(inventory, stats, moves)
 
 func load_player_state() -> PlayerState:
