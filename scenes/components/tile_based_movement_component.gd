@@ -26,9 +26,9 @@ func process_movement(delta: float):
 ### Input processing ###
 func _process_player_input():
 	if _input_direction.y == 0:
-		_input_direction.x = int(Input.is_action_just_pressed("ui_right")) - int(Input.is_action_just_pressed("ui_left"))
+		_input_direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	if _input_direction.x == 0:
-		_input_direction.y = int(Input.is_action_just_pressed("ui_down")) - int(Input.is_action_just_pressed("ui_up"))
+		_input_direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 	
 	if _input_direction != Vector2.ZERO:
 		_target_position = _input_direction * tile_size
