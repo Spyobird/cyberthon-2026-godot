@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://bc4wpx5r7fx4g" path="res://assets/door/doors_frame_right.png" id="2_18pbm"]
 [ext_resource type="Texture2D" uid="uid://dnku3ao8sxe4s" path="res://assets/door/doors_leaf_closed.png" id="3_q5w8r"]
 [ext_resource type="Script" uid="uid://cl013yx1tmuuv" path="res://scenes/components/interactable_component.gd" id="4_t58dd"]
+[ext_resource type="Texture2D" uid="uid://dvdntq16fxtye" path="res://assets/door/door_sides.png" id="5_q5w8r"]
+[ext_resource type="Texture2D" uid="uid://b6mwdh2jcju2m" path="res://assets/door/door.png" id="6_t58dd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ju5n0"]
 load_path = "res://.godot/imported/doors_frame_top.png-aa80d99e7afa61696868fd451b6f5351.ctex"
@@ -16,6 +18,35 @@ region = Rect2(8, 0, 8, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_pg2b6"]
 atlas = ExtResource("2_18pbm")
 region = Rect2(0, 0, 8, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju5n0"]
+atlas = ExtResource("6_t58dd")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey00f"]
+atlas = ExtResource("6_t58dd")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ayau"]
+atlas = ExtResource("6_t58dd")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t58dd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju5n0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ey00f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ayau")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ey00f"]
 size = Vector2(16, 16)
@@ -32,24 +63,45 @@ script = ExtResource("1_18pbm")
 [node name="Sprites" type="Node2D" parent="." unique_id=537089378]
 
 [node name="FrameTop" type="Sprite2D" parent="Sprites" unique_id=1859310936]
+visible = false
 z_index = 10
 position = Vector2(8, -16)
 texture = SubResource("CompressedTexture2D_ju5n0")
 centered = false
 
 [node name="FrameLeft" type="Sprite2D" parent="Sprites" unique_id=159963189]
+visible = false
 texture = SubResource("AtlasTexture_kgbum")
 centered = false
 
 [node name="FrameRight" type="Sprite2D" parent="Sprites" unique_id=824241161]
+visible = false
 position = Vector2(40, 0)
 texture = SubResource("AtlasTexture_pg2b6")
 centered = false
 
 [node name="DoorSprite" type="Sprite2D" parent="Sprites" unique_id=743010830]
-position = Vector2(8, 0)
+visible = false
+position = Vector2(8, -1)
 texture = ExtResource("3_q5w8r")
 centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprites" unique_id=1361979318]
+visible = false
+position = Vector2(-26, 92)
+
+[node name="DoorSides" type="Sprite2D" parent="Sprites" unique_id=772817228]
+position = Vector2(24.000002, 16)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_q5w8r")
+
+[node name="Door" type="AnimatedSprite2D" parent="Sprites" unique_id=278816736]
+position = Vector2(24, 16)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_t58dd")
+autoplay = "default"
+frame = 1
+frame_progress = 0.2913011
 
 [node name="InteractableComponent" type="StaticBody2D" parent="." unique_id=874572983]
 script = ExtResource("4_t58dd")
