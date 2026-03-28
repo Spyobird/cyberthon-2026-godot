@@ -11,15 +11,17 @@ script = ExtResource("1_mhnvy")
 [node name="Control" type="Control" parent="." unique_id=829471229]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -56.0
+offset_top = -40.0
+offset_right = -5.0
+offset_bottom = 24.0
 
 [node name="MenuBanner" type="NinePatchRect" parent="Control" unique_id=1822370850]
 layout_mode = 0
-offset_left = -63.0
-offset_top = -40.0
-offset_right = -12.0
-offset_bottom = 27.0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 46.0
+offset_bottom = 66.0
 texture = ExtResource("1_yqeox")
 patch_margin_left = 6
 patch_margin_top = 6
@@ -39,7 +41,7 @@ layout_mode = 2
 theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
 theme_override_fonts/normal_font = ExtResource("2_vjb58")
 theme_override_font_sizes/normal_font_size = 10
-text = "STATUS"
+text = "STATS"
 justification_flags = 161
 
 [node name="ItemsText" type="RichTextLabel" parent="Control/MenuBanner/TextContainer" unique_id=1812079777]
