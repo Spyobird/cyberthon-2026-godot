@@ -18,10 +18,10 @@ offset_bottom = 24.0
 
 [node name="MenuBanner" type="NinePatchRect" parent="Control" unique_id=1822370850]
 layout_mode = 0
-offset_left = -5.0
-offset_top = -1.0
-offset_right = 46.0
-offset_bottom = 66.0
+offset_left = -9.0
+offset_top = 3.0
+offset_right = 42.0
+offset_bottom = 70.0
 texture = ExtResource("1_yqeox")
 patch_margin_left = 6
 patch_margin_top = 6

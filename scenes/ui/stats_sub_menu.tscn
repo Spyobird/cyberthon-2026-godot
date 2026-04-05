@@ -17,10 +17,10 @@ offset_bottom = 24.0
 
 [node name="StatsMenu" type="NinePatchRect" parent="Control" unique_id=1488263814]
 layout_mode = 0
-offset_left = -5.0
-offset_top = -1.0
-offset_right = 53.0
-offset_bottom = 56.0
+offset_left = -9.0
+offset_top = 4.0
+offset_right = 49.0
+offset_bottom = 61.0
 texture = ExtResource("1_dlhxm")
 patch_margin_left = 6
 patch_margin_top = 6
