@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bt37ga2qwtju0"]
+
+[ext_resource type="Script" uid="uid://b22hifjdogtdp" path="res://scenes/ui/stats_sub_menu.gd" id="1_bobfa"]
+[ext_resource type="Texture2D" uid="uid://b5alcyi8ki0om" path="res://assets/menu/menu_box_1.png" id="1_dlhxm"]
+[ext_resource type="FontFile" uid="uid://dorfha5ylmpy8" path="res://assets/menu/pkmnfl.ttf" id="2_bobfa"]
+
+[node name="StatsSubMenu" type="Node2D" unique_id=79107404]
+script = ExtResource("1_bobfa")
+
+[node name="Control" type="Control" parent="." unique_id=38661780]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -56.0
+offset_top = -40.0
+offset_right = -5.0
+offset_bottom = 24.0
+
+[node name="StatsMenu" type="NinePatchRect" parent="Control" unique_id=1488263814]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 4.0
+offset_right = 49.0
+offset_bottom = 61.0
+texture = ExtResource("1_dlhxm")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 7
+patch_margin_bottom = 6
+axis_stretch_horizontal = 1
+metadata/_edit_group_ = true
+
+[node name="TextContainer" type="VBoxContainer" parent="Control/StatsMenu" unique_id=1028223399]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 66.0
+
+[node name="HPText" type="RichTextLabel" parent="Control/StatsMenu/TextContainer" unique_id=103142522]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_bobfa")
+theme_override_font_sizes/normal_font_size = 10
+text = "HP: 65535"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
+
+[node name="ATKText" type="RichTextLabel" parent="Control/StatsMenu/TextContainer" unique_id=2025703081]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_bobfa")
+theme_override_font_sizes/normal_font_size = 10
+text = "ATK: 65535"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
+
+[node name="DEFText" type="RichTextLabel" parent="Control/StatsMenu/TextContainer" unique_id=982701455]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_bobfa")
+theme_override_font_sizes/normal_font_size = 10
+text = "DEF: 65535"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
