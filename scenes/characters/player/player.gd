@@ -1,9 +1,9 @@
 class_name Player
 extends Node2D
 
-signal SYNC_PLAYER_START
-signal SYNC_PLAYER_SUCCESS
-signal SYNC_PLAYER_FAILED
+signal sync_player_started
+signal sync_player_completed
+signal sync_player_failed
 
 @onready var _movement_component = $TileBasedMovementComponent
 
@@ -45,11 +45,11 @@ func update_player_state(new_player_state: PlayerState) -> void:
 	_current_player_state = new_player_state
 
 func sync_player_state() -> void:
-	SYNC_PLAYER_START.emit()
+	sync_player_started.emit()
 	var result = await _player_state_loader.load_player_state()
 	if result == null:
-		SYNC_PLAYER_FAILED.emit()
+		sync_player_failed.emit()
 		return
 	update_player_state(result)
-	SYNC_PLAYER_SUCCESS.emit()
+	sync_player_completed.emit()
 	

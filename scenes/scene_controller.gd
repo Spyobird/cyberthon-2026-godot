@@ -10,8 +10,8 @@ func _ready() -> void:
 	overlay_2d_scene("res://scenes/game_new.tscn")
 	
 	# Load menu as a persistent overlay
-	var MenuNode: Node = load("res://scenes/menu.tscn").instantiate()
-	world_2d.add_child(MenuNode)
+	var menu_node: Node = load("res://scenes/menu.tscn").instantiate()
+	world_2d.add_child(menu_node)
 	
 func overlay_2d_scene(new_scene: String) -> Error:
 	if len(_current_2d_scenes) > 0:
