@@ -1,5 +1,5 @@
 class_name Inventory
-extends RefCounted
+extends Resource
 
 const _VALID_ITEMS = ["magic wand", "door key"]
 const _MAX_SIZE = 4
