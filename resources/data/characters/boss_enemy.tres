@@ -2,10 +2,22 @@
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_1tx0k"]
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_vbono"]
+[ext_resource type="Texture2D" uid="uid://bvldbqqqrfco2" path="res://assets/Pixelart Study - Expression Sheets - Full/Pixelart Study - Expression Sheet - Profile - 16x16.png" id="3_igd7n"]
+[ext_resource type="Texture2D" uid="uid://dtns2u53k57ch" path="res://assets/Pixelart Study - Expression Sheets - Full/Pixelart Study - Expression Sheet - Profile - 32x32.png" id="4_r1nuw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxfl7"]
+atlas = ExtResource("3_igd7n")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyg7x"]
+atlas = ExtResource("4_r1nuw")
+region = Rect2(24, 56, 16, 24)
 
 [resource]
 script = ExtResource("2_vbono")
 name = "Boss"
+sprite_front = SubResource("AtlasTexture_dyg7x")
+sprite_back = SubResource("AtlasTexture_dxfl7")
 max_hp = 360
 attack = 160
 defense = 120

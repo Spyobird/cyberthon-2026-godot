@@ -10,8 +10,10 @@ enum State {
 	LOSE
 }
 
-@onready var _enemy_pos = $EnemyPos
-@onready var _player_pos = $PlayerPos
+@onready var _enemy_pos = $CharacterSprites/EnemyPos
+@onready var _player_pos = $CharacterSprites/PlayerPos
+@onready var _enemy_sprite = $CharacterSprites/EnemyPos/EnemySprite
+@onready var _player_sprite = $CharacterSprites/PlayerPos/PlayerSprite
 @onready var _ui = $BattleUI
 
 var _player_data: CharacterData
@@ -35,11 +37,27 @@ func _change_state(new_state: State):
 			_end_battle()
 
 func _setup_battle():
+	# load character data
 	_player_data = GameManager.player_data.duplicate(true)
 	_enemy_data = GameManager.enemy_data.duplicate(true)
 	print("Fetched player and enemy data from GameManager")
 	
-	# initialize player and enemy
+	# setup sprites
+	_player_sprite.texture = _player_data.sprite_back
+	_enemy_sprite.texture = _enemy_data.sprite_front
+	_player_sprite.position = Vector2.ZERO
+	_enemy_sprite.position = Vector2.ZERO
+	_player_sprite.apply_scale(Vector2(3, 3))
+	_enemy_sprite.apply_scale(Vector2(3, 3))
+	print("Loaded player and enemy sprites")
+	
+	# setup UI
+	
+	# possibly play something with a message
+	
+	print("Battle setup complete")
+	_change_state(State.PLAYER_TURN)
+	
 
 func _start_player_turn():
 	# handle inputs
