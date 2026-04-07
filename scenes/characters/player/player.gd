@@ -5,11 +5,14 @@ signal sync_player_started
 signal sync_player_completed
 signal sync_player_failed
 
+const PLAYER_BASE_DATA = preload("res://resources/data/characters/player_base.tres")
+
 @onready var _movement_component = $TileBasedMovementComponent
 
 var _player_state_loader: PlayerStateLoader
 var _current_player_state: PlayerState
 var _last_direction: Vector2
+var player_data: CharacterData
 
 func _ready() -> void:
 	_player_state_loader = MockPlayerStateLoader.new()
@@ -31,6 +34,11 @@ func has_item(item: String) -> bool:
 
 func update_player_state(new_player_state: PlayerState) -> void:
 	_current_player_state = new_player_state
+	player_data = PLAYER_BASE_DATA.duplicate(true)
+	#player_data.moves = _current_player_state.moves # TODO: initialise moves
+	player_data.attack = _current_player_state.stats.x
+	player_data.defense = _current_player_state.stats.y
+	player_data.max_hp = _current_player_state.stats.z
 
 func sync_player_state() -> void:
 	sync_player_started.emit()

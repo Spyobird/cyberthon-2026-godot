@@ -14,6 +14,8 @@ enum State {
 @onready var _player_pos = $PlayerPos
 @onready var _ui = $BattleUI
 
+var _player_data: CharacterData
+var _enemy_data: CharacterData
 var current_state: State
 
 func _ready() -> void:
@@ -33,8 +35,11 @@ func _change_state(new_state: State):
 			_end_battle()
 
 func _setup_battle():
+	_player_data = GameManager.player_data.duplicate(true)
+	_enemy_data = GameManager.enemy_data.duplicate(true)
+	print("Fetched player and enemy data from GameManager")
+	
 	# initialize player and enemy
-	pass
 
 func _start_player_turn():
 	# handle inputs
