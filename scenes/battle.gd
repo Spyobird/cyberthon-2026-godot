@@ -53,8 +53,13 @@ func _setup_battle():
 	
 	# setup UI
 	_ui.initialize(_player_data, _enemy_data)
+	_ui.run_button.pressed.connect(_run)
+	print("Loaded Battle UI")
 	
 	# possibly play something with a message
+	var result = _ui.display_message("Battle with %s" % _enemy_data.name)
+	if result:
+		await result
 	
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)
@@ -66,6 +71,7 @@ func _start_player_turn():
 	pass
 
 func _run():
+	print("Running...")
 	_end_battle()
 
 func _start_enemy_turn():
@@ -76,7 +82,7 @@ func _start_enemy_turn():
 
 func _end_battle():
 	# handle scene change + updates
-	pass
+	GameManager.scene_controller.pop_2d_scene()
 
 func _execute_action(some_parameters):
 	_change_state(State.ACTION)
@@ -93,3 +99,9 @@ func _check_for_faint():
 	# player hp zero -> change to lose
 	# enemy hp zero -> change to win
 	pass
+
+func _input(event: InputEvent) -> void:
+	if _ui.is_message_reading():
+		if event.is_action_pressed("ui_accept"):
+			_ui.scroll_text()
+			get_viewport().set_input_as_handled()

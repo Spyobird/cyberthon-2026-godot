@@ -53,7 +53,7 @@ func create_message_popup(...messages):
 func _process(delta: float) -> void:
 	# handle scrolling of text
 	if _message_manager:
-		if Input.is_action_just_pressed("use"):
+		if Input.is_action_just_pressed("ui_accept"):
 			_message_manager.scroll_text()
 		if Input.is_action_just_pressed("test_message"):
 			create_message_popup("Hello world", "Hope you have a great day!") # temp string

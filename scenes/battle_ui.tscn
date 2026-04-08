@@ -9,7 +9,7 @@ font_size = 8
 [sub_resource type="LabelSettings" id="LabelSettings_th188"]
 font_size = 8
 
-[node name="BattleUI" type="CanvasLayer" unique_id=1692606746 node_paths=PackedStringArray("options_menu", "moves_menu", "moves_button", "run_button", "player_name", "player_hp", "enemy_name", "player_bar", "enemy_bar", "move_buttons")]
+[node name="BattleUI" type="CanvasLayer" unique_id=1692606746 node_paths=PackedStringArray("options_menu", "moves_menu", "moves_button", "run_button", "player_name", "player_hp", "enemy_name", "player_bar", "enemy_bar", "move_buttons", "message_label")]
 script = ExtResource("1_p4gof")
 options_menu = NodePath("Control/Menu/MarginContainer/Options")
 moves_menu = NodePath("Control/Menu/MarginContainer/Moves")
@@ -21,6 +21,7 @@ enemy_name = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/NameLabel")
 player_bar = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/HPBar")
 enemy_bar = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/HPBar")
 move_buttons = [NodePath("Control/Menu/MarginContainer/Moves/Move1"), NodePath("Control/Menu/MarginContainer/Moves/Move2"), NodePath("Control/Menu/MarginContainer/Moves/Move3"), NodePath("Control/Menu/MarginContainer/Moves/Move4")]
+message_label = NodePath("Control/Menu/MarginContainer/MessageLabel")
 
 [node name="Control" type="Control" parent="." unique_id=1968808868]
 layout_mode = 3
@@ -129,6 +130,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Options" type="HBoxContainer" parent="Control/Menu/MarginContainer" unique_id=389368118]
+visible = false
 layout_mode = 2
 
 [node name="MovesLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=932083739]
@@ -173,5 +175,13 @@ size_flags_horizontal = 3
 size_flags_vertical = 6
 theme_override_font_sizes/font_size = 8
 text = "Move 4"
+
+[node name="MessageLabel" type="RichTextLabel" parent="Control/Menu/MarginContainer" unique_id=614278991]
+visible = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "TEST MESSAGE"
 
 [connection signal="pressed" from="Control/Menu/MarginContainer/Options/MovesLabel" to="." method="_show_moves_menu"]

@@ -105,7 +105,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			elif event.is_action_pressed("ui_up"):
 				selected_option = (selected_option - 1 + number_menu_options) % number_menu_options
 				calculate_arrow_position()
-			elif event.is_action_pressed("use"):
+			elif event.is_action_pressed("ui_accept"):
 				_handle_menu_select()
 
 		MenuState.STATUS_SCREEN:

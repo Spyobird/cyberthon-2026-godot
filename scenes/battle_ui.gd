@@ -1,6 +1,9 @@
 class_name BattleUI
 extends CanvasLayer
 
+signal message_box_opened
+signal message_box_closed
+
 @export_group("Menus")
 @export var options_menu: Container
 @export var moves_menu: Container
@@ -16,6 +19,13 @@ extends CanvasLayer
 @export var player_bar: ProgressBar
 @export var enemy_bar: ProgressBar
 @export var move_buttons: Array[Button]
+
+@export_group("Message Box")
+@export var delay_ms: float = 15
+@export var message_label: RichTextLabel
+
+var is_message_box_scrolling: bool = false
+var _messages: Array[String] = []
 
 func initialize(player: CharacterData, enemy: CharacterData):
 	print("Initializing Battle UI...")
@@ -61,6 +71,10 @@ func _show_options_menu():
 	moves_menu.hide()
 	moves_button.grab_focus()
 
+func _hide_all_menus():
+	options_menu.hide()
+	moves_menu.hide()
+
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		if moves_menu.is_visible_in_tree():
@@ -69,3 +83,43 @@ func _input(event):
 
 func _on_move_pressed(move: MoveData):
 	print("Used move %s" % move.name)
+
+# Message box methods (from MessageManager)
+
+func display_message(... messages):
+	if is_message_reading():
+		return
+	if len(messages) == 0:
+		return
+	
+	_hide_all_menus()
+	message_box_opened.emit()
+	_messages.assign(messages.filter(func(x): return x is String))
+	scroll_text()
+	return message_box_closed
+
+func is_message_reading() -> bool:
+	return message_label.visible
+
+func scroll_text():
+	if is_message_box_scrolling:
+		return
+	if not is_message_reading():
+		message_label.visible = true
+	if len(_messages) == 0:
+		message_label.visible = false
+		message_box_closed.emit()
+		_show_options_menu()
+		return
+	
+	is_message_box_scrolling = true
+	message_label.text = _messages[0]
+	message_label.visible_characters = 0 # Hide everything initially
+	
+	var total_chars = message_label.get_total_character_count()
+	for i in range(total_chars):
+		message_label.visible_characters += 1
+		await get_tree().create_timer(delay_ms/1000).timeout
+	
+	_messages.pop_front()
+	is_message_box_scrolling = false
