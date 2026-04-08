@@ -9,6 +9,7 @@ extends Resource
 
 @export_group("Stats")
 @export var max_hp: int = 20
+@export var current_hp: int = 20
 @export var attack: int = 10
 @export var defense: int = 10
 @export var type: Constants.Element = Constants.Element.NORMAL

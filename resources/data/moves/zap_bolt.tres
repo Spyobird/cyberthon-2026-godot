@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_t8foc")
+name = "Zap Bolt"
 power = 30
 type = 2
 metadata/_custom_type_script = "uid://cr2etpgecorfn"

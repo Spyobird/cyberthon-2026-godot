@@ -19,6 +19,7 @@ name = "Boss"
 sprite_front = SubResource("AtlasTexture_dyg7x")
 sprite_back = SubResource("AtlasTexture_dxfl7")
 max_hp = 360
+current_hp = 360
 attack = 160
 defense = 120
 type = 4

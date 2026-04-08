@@ -20,6 +20,24 @@ func lock_movement(id: StringName) -> void:
 func unlock_movement(id: StringName) -> void:
 	_movement_locks.erase(id)
 
+# Moves related
+func load_move(move: String) -> MoveData:
+	var file_name = move.to_lower().replace(" ", "_")
+	var path = "res://resources/data/moves/" + file_name + ".tres"
+	if FileAccess.file_exists(path):
+		print("Loading move from path: %s" % path)
+		return load(path)
+	print("Error loading move")
+	return null
+
+func load_moves(moves: Array[String]) -> Array[MoveData]:
+	var output: Array[MoveData] = []
+	for move in moves:
+		var loaded_move = load_move(move)
+		if loaded_move:
+			output.append(loaded_move)
+	return output
+
 # Message manager related
 
 func register_message_manager(message_manager: MessageManager):

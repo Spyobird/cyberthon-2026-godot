@@ -52,12 +52,12 @@ func _setup_battle():
 	print("Loaded player and enemy sprites")
 	
 	# setup UI
+	_ui.initialize(_player_data, _enemy_data)
 	
 	# possibly play something with a message
 	
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)
-	
 
 func _start_player_turn():
 	# handle inputs

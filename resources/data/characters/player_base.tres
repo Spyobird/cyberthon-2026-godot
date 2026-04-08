@@ -19,6 +19,7 @@ name = "Player"
 sprite_front = SubResource("AtlasTexture_rfto7")
 sprite_back = SubResource("AtlasTexture_ip78s")
 max_hp = 100
+current_hp = 100
 attack = 20
 defense = 20
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"

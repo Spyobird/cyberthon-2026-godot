@@ -18,4 +18,5 @@ script = ExtResource("2_4yt4v")
 name = "Enemy"
 sprite_front = SubResource("AtlasTexture_3xab7")
 sprite_back = SubResource("AtlasTexture_17f1f")
+current_hp = 20
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"
