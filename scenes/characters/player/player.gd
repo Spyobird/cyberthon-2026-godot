@@ -20,7 +20,7 @@ func _ready() -> void:
 	
 	_movement_component.init(self)
 	
-	update_player_state(PlayerState.new(["magic wand"], Vector3i(100, 20, 20), ["fireball", "lightning"]))
+	update_player_state(PlayerState.new(["magic wand"], Vector3i(100, 45, 45), ["fireball", "zap_bolt"]))
 	print("Loaded default player state!")
 
 func _physics_process(delta) -> void:

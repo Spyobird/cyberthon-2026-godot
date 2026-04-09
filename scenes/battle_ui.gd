@@ -55,8 +55,6 @@ func initialize(battle: Battle, player: CharacterData, enemy: CharacterData):
 		else:
 			btn.hide()
 	print("Initialized move buttons")
-	
-	_show_options_menu()
 
 func update_ui(player: CharacterData, enemy: CharacterData):
 	player_name.text = player.name
@@ -67,24 +65,28 @@ func update_ui(player: CharacterData, enemy: CharacterData):
 	enemy_bar.max_value = enemy.max_hp
 	enemy_bar.value = enemy.current_hp
 
-func _show_moves_menu():
+func show_moves_menu():
 	options_menu.hide()
 	moves_menu.show()
 	move_buttons[0].grab_focus()
 
-func _show_options_menu():
+func show_options_menu():
 	options_menu.show()
 	moves_menu.hide()
 	moves_button.grab_focus()
 
-func _hide_all_menus():
+func hide_all_menus():
 	options_menu.hide()
 	moves_menu.hide()
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		if moves_menu.is_visible_in_tree():
-			_show_options_menu()
+			show_options_menu()
+			get_viewport().set_input_as_handled()
+	if is_message_reading():
+		if event.is_action_pressed("ui_accept"):
+			scroll_text()
 			get_viewport().set_input_as_handled()
 
 # Message box methods (from MessageManager)
@@ -95,7 +97,7 @@ func display_message(... messages):
 	if len(messages) == 0:
 		return
 	
-	_hide_all_menus()
+	hide_all_menus()
 	message_box_opened.emit()
 	_messages.assign(messages.filter(func(x): return x is String))
 	scroll_text()
@@ -111,7 +113,6 @@ func scroll_text():
 		message_label.visible = true
 	if len(_messages) == 0:
 		message_label.visible = false
-		_show_options_menu()
 		message_box_closed.emit()
 		return
 	

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://db8s6kvkohge7"]
+
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_idgjd"]
+
+[resource]
+script = ExtResource("1_idgjd")
+name = "Nudge"
+power = 30
+accuracy = 95
+metadata/_custom_type_script = "uid://cr2etpgecorfn"

@@ -2,6 +2,7 @@ class_name Battle
 extends Node2D
 
 signal data_updated(player, enemy)
+signal action_completed
 
 enum State {
 	START,
@@ -34,7 +35,7 @@ func _change_state(new_state: State):
 		State.PLAYER_TURN:
 			_start_player_turn()
 		State.ENEMY_TURN:
-			_start_player_turn()
+			_start_enemy_turn()
 		State.WIN:
 			_win()
 		State.LOSE:
@@ -69,22 +70,17 @@ func _setup_battle():
 	_change_state(State.PLAYER_TURN)
 
 func _start_player_turn():
-	# handle inputs
+	_ui.show_options_menu()
 	
 	# on action -> action
-	pass
+	await action_completed
+	_change_state(State.ENEMY_TURN)
 
 func _run():
 	var result = _ui.display_message("Running...")
 	if result:
 		await result
 	_end_battle()
-
-func _start_enemy_turn():
-	pass
-	# calculate stuff
-	
-	#_execute_action()
 
 func _lose():
 	var result = _ui.display_message("You lost the fight...")
@@ -121,16 +117,32 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	var damage = _calculate_damage(attacker, defender, move)
 	print("Damage: %d" % damage)
 	_apply_damage(damage, defender)
-	data_updated.emit(attacker, defender)
 	
 	# update UI
+	data_updated.emit(_player_data, _enemy_data)
 	
 	_check_for_faint()
+	
+	action_completed.emit()
+
+func _start_enemy_turn():
+	_ui.hide_all_menus()
+	
+	# choose move (requires at least 1 move)
+	var chosen_move = _enemy_data.moves[0]
+	
+	# wait a bit
+	await get_tree().create_timer(2.0).timeout
+	
+	_execute_action(_enemy_data, _player_data, chosen_move)
+	# on action -> action
+	await action_completed
+	_change_state(State.PLAYER_TURN)
 
 func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: MoveData):
 	if attacker.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
 		return 0
-	return int(attacker.attack + move.power * randf_range(0.9, 1.1) - defender.defense)
+	return max(int((6 * attacker.attack / defender.defense * move.power / 50 + 2) * randf_range(0.85, 1)), 1)
 
 func _apply_damage(damage: int, defender: CharacterData):
 	defender.current_hp -= damage
@@ -142,9 +154,3 @@ func _check_for_faint():
 	# enemy hp zero -> change to win
 	if _enemy_data.current_hp <= 0:
 		_change_state(State.WIN)
-
-func _input(event: InputEvent) -> void:
-	if _ui.is_message_reading():
-		if event.is_action_pressed("ui_accept"):
-			_ui.scroll_text()
-			get_viewport().set_input_as_handled()
