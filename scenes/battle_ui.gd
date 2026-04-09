@@ -25,18 +25,15 @@ signal message_box_closed
 @export var message_label: RichTextLabel
 
 var is_message_box_scrolling: bool = false
+var _battle: Battle
 var _messages: Array[String] = []
 
-func initialize(player: CharacterData, enemy: CharacterData):
+func initialize(battle: Battle, player: CharacterData, enemy: CharacterData):
 	print("Initializing Battle UI...")
+	_battle = battle
+	battle.data_updated.connect(update_ui)
 	
-	player_name.text = player.name
-	enemy_name.text = enemy.name
-	player_hp.text = "%d / %d" % [player.current_hp, player.max_hp]
-	player_bar.max_value = player.max_hp
-	player_bar.value = player.current_hp
-	enemy_bar.max_value = enemy.max_hp
-	enemy_bar.value = enemy.current_hp
+	update_ui(player, enemy)
 	print("Initialized character data")
 	
 	# Moves
@@ -50,16 +47,25 @@ func initialize(player: CharacterData, enemy: CharacterData):
 			btn.show()
 			
 			# Clean up old connections if they exist
-			if btn.pressed.is_connected(_on_move_pressed):
-				btn.pressed.disconnect(_on_move_pressed)
+			if btn.pressed.is_connected(battle.use_move):
+				btn.pressed.disconnect(battle.use_move)
 				
 			# LINKING: Bind the move resource directly to the button signal
-			btn.pressed.connect(_on_move_pressed.bind(move_res))
+			btn.pressed.connect(battle.use_move.bind(move_res))
 		else:
 			btn.hide()
 	print("Initialized move buttons")
 	
 	_show_options_menu()
+
+func update_ui(player: CharacterData, enemy: CharacterData):
+	player_name.text = player.name
+	enemy_name.text = enemy.name
+	player_hp.text = "%d / %d" % [player.current_hp, player.max_hp]
+	player_bar.max_value = player.max_hp
+	player_bar.value = player.current_hp
+	enemy_bar.max_value = enemy.max_hp
+	enemy_bar.value = enemy.current_hp
 
 func _show_moves_menu():
 	options_menu.hide()
@@ -80,9 +86,6 @@ func _input(event):
 		if moves_menu.is_visible_in_tree():
 			_show_options_menu()
 			get_viewport().set_input_as_handled()
-
-func _on_move_pressed(move: MoveData):
-	print("Used move %s" % move.name)
 
 # Message box methods (from MessageManager)
 
@@ -108,8 +111,8 @@ func scroll_text():
 		message_label.visible = true
 	if len(_messages) == 0:
 		message_label.visible = false
-		message_box_closed.emit()
 		_show_options_menu()
+		message_box_closed.emit()
 		return
 	
 	is_message_box_scrolling = true

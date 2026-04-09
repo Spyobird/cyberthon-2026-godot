@@ -1,6 +1,8 @@
 class_name Battle
 extends Node2D
 
+signal data_updated(player, enemy)
+
 enum State {
 	START,
 	PLAYER_TURN,
@@ -33,8 +35,10 @@ func _change_state(new_state: State):
 			_start_player_turn()
 		State.ENEMY_TURN:
 			_start_player_turn()
-		State.WIN, State.LOSE:
-			_end_battle()
+		State.WIN:
+			_win()
+		State.LOSE:
+			_lose()
 
 func _setup_battle():
 	# load character data
@@ -52,7 +56,7 @@ func _setup_battle():
 	print("Loaded player and enemy sprites")
 	
 	# setup UI
-	_ui.initialize(_player_data, _enemy_data)
+	_ui.initialize(self, _player_data, _enemy_data)
 	_ui.run_button.pressed.connect(_run)
 	print("Loaded Battle UI")
 	
@@ -71,34 +75,73 @@ func _start_player_turn():
 	pass
 
 func _run():
-	print("Running...")
+	var result = _ui.display_message("Running...")
+	if result:
+		await result
 	_end_battle()
 
 func _start_enemy_turn():
-	
+	pass
 	# calculate stuff
 	
-	_execute_action("some params")
+	#_execute_action()
 
-func _end_battle():
+func _lose():
+	var result = _ui.display_message("You lost the fight...")
+	if result:
+		await result
+	_end_battle()	
+
+func _win():
+	var result = _ui.display_message("%s was defeated!" % _enemy_data.name)
+	if result:
+		await result
+	_end_battle(true)
+
+func _end_battle(remove_enemy: bool = false):
 	# handle scene change + updates
 	GameManager.scene_controller.pop_2d_scene()
 
-func _execute_action(some_parameters):
+# Called from BattleUI buttons
+func use_move(move: MoveData):
+	print("Used move %s" % move.name)
+	_execute_action(_player_data, _enemy_data, move)
+
+func _execute_action(attacker: CharacterData, defender: CharacterData, move: MoveData):
 	_change_state(State.ACTION)
 	
 	# show text
+	var result = _ui.display_message("%s used %s!" % [attacker.name, move.name])
+	if result:
+		await result
 	
 	# play animations
 	
-	# calculate dmg
+	# calculate + apply dmg
+	var damage = _calculate_damage(attacker, defender, move)
+	print("Damage: %d" % damage)
+	_apply_damage(damage, defender)
+	data_updated.emit(attacker, defender)
+	
+	# update UI
 	
 	_check_for_faint()
 
+func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: MoveData):
+	if attacker.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
+		return 0
+	return int(attacker.attack + move.power * randf_range(0.9, 1.1) - defender.defense)
+
+func _apply_damage(damage: int, defender: CharacterData):
+	defender.current_hp -= damage
+
 func _check_for_faint():
 	# player hp zero -> change to lose
+	if _player_data.current_hp <= 0:
+		_change_state(State.LOSE)
 	# enemy hp zero -> change to win
-	pass
+	if _enemy_data.current_hp <= 0:
+		_change_state(State.WIN)
 
 func _input(event: InputEvent) -> void:
 	if _ui.is_message_reading():

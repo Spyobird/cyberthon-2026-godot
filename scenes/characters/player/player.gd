@@ -36,10 +36,10 @@ func update_player_state(new_player_state: PlayerState) -> void:
 	_current_player_state = new_player_state
 	player_data = PLAYER_BASE_DATA.duplicate(true)
 	player_data.moves = GameManager.load_moves(_current_player_state.moves)
-	player_data.attack = _current_player_state.stats.x
-	player_data.defense = _current_player_state.stats.y
-	player_data.max_hp = _current_player_state.stats.z
-	player_data.current_hp = _current_player_state.stats.z
+	player_data.attack = _current_player_state.stats.y
+	player_data.defense = _current_player_state.stats.z
+	player_data.max_hp = _current_player_state.stats.x
+	player_data.current_hp = _current_player_state.stats.x
 
 func sync_player_state() -> void:
 	sync_player_started.emit()
