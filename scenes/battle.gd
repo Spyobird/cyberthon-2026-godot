@@ -62,9 +62,7 @@ func _setup_battle():
 	print("Loaded Battle UI")
 	
 	# possibly play something with a message
-	var result = _ui.display_message("Battle with %s" % _enemy_data.name)
-	if result:
-		await result
+	await _ui.display_message("Battle with %s" % _enemy_data.name)
 	
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)
@@ -77,25 +75,22 @@ func _start_player_turn():
 	_change_state(State.ENEMY_TURN)
 
 func _run():
-	var result = _ui.display_message("Running...")
-	if result:
-		await result
+	await _ui.display_message("Running...")
 	_end_battle()
 
 func _lose():
-	var result = _ui.display_message("You lost the fight...")
-	if result:
-		await result
+	await _ui.display_message("You lost the fight...")
 	_end_battle()	
 
 func _win():
-	var result = _ui.display_message("%s was defeated!" % _enemy_data.name)
-	if result:
-		await result
+	await _ui.display_message("%s was defeated!" % _enemy_data.name)
 	_end_battle(true)
 
 func _end_battle(remove_enemy: bool = false):
 	# handle scene change + updates
+	if remove_enemy:
+		# Deletes enemy
+		GameManager.enemy_node.queue_free()
 	GameManager.scene_controller.pop_2d_scene()
 
 # Called from BattleUI buttons
@@ -107,9 +102,7 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	_change_state(State.ACTION)
 	
 	# show text
-	var result = _ui.display_message("%s used %s!" % [attacker.name, move.name])
-	if result:
-		await result
+	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
 	
 	# play animations
 	

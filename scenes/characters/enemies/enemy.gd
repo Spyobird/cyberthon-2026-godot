@@ -13,5 +13,6 @@ func _on_interacted(collider):
 	
 	GameManager.player_data = collider.player_data
 	GameManager.enemy_data = _enemy_data
+	GameManager.enemy_node = self
 	
 	GameManager.scene_controller.overlay_2d_scene("res://scenes/battle.tscn")
