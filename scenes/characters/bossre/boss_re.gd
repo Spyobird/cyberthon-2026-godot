@@ -1,4 +1,4 @@
-class_name Slime
+class_name BossRE
 extends Node2D
 
 @onready var _interactable_component = $InteractableComponent
