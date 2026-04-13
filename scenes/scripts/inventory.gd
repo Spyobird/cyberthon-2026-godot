@@ -2,9 +2,9 @@ class_name Inventory
 extends Resource
 
 const _VALID_ITEMS = ["magic wand", "door key"]
-const _MAX_SIZE = 4
+const _MAX_SIZE = 3
 
-var _items: Array = []
+var _items: Array[String] = []
 
 func _init(items: Array[String] = []):
 	for item in items:
@@ -26,7 +26,7 @@ func load_items(items: Array[String]):
 		_items.append(valid_item)
 
 
-func read_items():
+func read_items() -> Array[String]:
 	return _items
 
 func has_item(item) -> bool:
