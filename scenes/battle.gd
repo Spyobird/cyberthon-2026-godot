@@ -80,7 +80,7 @@ func _run():
 
 func _lose():
 	await _ui.display_message("You lost the fight...")
-	_end_battle()	
+	_end_battle()
 
 func _win():
 	await _ui.display_message("%s was defeated!" % _enemy_data.name)
@@ -114,7 +114,8 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	# update UI
 	data_updated.emit(_player_data, _enemy_data)
 	
-	_check_for_faint()
+	if _check_for_faint():
+		return
 	
 	action_completed.emit()
 
@@ -140,10 +141,13 @@ func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: M
 func _apply_damage(damage: int, defender: CharacterData):
 	defender.current_hp -= damage
 
-func _check_for_faint():
+func _check_for_faint() -> bool:
 	# player hp zero -> change to lose
 	if _player_data.current_hp <= 0:
 		_change_state(State.LOSE)
+		return true
 	# enemy hp zero -> change to win
 	if _enemy_data.current_hp <= 0:
 		_change_state(State.WIN)
+		return true
+	return false

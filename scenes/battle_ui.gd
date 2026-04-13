@@ -80,6 +80,13 @@ func hide_all_menus():
 	moves_menu.hide()
 
 func _input(event):
+	# If nothing is focused, and we press an arrow key, force focus back
+	if get_viewport().gui_get_focus_owner() == null:
+		if event.is_action_pressed("ui_up") or event.is_action_pressed("ui_down") or event.is_action_pressed("ui_left") or event.is_action_pressed("ui_right"):
+			if options_menu.visible:
+				moves_button.grab_focus()
+			elif moves_menu.visible:
+				move_buttons[0].grab_focus()
 	if event.is_action_pressed("ui_cancel"):
 		if moves_menu.is_visible_in_tree():
 			show_options_menu()
