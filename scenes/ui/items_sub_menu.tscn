@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dem3lyc2k70ak"]
+
+[ext_resource type="Texture2D" uid="uid://b5alcyi8ki0om" path="res://assets/menu/menu_box_1.png" id="1_dlhxm"]
+[ext_resource type="Script" uid="uid://d1agt4iaw0n7" path="res://scenes/ui/items_sub_menu.gd" id="1_items"]
+[ext_resource type="FontFile" uid="uid://dorfha5ylmpy8" path="res://assets/menu/pkmnfl.ttf" id="2_items"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("1_dlhxm")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 7.0
+texture_margin_bottom = 6.0
+axis_stretch_horizontal = 1
+
+[node name="ItemsSubMenu" type="CanvasLayer" unique_id=1824426790]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
+script = ExtResource("1_items")
+
+[node name="ItemsMenu" type="PanelContainer" parent="." unique_id=2045396155]
+theme_override_styles/panel = SubResource("StyleBoxTexture_1")
+
+[node name="TextContainer" type="VBoxContainer" parent="ItemsMenu" unique_id=1508734366]
+layout_mode = 2
+
+[node name="Item1Text" type="RichTextLabel" parent="ItemsMenu/TextContainer" unique_id=1799211575]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_items")
+theme_override_font_sizes/normal_font_size = 10
+text = "Item 1"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
+
+[node name="Item2Text" type="RichTextLabel" parent="ItemsMenu/TextContainer" unique_id=126555813]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_items")
+theme_override_font_sizes/normal_font_size = 10
+text = "Item 2"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
+
+[node name="Item3Text" type="RichTextLabel" parent="ItemsMenu/TextContainer" unique_id=1018265855]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
+theme_override_fonts/normal_font = ExtResource("2_items")
+theme_override_font_sizes/normal_font_size = 10
+text = "Item 3"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+justification_flags = 161
