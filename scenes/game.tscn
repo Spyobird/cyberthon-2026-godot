@@ -8,7 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="5_7jktm"]
 [ext_resource type="PackedScene" uid="uid://2x71pc4tx65t" path="res://scenes/characters/enemies/magician.tscn" id="6_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://btamts4mw3lhu" path="res://scenes/door.tscn" id="6_ryrav"]
-[ext_resource type="PackedScene" uid="uid://dvurgvpeojugr" path="res://scenes/interactables/hint.tscn" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://dvurgvpeojugr" path="res://scenes/interactables/door_hint.tscn" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://b0qq8nufifylm" path="res://scenes/interactables/stats_hint.tscn" id="10_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0tnpc"]
 texture = ExtResource("1_gee14")
@@ -202,5 +203,8 @@ position = Vector2(-16, -48)
 [node name="DoorRE" parent="." unique_id=1242320148 instance=ExtResource("6_ryrav")]
 position = Vector2(48, -48)
 
-[node name="Hint" parent="." unique_id=1382673253 instance=ExtResource("8_gee14")]
+[node name="DoorHint" parent="." unique_id=1382673253 instance=ExtResource("8_gee14")]
 position = Vector2(32, -32)
+
+[node name="StatsHint" parent="." unique_id=1898723914 instance=ExtResource("10_vtaks")]
+position = Vector2(-272, -144)

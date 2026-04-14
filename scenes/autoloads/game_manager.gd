@@ -48,9 +48,13 @@ func register_message_manager(message_manager: MessageManager):
 	_message_manager.message_box_opened.connect(func(): lock_movement(&"message_box"); is_menu_allowed = false)
 	_message_manager.message_box_closed.connect(func(): unlock_movement(&"message_box"); is_menu_allowed = true)
 
-func create_message_popup(...messages):
+func create_message_popup(messages, ...args):
 	if _message_manager:
-		_message_manager.play_text.callv(messages)
+		if messages is String:
+			args.push_front(messages)
+			_message_manager.play_text.callv(args)
+		elif messages is Array:
+			_message_manager.play_text.callv(messages)
 	return _message_manager.message_box_closed
 
 func _process(delta: float) -> void:
@@ -59,4 +63,4 @@ func _process(delta: float) -> void:
 		if Input.is_action_just_pressed("ui_accept"):
 			_message_manager.scroll_text()
 		if Input.is_action_just_pressed("test_message"):
-			create_message_popup("Hello world", "Hope you have a great day!") # temp string
+			create_message_popup(["Hello world", "Hope you have a great day!"]) # temp string
