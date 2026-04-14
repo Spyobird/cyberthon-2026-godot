@@ -4,38 +4,47 @@
 [ext_resource type="Texture2D" uid="uid://b5alcyi8ki0om" path="res://assets/menu/menu_box_1.png" id="1_yqeox"]
 [ext_resource type="FontFile" uid="uid://dorfha5ylmpy8" path="res://assets/menu/pkmnfl.ttf" id="2_vjb58"]
 [ext_resource type="Texture2D" uid="uid://ducfduejpcjhd" path="res://assets/menu/ui_arrow_left_right.png" id="4_4ytvr"]
+[ext_resource type="PackedScene" uid="uid://bt37ga2qwtju0" path="res://scenes/ui/stats_sub_menu.tscn" id="5_statsmenu"]
+[ext_resource type="PackedScene" uid="uid://dem3lyc2k70ak" path="res://scenes/ui/items_sub_menu.tscn" id="6_itemsmenu"]
 
-[node name="Menu" type="Node2D" unique_id=1641783459]
+[node name="Menu" type="CanvasLayer" unique_id=1641783459]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
 script = ExtResource("1_mhnvy")
 
-[node name="Control" type="Control" parent="." unique_id=829471229]
+[node name="MainMenu" type="Control" parent="." unique_id=829471229]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -56.0
-offset_top = -40.0
-offset_right = -5.0
-offset_bottom = 24.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 51.0
+offset_bottom = 66.0
 
-[node name="MenuBanner" type="NinePatchRect" parent="Control" unique_id=1822370850]
+[node name="MenuBanner" type="NinePatchRect" parent="MainMenu" unique_id=1822370850]
 layout_mode = 0
-offset_left = -9.0
-offset_top = 3.0
-offset_right = 42.0
-offset_bottom = 70.0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 52.0
+offset_bottom = 67.0
 texture = ExtResource("1_yqeox")
 patch_margin_left = 6
 patch_margin_top = 6
 patch_margin_right = 6
 patch_margin_bottom = 6
 
-[node name="TextContainer" type="VBoxContainer" parent="Control/MenuBanner" unique_id=436584621]
-layout_mode = 0
+[node name="TextContainer" type="VBoxContainer" parent="MainMenu/MenuBanner" unique_id=436584621]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054545455
+anchor_right = 0.12727273
+anchor_bottom = 0.39999998
 offset_left = 14.0
 offset_top = 8.0
 offset_right = 45.0
 offset_bottom = 66.0
+metadata/_edit_use_anchors_ = true
 
-[node name="StatusText" type="RichTextLabel" parent="Control/MenuBanner/TextContainer" unique_id=1509437999]
+[node name="StatusText" type="RichTextLabel" parent="MainMenu/MenuBanner/TextContainer" unique_id=1509437999]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
@@ -44,7 +53,7 @@ theme_override_font_sizes/normal_font_size = 10
 text = "STATS"
 justification_flags = 161
 
-[node name="ItemsText" type="RichTextLabel" parent="Control/MenuBanner/TextContainer" unique_id=1812079777]
+[node name="ItemsText" type="RichTextLabel" parent="MainMenu/MenuBanner/TextContainer" unique_id=1812079777]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
@@ -53,7 +62,7 @@ theme_override_font_sizes/normal_font_size = 10
 text = "ITEMS"
 justification_flags = 161
 
-[node name="SyncText" type="RichTextLabel" parent="Control/MenuBanner/TextContainer" unique_id=528600108]
+[node name="SyncText" type="RichTextLabel" parent="MainMenu/MenuBanner/TextContainer" unique_id=528600108]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
@@ -62,7 +71,7 @@ theme_override_font_sizes/normal_font_size = 10
 text = "SYNC"
 justification_flags = 161
 
-[node name="ExitText" type="RichTextLabel" parent="Control/MenuBanner/TextContainer" unique_id=597290111]
+[node name="ExitText" type="RichTextLabel" parent="MainMenu/MenuBanner/TextContainer" unique_id=597290111]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.43529412, 0.43529412, 0.53333336, 1)
@@ -71,10 +80,14 @@ theme_override_font_sizes/normal_font_size = 10
 text = "EXIT"
 justification_flags = 161
 
-[node name="TextureRect" type="TextureRect" parent="Control/MenuBanner" unique_id=1342418791]
+[node name="TextureRect" type="TextureRect" parent="MainMenu/MenuBanner" unique_id=1342418791]
 layout_mode = 0
-offset_left = 6.0
+offset_left = 8.0
 offset_top = 7.0
-offset_right = 13.0
+offset_right = 15.0
 offset_bottom = 17.0
 texture = ExtResource("4_4ytvr")
+
+[node name="StatsSubMenu" parent="." unique_id=1419528140 instance=ExtResource("5_statsmenu")]
+
+[node name="ItemsSubMenu" parent="." unique_id=1684892213 instance=ExtResource("6_itemsmenu")]
