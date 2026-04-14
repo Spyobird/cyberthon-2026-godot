@@ -18,19 +18,17 @@ grow_vertical = 2
 visible = false
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.01875
-anchor_top = 0.023611112
-anchor_right = 0.98125
-anchor_bottom = 0.3638889
+anchor_left = 0.02
+anchor_top = 0.68
+anchor_right = 0.98
+anchor_bottom = 0.98
 grow_horizontal = 2
-grow_vertical = 2
 texture = ExtResource("1_gxlwh")
 region_rect = Rect2(0, 0, 64, 20)
 patch_margin_left = 5
 patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
-metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect" unique_id=1724464050]
 layout_mode = 1

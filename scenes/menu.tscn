@@ -13,6 +13,7 @@ transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
 script = ExtResource("1_mhnvy")
 
 [node name="MainMenu" type="Control" parent="." unique_id=829471229]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 1.0
@@ -89,5 +90,7 @@ offset_bottom = 17.0
 texture = ExtResource("4_4ytvr")
 
 [node name="StatsSubMenu" parent="." unique_id=1419528140 instance=ExtResource("5_statsmenu")]
+visible = false
 
 [node name="ItemsSubMenu" parent="." unique_id=1684892213 instance=ExtResource("6_itemsmenu")]
+visible = false
