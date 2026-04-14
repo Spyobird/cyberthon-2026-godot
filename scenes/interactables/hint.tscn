@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dvurgvpeojugr"]
+
+[ext_resource type="Script" uid="uid://ibnvstu8uxy1" path="res://scenes/interactables/hint.gd" id="1_g71re"]
+[ext_resource type="Texture2D" uid="uid://cugr1al6xjpir" path="res://assets/caelum_cat/caelum-idle-Sheet.png" id="2_l3jea"]
+[ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_75iny"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
+size = Vector2(32, 32)
+
+[node name="Hint" type="Node2D" unique_id=536498216]
+script = ExtResource("1_g71re")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
+texture = ExtResource("2_l3jea")
+centered = false
+hframes = 4
+vframes = 5
+
+[node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_75iny")]
+is_collidable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_7rgl3")
