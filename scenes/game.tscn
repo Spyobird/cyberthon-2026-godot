@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="3_ahv6m"]
 [ext_resource type="PackedScene" uid="uid://b2pfiuisk4j5t" path="res://scenes/ui/message_manager.tscn" id="4_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="5_7jktm"]
+[ext_resource type="PackedScene" uid="uid://2x71pc4tx65t" path="res://scenes/characters/enemies/magician.tscn" id="6_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://btamts4mw3lhu" path="res://scenes/door.tscn" id="6_ryrav"]
+[ext_resource type="PackedScene" uid="uid://dvurgvpeojugr" path="res://scenes/interactables/hint.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0tnpc"]
 texture = ExtResource("1_gee14")
@@ -183,12 +185,11 @@ position = Vector2(32, 0)
 
 [node name="MessageManager" parent="." unique_id=712240846 instance=ExtResource("4_fc0e3")]
 
-[node name="EnemyRFID" parent="." unique_id=536498216 instance=ExtResource("5_7jktm")]
-position = Vector2(0, -128)
-scale = Vector2(0.5, 0.5)
+[node name="Magician" parent="." unique_id=536498216 instance=ExtResource("6_0tnpc")]
+position = Vector2(-256, -288)
 
-[node name="HardEnemyRFID" parent="." unique_id=1840221203 instance=ExtResource("5_7jktm")]
-position = Vector2(-256, -280)
+[node name="EnemyRFID" parent="." unique_id=388757473 instance=ExtResource("5_7jktm")]
+position = Vector2(0, -128)
 scale = Vector2(0.5, 0.5)
 
 [node name="EnemyRE" parent="." unique_id=1975856299 instance=ExtResource("5_7jktm")]
@@ -200,3 +201,6 @@ position = Vector2(-16, -48)
 
 [node name="DoorRE" parent="." unique_id=1242320148 instance=ExtResource("6_ryrav")]
 position = Vector2(48, -48)
+
+[node name="Hint" parent="." unique_id=1382673253 instance=ExtResource("8_gee14")]
+position = Vector2(32, -32)

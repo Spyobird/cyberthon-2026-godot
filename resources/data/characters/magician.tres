@@ -7,8 +7,9 @@
 [resource]
 script = ExtResource("2_0qlpj")
 name = "Magician"
-max_hp = 160
-attack = 136
-defense = 148
+max_hp = 80
+current_hp = 80
+attack = 92
+defense = 84
 moves = Array[ExtResource("1_pq1g7")]([ExtResource("2_t4tin")])
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"

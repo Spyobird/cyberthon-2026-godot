@@ -86,11 +86,9 @@ func _win():
 	await _ui.display_message("%s was defeated!" % _enemy_data.name)
 	_end_battle(true)
 
-func _end_battle(remove_enemy: bool = false):
+func _end_battle(won: bool = false):
 	# handle scene change + updates
-	if remove_enemy:
-		# Deletes enemy
-		GameManager.enemy_node.queue_free()
+	GameManager.battle_ended.emit(won)
 	GameManager.scene_controller.pop_2d_scene()
 
 # Called from BattleUI buttons
