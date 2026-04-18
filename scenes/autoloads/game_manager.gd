@@ -1,10 +1,8 @@
 extends Node
 
 var _message_manager: MessageManager
-var scene_controller: SceneController # Initialised in node
-var player_data: CharacterData
-var enemy_data: CharacterData
-var enemy_node: Node
+var scene_controller: SceneController
+var transition_controller: TransitionController
 var is_menu_allowed: bool = true
 
 var _movement_locks: Array[StringName] = []
