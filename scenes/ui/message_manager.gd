@@ -49,6 +49,3 @@ func scroll_text():
 	
 	_messages.pop_front()
 	is_scrolling = false
-	
-	
-	

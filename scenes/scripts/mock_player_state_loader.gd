@@ -4,6 +4,6 @@ extends PlayerStateLoader
 func load_player_state():
 	return PlayerState.new(
 		["magic wand", "door key"],
-		Vector3i(100, 20, 20),
-		["fireball", "lightning"]
+		Vector3i(100, 45, 45),
+		["fireball", "zap_bolt"]
 	)

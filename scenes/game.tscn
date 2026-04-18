@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bmj6xqdfx2kvj"]
+[gd_scene format=4 uid="uid://b3peqd4q68bby"]
 
 [ext_resource type="Texture2D" uid="uid://mhefi8jnfnx8" path="res://assets/floor.png" id="1_gee14"]
 [ext_resource type="Texture2D" uid="uid://bo0v6fn6hede0" path="res://assets/tilemap-Sheet.png" id="2_u5sy4"]
@@ -181,19 +181,17 @@ tile_set = SubResource("TileSet_h2vnc")
 [node name="Player" parent="." unique_id=485389286 instance=ExtResource("3_ahv6m")]
 position = Vector2(32, 0)
 
-[node name="Helper NPC" parent="." unique_id=712240846 instance=ExtResource("4_fc0e3")]
+[node name="MessageManager" parent="." unique_id=712240846 instance=ExtResource("4_fc0e3")]
 
-[node name="RE Boss Message" parent="." unique_id=645781728 instance=ExtResource("4_fc0e3")]
-
-[node name="WeakEnemyRFID" parent="." unique_id=536498216 instance=ExtResource("5_7jktm")]
+[node name="EnemyRFID" parent="." unique_id=536498216 instance=ExtResource("5_7jktm")]
 position = Vector2(0, -128)
 scale = Vector2(0.5, 0.5)
 
-[node name="BossRFID" parent="." unique_id=1840221203 instance=ExtResource("5_7jktm")]
+[node name="HardEnemyRFID" parent="." unique_id=1840221203 instance=ExtResource("5_7jktm")]
 position = Vector2(-256, -280)
 scale = Vector2(0.5, 0.5)
 
-[node name="BossRE" parent="." unique_id=1975856299 instance=ExtResource("5_7jktm")]
+[node name="EnemyRE" parent="." unique_id=1975856299 instance=ExtResource("5_7jktm")]
 position = Vector2(384, 24)
 scale = Vector2(0.5, 0.5)
 

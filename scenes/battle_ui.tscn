@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://jgcvikljc45j"]
+
+[ext_resource type="Script" uid="uid://4a8csx7mem6w" path="res://scenes/battle_ui.gd" id="1_p4gof"]
+[ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="2_gvrrm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dn72j"]
+font_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_th188"]
+font_size = 8
+
+[node name="BattleUI" type="CanvasLayer" unique_id=1692606746 node_paths=PackedStringArray("options_menu", "moves_menu", "moves_button", "run_button", "player_name", "player_hp", "enemy_name", "player_bar", "enemy_bar", "move_buttons", "message_label")]
+script = ExtResource("1_p4gof")
+options_menu = NodePath("Control/Menu/MarginContainer/Options")
+moves_menu = NodePath("Control/Menu/MarginContainer/Moves")
+moves_button = NodePath("Control/Menu/MarginContainer/Options/MovesLabel")
+run_button = NodePath("Control/Menu/MarginContainer/Options/RunLabel")
+player_name = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/NameLabel")
+player_hp = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/HPLabel")
+enemy_name = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/NameLabel")
+player_bar = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/HPBar")
+enemy_bar = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/HPBar")
+move_buttons = [NodePath("Control/Menu/MarginContainer/Moves/Move1"), NodePath("Control/Menu/MarginContainer/Moves/Move2"), NodePath("Control/Menu/MarginContainer/Moves/Move3"), NodePath("Control/Menu/MarginContainer/Moves/Move4")]
+message_label = NodePath("Control/Menu/MarginContainer/MessageLabel")
+
+[node name="Control" type="Control" parent="." unique_id=1968808868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBars" type="Control" parent="Control" unique_id=512556305]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 9.0
+offset_right = -14.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnemyBar" type="PanelContainer" parent="Control/HealthBars" unique_id=151544240]
+layout_mode = 1
+offset_right = 108.0
+offset_bottom = 36.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HealthBars/EnemyBar" unique_id=1882806791]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="NameLabel" type="Label" parent="Control/HealthBars/EnemyBar/VBoxContainer" unique_id=703766423]
+layout_mode = 2
+text = "ENEMY"
+label_settings = SubResource("LabelSettings_dn72j")
+
+[node name="HPBar" type="ProgressBar" parent="Control/HealthBars/EnemyBar/VBoxContainer" unique_id=1348104801]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+step = 1.0
+value = 30.0
+show_percentage = false
+
+[node name="PlayerBar" type="PanelContainer" parent="Control/HealthBars" unique_id=60596244]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HealthBars/PlayerBar" unique_id=1222422626]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="NameLabel" type="Label" parent="Control/HealthBars/PlayerBar/VBoxContainer" unique_id=1467245462]
+layout_mode = 2
+text = "PLAYER"
+label_settings = SubResource("LabelSettings_dn72j")
+
+[node name="HPBar" type="ProgressBar" parent="Control/HealthBars/PlayerBar/VBoxContainer" unique_id=244121662]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+step = 1.0
+value = 30.0
+show_percentage = false
+
+[node name="HPLabel" type="Label" parent="Control/HealthBars/PlayerBar/VBoxContainer" unique_id=371462658]
+layout_mode = 2
+text = "30/100"
+label_settings = SubResource("LabelSettings_th188")
+horizontal_alignment = 2
+
+[node name="Menu" type="NinePatchRect" parent="Control" unique_id=1397152173]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -62.0
+offset_right = 151.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_gvrrm")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Menu" unique_id=1512043750]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = -9.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Options" type="HBoxContainer" parent="Control/Menu/MarginContainer" unique_id=389368118]
+visible = false
+layout_mode = 2
+
+[node name="MovesLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=932083739]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MOVES"
+
+[node name="RunLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=480607486]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RUN"
+
+[node name="Moves" type="GridContainer" parent="Control/Menu/MarginContainer" unique_id=247301430]
+visible = false
+layout_mode = 2
+columns = 2
+
+[node name="Move1" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=1613711462]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 1"
+
+[node name="Move2" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=884195142]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 2"
+
+[node name="Move3" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=863700977]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 3"
+
+[node name="Move4" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=256088684]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 8
+text = "Move 4"
+
+[node name="MessageLabel" type="RichTextLabel" parent="Control/Menu/MarginContainer" unique_id=614278991]
+visible = false
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "TEST MESSAGE"
+
+[connection signal="pressed" from="Control/Menu/MarginContainer/Options/MovesLabel" to="." method="show_moves_menu"]

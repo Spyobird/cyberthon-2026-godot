@@ -2,8 +2,26 @@
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_jwjgq"]
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_4yt4v"]
+[ext_resource type="Resource" uid="uid://db8s6kvkohge7" path="res://resources/data/moves/nudge.tres" id="2_y8jn4"]
+[ext_resource type="Texture2D" uid="uid://bvldbqqqrfco2" path="res://assets/Pixelart Study - Expression Sheets - Full/Pixelart Study - Expression Sheet - Profile - 16x16.png" id="3_pbdtp"]
+[ext_resource type="Texture2D" uid="uid://c0ydxqdrhpq6q" path="res://assets/Pixelart Study - Expression Sheets - Full/Pixelart Study - Expression Sheet - Profile - 16x32 - ver2.png" id="4_y8jn4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17f1f"]
+atlas = ExtResource("3_pbdtp")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xab7"]
+atlas = ExtResource("4_y8jn4")
+region = Rect2(32, 48, 16, 16)
 
 [resource]
 script = ExtResource("2_4yt4v")
 name = "Enemy"
+sprite_front = SubResource("AtlasTexture_3xab7")
+sprite_back = SubResource("AtlasTexture_17f1f")
+max_hp = 30
+current_hp = 30
+attack = 30
+defense = 30
+moves = Array[ExtResource("1_jwjgq")]([ExtResource("2_y8jn4")])
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"
