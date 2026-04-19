@@ -15,4 +15,6 @@ func _on_interacted(collider):
 	GameManager.enemy_data = _enemy_data
 	GameManager.enemy_node = self
 	
-	GameManager.scene_controller.overlay_2d_scene("res://scenes/battle.tscn")
+	GameManager.transition_controller.scene_transition_request_started.emit("res://scenes/battle.tscn", TransitionController.TransitionEffect.DIAGONAL_POPPING_SQUARES)
+	
+	#GameManager.scene_controller.overlay_2d_scene("res://scenes/battle.tscn")
