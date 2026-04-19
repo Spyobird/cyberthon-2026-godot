@@ -7,11 +7,18 @@ var _current_2d_scenes = []
 
 func _ready() -> void:
 	GameManager.scene_controller = self
+
+	# Must be added before any scene load so GameManager.transition_controller
+	# is populated before a transition can be requested.
+	var transition_controller: TransitionController = load("res://scenes/transition_controller.tscn").instantiate()
+	add_child(transition_controller)
+
 	overlay_2d_scene("res://scenes/game.tscn")
 	
 	# Load menu as a persistent overlay
 	var menu_node: Node = load("res://scenes/menu.tscn").instantiate()
 	world_2d.add_child(menu_node)
+	
 	
 func overlay_2d_scene(new_scene: String) -> Error:
 	if len(_current_2d_scenes) > 0:
