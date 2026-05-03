@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc4wpx5r7fx4g"
-path="res://.godot/imported/doors_frame_right.png-7738317b365b14bc52502fd50ea98c31.ctex"
+uid="uid://dvby4lbnl50l7"
+path="res://.godot/imported/magician.png-08cb5c45187dd0144d0c4715f7859cd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/door/doors_frame_right.png"
-dest_files=["res://.godot/imported/doors_frame_right.png-7738317b365b14bc52502fd50ea98c31.ctex"]
+source_file="res://assets/characters/magician/magician.png"
+dest_files=["res://.godot/imported/magician.png-08cb5c45187dd0144d0c4715f7859cd3.ctex"]
 
 [params]
 

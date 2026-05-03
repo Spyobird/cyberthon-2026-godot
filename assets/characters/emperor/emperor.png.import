@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqc7ls362yi8y"
-path="res://.godot/imported/atlas_walls_low-16x16.png-3bc0839d98c724e6e53b51e88f5d1246.ctex"
+uid="uid://bgtdfbkbh7adp"
+path="res://.godot/imported/emperor.png-50f48ecbb4c14d21c1b799c366b2aeff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/atlas_walls_low-16x16.png"
-dest_files=["res://.godot/imported/atlas_walls_low-16x16.png-3bc0839d98c724e6e53b51e88f5d1246.ctex"]
+source_file="res://assets/characters/emperor/emperor.png"
+dest_files=["res://.godot/imported/emperor.png-50f48ecbb4c14d21c1b799c366b2aeff.ctex"]
 
 [params]
 

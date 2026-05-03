@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmabo1eg7b7g2"
-path="res://.godot/imported/doors_frame_top.png-aa80d99e7afa61696868fd451b6f5351.ctex"
+uid="uid://djtbbcuxuvmbk"
+path="res://.godot/imported/blob.png-2fbfaaede28b865a0c37e68ba623a21a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/door/doors_frame_top.png"
-dest_files=["res://.godot/imported/doors_frame_top.png-aa80d99e7afa61696868fd451b6f5351.ctex"]
+source_file="res://assets/characters/slime/blob.png"
+dest_files=["res://.godot/imported/blob.png-2fbfaaede28b865a0c37e68ba623a21a.ctex"]
 
 [params]
 
