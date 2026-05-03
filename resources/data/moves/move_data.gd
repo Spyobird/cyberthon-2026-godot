@@ -8,4 +8,5 @@ extends Resource
 
 @export_group("Animation")
 @export var anim_name: String = ""
+@export var anim_effect: SpriteFrames
 @export var anim_effect_pos_offset: Vector2 = Vector2.ZERO

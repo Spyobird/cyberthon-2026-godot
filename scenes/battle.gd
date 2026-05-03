@@ -74,6 +74,7 @@ func _play_move_animation(move: MoveData, defender: CharacterData) -> void:
 		return
 	var defender_pos: Marker2D = _player_pos if defender == _player_data else _enemy_pos
 	_effect_sprite.position = defender_pos.position + move.anim_effect_pos_offset
+	_effect_sprite.sprite_frames = move.anim_effect
 	_animation_player.play(move.anim_name)
 	await _animation_player.animation_finished
 
