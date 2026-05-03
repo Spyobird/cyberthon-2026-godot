@@ -7,7 +7,7 @@ var _current_2d_scenes = []
 
 func _ready() -> void:
 	GameManager.scene_controller = self
-	overlay_2d_scene("res://scenes/levels/emperor_stage.tscn")
+	overlay_2d_scene("res://scenes/levels/game.tscn")
 	
 func overlay_2d_scene(new_scene: String) -> Error:
 	if len(_current_2d_scenes) > 0:
