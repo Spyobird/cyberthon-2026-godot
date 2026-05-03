@@ -19,6 +19,7 @@ enum State {
 @onready var _player_sprite = $CharacterSprites/PlayerPos/PlayerSprite
 @onready var _ui = $BattleUI
 @onready var _effect_sprite: AnimatedSprite2D = $CharacterSprites/EffectSprite
+@onready var _animation_player: AnimationPlayer = $AnimationPlayer
 
 var _player_data: CharacterData
 var _enemy_data: CharacterData
@@ -69,16 +70,12 @@ func _setup_battle():
 	_change_state(State.PLAYER_TURN)
 
 func _play_move_animation(move: MoveData, defender: CharacterData) -> void:
-	if not move.anim_effect:
+	if move.anim_name.is_empty():
 		return
 	var defender_pos: Marker2D = _player_pos if defender == _player_data else _enemy_pos
 	_effect_sprite.position = defender_pos.position + move.anim_effect_pos_offset
-	_effect_sprite.scale = move.anim_effect_scale
-	_effect_sprite.sprite_frames = move.anim_effect
-	_effect_sprite.play("default")
-	_effect_sprite.visible = true
-	await _effect_sprite.animation_finished
-	_effect_sprite.visible = false
+	_animation_player.play(move.anim_name)
+	await _animation_player.animation_finished
 
 func _start_player_turn():
 	_ui.show_options_menu()
