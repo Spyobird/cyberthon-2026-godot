@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://mgwl1dc4764n"]
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://d0ajq8smcac61"]
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_1tx0k"]
 [ext_resource type="Resource" uid="uid://db8s6kvkohge7" path="res://resources/data/moves/nudge.tres" id="2_r1nuw"]
