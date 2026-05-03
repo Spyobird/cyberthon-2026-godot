@@ -4,42 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="2_cowpe"]
 [ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/magician/magician.png" id="2_nwhyh"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qj54i"]
-atlas = ExtResource("2_nwhyh")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4b"]
-atlas = ExtResource("2_nwhyh")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ksqmq"]
-atlas = ExtResource("2_nwhyh")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8e52f"]
-atlas = ExtResource("2_nwhyh")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mxrkf"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qj54i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ihb4b")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ksqmq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8e52f")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
 size = Vector2(16, 16)
 
@@ -51,7 +15,6 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_nwhyh")
 centered = false
 hframes = 4
-vframes = 5
 
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("2_cowpe")]
 
