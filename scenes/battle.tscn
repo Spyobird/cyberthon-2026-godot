@@ -1,13 +1,10 @@
-[gd_scene format=3 uid="uid://c8gtfuerchmhf"]
+[gd_scene format=3]
 
-[ext_resource type="Script" uid="uid://dh75343vp8c7m" path="res://scenes/battle.gd" id="1_th188"]
-[ext_resource type="PackedScene" uid="uid://jgcvikljc45j" path="res://scenes/battle_ui.tscn" id="2_p1qf1"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mgoel"]
-load_path = "res://.godot/imported/Ash - old wooden flooring 250x250.jpg-fa33856c9f5031832b353e8c08eb72dc.ctex"
+[ext_resource type="Texture2D" path="res://assets/battle/battle_bg_resized.png" id="2_a12nh"]
+[ext_resource type="PackedScene" path="res://scenes/battle_ui.tscn" id="2_p1qf1"]
+[ext_resource type="Script" path="res://scenes/battle_ui.gd" id="3_8ejva"]
 
 [node name="Battle" type="Node2D" unique_id=1810615026]
-script = ExtResource("1_th188")
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=139307253]
 layer = -1
@@ -18,11 +15,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("CompressedTexture2D_mgoel")
+texture = ExtResource("2_a12nh")
 expand_mode = 2
 stretch_mode = 1
 
-[node name="BattleUI" parent="." unique_id=1692606746 instance=ExtResource("2_p1qf1")]
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=1692606746 node_paths=PackedStringArray("options_menu", "moves_menu", "moves_button", "run_button", "player_name", "player_hp", "enemy_name", "player_bar", "enemy_bar", "move_buttons", "message_label") instance=ExtResource("2_p1qf1")]
+script = ExtResource("3_8ejva")
+options_menu = NodePath("Control/Menu/MarginContainer/Options")
+moves_menu = NodePath("Control/Menu/MarginContainer/Moves")
+moves_button = NodePath("Control/Menu/MarginContainer/Options/MovesLabel")
+run_button = NodePath("Control/Menu/MarginContainer/Options/RunLabel")
+player_name = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/NameLabel")
+player_hp = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/HPLabel")
+enemy_name = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/NameLabel")
+player_bar = NodePath("Control/HealthBars/PlayerBar/VBoxContainer/HPBar")
+enemy_bar = NodePath("Control/HealthBars/EnemyBar/VBoxContainer/HPBar")
+move_buttons = [NodePath("Control/Menu/MarginContainer/Moves/Move1"), NodePath("Control/Menu/MarginContainer/Moves/Move2"), NodePath("Control/Menu/MarginContainer/Moves/Move3"), NodePath("Control/Menu/MarginContainer/Moves/Move4")]
+message_label = NodePath("Control/Menu/MarginContainer/MessageLabel")
 
 [node name="CharacterSprites" type="CanvasLayer" parent="." unique_id=1338227438]
 
@@ -36,5 +45,9 @@ position = Vector2(80, 90)
 
 [node name="PlayerSprite" type="Sprite2D" parent="CharacterSprites/PlayerPos" unique_id=1209670183]
 
+[node name="EffectSprite" type="AnimatedSprite2D" parent="CharacterSprites" unique_id=435909928]
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944846935]
 position = Vector2(160, 91)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=153885053]
