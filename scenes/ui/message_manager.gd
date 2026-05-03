@@ -15,7 +15,7 @@ func _ready() -> void:
 	
 	_label.bbcode_enabled = true
 
-func play_text(... messages):
+func play_text(...messages):
 	if is_reading():
 		return
 	if len(messages) == 0:

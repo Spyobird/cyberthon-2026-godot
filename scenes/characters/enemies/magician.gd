@@ -1,17 +1,14 @@
-class_name Enemy
+class_name Magician
 extends Node2D
 
-const KEY_SCENE = preload("res://scenes/interactables/key.tscn")
-
 @onready var _interactable_component = $InteractableComponent
-var _enemy_data = preload("res://resources/data/characters/enemy.tres")
+var _enemy_data = preload("res://resources/data/characters/magician.tres")
 
 func _ready() -> void:
 	_interactable_component.interacted.connect(_on_interacted)
 
 func _on_interacted(collider):
-	print("Interacted with ", collider)
-	await GameManager.create_message_popup("This is an interactive popup!")
+	await GameManager.create_message_popup("Alakazam!")
 	
 	GameManager.player_data = collider.player_data
 	GameManager.enemy_data = _enemy_data
@@ -22,9 +19,5 @@ func _on_interacted(collider):
 
 func _on_battle_ended(defeated: bool):
 	if defeated:
-		print("Enemy defeated")
-		var instance = KEY_SCENE.instantiate()
-		get_parent().add_child(instance)
-		instance.position = position
+		print("Magician defeated")
 		queue_free()
-	

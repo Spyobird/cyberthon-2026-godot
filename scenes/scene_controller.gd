@@ -9,10 +9,6 @@ func _ready() -> void:
 	GameManager.scene_controller = self
 	overlay_2d_scene("res://scenes/game.tscn")
 	
-	# Load menu as a persistent overlay
-	var menu_node: Node = load("res://scenes/menu.tscn").instantiate()
-	world_2d.add_child(menu_node)
-	
 func overlay_2d_scene(new_scene: String) -> Error:
 	if len(_current_2d_scenes) > 0:
 		var current_scene = _current_2d_scenes.back()
