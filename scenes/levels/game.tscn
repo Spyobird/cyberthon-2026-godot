@@ -1,24 +1,24 @@
 [gd_scene format=4 uid="uid://b3peqd4q68bby"]
 
-[ext_resource type="Texture2D" uid="uid://mhefi8jnfnx8" path="res://assets/floor.png" id="1_gee14"]
-[ext_resource type="Texture2D" uid="uid://qoikr3qlcevg" path="res://assets/atlas_floor-16x16.png" id="2_ute48"]
-[ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="3_ahv6m"]
-[ext_resource type="Texture2D" uid="uid://bo0v6fn6hede0" path="res://assets/tilemap-Sheet.png" id="3_gee14"]
-[ext_resource type="PackedScene" uid="uid://b2pfiuisk4j5t" path="res://scenes/ui/message_manager.tscn" id="4_fc0e3"]
-[ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="5_7jktm"]
-[ext_resource type="PackedScene" uid="uid://2x71pc4tx65t" path="res://scenes/characters/enemies/magician.tscn" id="6_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://busfr44pv6x42" path="res://scenes/characters/enemies/slime_enemy.tscn" id="6_dinhu"]
-[ext_resource type="PackedScene" uid="uid://btamts4mw3lhu" path="res://scenes/door.tscn" id="6_ryrav"]
-[ext_resource type="PackedScene" uid="uid://dvurgvpeojugr" path="res://scenes/interactables/door_hint.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://b0qq8nufifylm" path="res://scenes/interactables/stats_hint.tscn" id="10_vtaks"]
-[ext_resource type="PackedScene" uid="uid://bfcttm8jgbfyr" path="res://scenes/menu.tscn" id="11_kvpfn"]
+[ext_resource type="Texture2D" uid="uid://mhefi8jnfnx8" path="res://assets/floor.png" id="1_oi2tv"]
+[ext_resource type="Texture2D" uid="uid://qoikr3qlcevg" path="res://assets/atlas_floor-16x16.png" id="2_6370d"]
+[ext_resource type="Texture2D" uid="uid://bo0v6fn6hede0" path="res://assets/tilemap-Sheet.png" id="3_fojqs"]
+[ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="4_bgnkb"]
+[ext_resource type="PackedScene" uid="uid://btamts4mw3lhu" path="res://scenes/interactables/door.tscn" id="5_eiv1w"]
+[ext_resource type="PackedScene" uid="uid://busfr44pv6x42" path="res://scenes/characters/enemies/slime_enemy.tscn" id="6_d2m8s"]
+[ext_resource type="PackedScene" uid="uid://2x71pc4tx65t" path="res://scenes/characters/enemies/magician.tscn" id="7_886ur"]
+[ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="8_r4lr3"]
+[ext_resource type="PackedScene" uid="uid://dvurgvpeojugr" path="res://scenes/interactables/door_hint.tscn" id="9_15o36"]
+[ext_resource type="PackedScene" uid="uid://b0qq8nufifylm" path="res://scenes/interactables/stats_hint.tscn" id="10_02t1k"]
+[ext_resource type="PackedScene" uid="uid://b2pfiuisk4j5t" path="res://scenes/ui/message_manager.tscn" id="11_hilwk"]
+[ext_resource type="PackedScene" uid="uid://bfcttm8jgbfyr" path="res://scenes/ui/menu.tscn" id="12_v80qm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0tnpc"]
-texture = ExtResource("1_gee14")
+texture = ExtResource("1_oi2tv")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_de2d8"]
-texture = ExtResource("2_ute48")
+texture = ExtResource("2_6370d")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -70,7 +70,7 @@ sources/1 = SubResource("TileSetAtlasSource_de2d8")
 sources/0 = SubResource("TileSetAtlasSource_0tnpc")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vtaks"]
-texture = ExtResource("3_gee14")
+texture = ExtResource("3_fojqs")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 1:0/0 = 0
@@ -184,30 +184,30 @@ tile_set = SubResource("TileSet_h2vnc")
 
 [node name="Entities" type="Node2D" parent="." unique_id=1857225231]
 
-[node name="Player" parent="Entities" unique_id=485389286 instance=ExtResource("3_ahv6m")]
+[node name="Player" parent="Entities" unique_id=485389286 instance=ExtResource("4_bgnkb")]
 position = Vector2(32, 0)
 
-[node name="DoorRE" parent="Entities" unique_id=1242320148 instance=ExtResource("6_ryrav")]
+[node name="DoorRE" parent="Entities" unique_id=1242320148 instance=ExtResource("5_eiv1w")]
 position = Vector2(48, -48)
 
-[node name="SlimeEnemyRE" parent="Entities" unique_id=536498216 instance=ExtResource("6_dinhu")]
+[node name="SlimeEnemyRE" parent="Entities" unique_id=536498216 instance=ExtResource("6_d2m8s")]
 position = Vector2(432, 16)
 
-[node name="DoorRFID" parent="Entities" unique_id=1270764413 instance=ExtResource("6_ryrav")]
+[node name="DoorRFID" parent="Entities" unique_id=1270764413 instance=ExtResource("5_eiv1w")]
 position = Vector2(-16, -48)
 
-[node name="MagicianRFID" parent="Entities" unique_id=1290997602 instance=ExtResource("6_0tnpc")]
+[node name="MagicianRFID" parent="Entities" unique_id=1290997602 instance=ExtResource("7_886ur")]
 position = Vector2(-256, -288)
 
-[node name="EnemyRFID" parent="Entities" unique_id=388757473 instance=ExtResource("5_7jktm")]
+[node name="EnemyRFID" parent="Entities" unique_id=388757473 instance=ExtResource("8_r4lr3")]
 position = Vector2(0, -128)
 
-[node name="DoorHintRFID" parent="Entities" unique_id=1382673253 instance=ExtResource("8_gee14")]
+[node name="DoorHintRFID" parent="Entities" unique_id=1382673253 instance=ExtResource("9_15o36")]
 position = Vector2(32, -32)
 
-[node name="StatsHintRFID" parent="Entities" unique_id=1898723914 instance=ExtResource("10_vtaks")]
+[node name="StatsHintRFID" parent="Entities" unique_id=1898723914 instance=ExtResource("10_02t1k")]
 position = Vector2(-272, -144)
 
-[node name="MessageManager" parent="." unique_id=712240846 instance=ExtResource("4_fc0e3")]
+[node name="MessageManager" parent="." unique_id=712240846 instance=ExtResource("11_hilwk")]
 
-[node name="Menu" parent="." unique_id=1641783459 instance=ExtResource("11_kvpfn")]
+[node name="Menu" parent="." unique_id=1641783459 instance=ExtResource("12_v80qm")]

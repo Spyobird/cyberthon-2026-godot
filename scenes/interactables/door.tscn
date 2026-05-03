@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btamts4mw3lhu"]
 
-[ext_resource type="Script" uid="uid://dhu5316ep8gkp" path="res://scenes/door.gd" id="1_18pbm"]
+[ext_resource type="Script" uid="uid://dhu5316ep8gkp" path="res://scenes/interactables/door.gd" id="1_18pbm"]
 [ext_resource type="Texture2D" uid="uid://gc6yyc2t7m5b" path="res://assets/door/doors_frame_left.png" id="1_la1wf"]
 [ext_resource type="Texture2D" uid="uid://bc4wpx5r7fx4g" path="res://assets/door/doors_frame_right.png" id="2_18pbm"]
 [ext_resource type="Texture2D" uid="uid://dnku3ao8sxe4s" path="res://assets/door/doors_leaf_closed.png" id="3_q5w8r"]
