@@ -132,8 +132,10 @@ func _start_enemy_turn():
 	_change_state(State.PLAYER_TURN)
 
 func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: MoveData):
-	if attacker.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
+	if defender.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
 		return 0
+	if attacker.type == Constants.Element.DARK:
+		return max(int(move.power / 2 * randf_range(0.85, 1)), 1)
 	return max(int((6 * attacker.attack / defender.defense * move.power / 50 + 2) * randf_range(0.85, 1)), 1)
 
 func _apply_damage(damage: int, defender: CharacterData):

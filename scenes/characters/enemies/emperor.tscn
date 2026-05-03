@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dcosauxo7evs"]
 
 [ext_resource type="Script" uid="uid://4lbib0e1gyb7" path="res://scenes/characters/enemies/enemy.gd" id="1_m8prd"]
-[ext_resource type="Texture2D" uid="uid://bgtdfbkbh7adp" path="res://assets/emperor/emperor.png" id="2_dvv3r"]
+[ext_resource type="Texture2D" uid="uid://bgtdfbkbh7adp" path="res://assets/characters/emperor/emperor.png" id="2_dvv3r"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_x2msd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]

@@ -1,8 +1,6 @@
 [gd_scene format=4 uid="uid://dd3ehrifcp34h"]
 
 [ext_resource type="Texture2D" uid="uid://mhefi8jnfnx8" path="res://assets/floor.png" id="1_exmpu"]
-[ext_resource type="Texture2D" uid="uid://qoikr3qlcevg" path="res://assets/atlas_floor-16x16.png" id="2_7qwfs"]
-[ext_resource type="Texture2D" uid="uid://c772lcnpwvxdy" path="res://assets/0x72_DungeonTilesetII_v1.7.png" id="3_7qwfs"]
 [ext_resource type="Texture2D" uid="uid://bo0v6fn6hede0" path="res://assets/tilemap-Sheet.png" id="3_fwjk2"]
 [ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="4_q2cj7"]
 [ext_resource type="PackedScene" uid="uid://b2pfiuisk4j5t" path="res://scenes/ui/message_manager.tscn" id="5_rep2p"]
@@ -16,8 +14,11 @@
 texture = ExtResource("1_exmpu")
 0:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_57efi"]
+load_path = "res://.godot/imported/atlas_floor-16x16.png-5a9bee501d4b893a4ab18789c64b4203.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_de2d8"]
-texture = ExtResource("2_7qwfs")
+texture = SubResource("CompressedTexture2D_57efi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -64,8 +65,11 @@ texture = ExtResource("2_7qwfs")
 4:6/0 = 0
 5:6/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xhe7i"]
+load_path = "res://.godot/imported/0x72_DungeonTilesetII_v1.7.png-5c072be9505fb908ba19acb4aa4f9cba.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fwjk2"]
-texture = ExtResource("3_7qwfs")
+texture = SubResource("CompressedTexture2D_xhe7i")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -823,10 +827,10 @@ tile_set = SubResource("TileSet_h2vnc")
 [node name="Entities" type="Node2D" parent="." unique_id=1215764996]
 
 [node name="Player" parent="Entities" unique_id=485389286 instance=ExtResource("4_q2cj7")]
-position = Vector2(32, -2)
+position = Vector2(32, 0)
 
 [node name="BossDoor" parent="Entities" unique_id=1242320148 instance=ExtResource("7_2o4d7")]
-position = Vector2(32, -50)
+position = Vector2(32, -48)
 script = ExtResource("9_fwjk2")
 
 [node name="Emperor" parent="Entities" unique_id=536498216 instance=ExtResource("9_dptwu")]

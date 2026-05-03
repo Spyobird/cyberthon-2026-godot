@@ -17,7 +17,7 @@ func _on_interacted(collider):
 		"My generals. My champions. All fallen.",
 		"You've earned your right to stand before the throne.",
 		"Now prove that you're worthy of it."
-		], Vector2i(6, 115)
+		]
 	)
 	
 	GameManager.player_data = collider.player_data

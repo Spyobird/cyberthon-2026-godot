@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_h0xg2")
 name = "Blizzard"
-power = 90000
+power = 160
 accuracy = 95
 type = 5
 metadata/_custom_type_script = "uid://cr2etpgecorfn"

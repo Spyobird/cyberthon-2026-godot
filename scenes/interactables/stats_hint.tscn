@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b0qq8nufifylm"]
 
 [ext_resource type="Script" uid="uid://bpx7u15pexp1x" path="res://scenes/interactables/stats_hint.gd" id="1_sdnxa"]
-[ext_resource type="Texture2D" uid="uid://cugr1al6xjpir" path="res://assets/caelum_cat/caelum-idle-Sheet.png" id="2_6m8sp"]
+[ext_resource type="Texture2D" uid="uid://cugr1al6xjpir" path="res://assets/characters/player/player.png" id="2_6m8sp"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_tpbc7"]
 [ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="4_6m8sp"]
 

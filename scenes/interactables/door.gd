@@ -1,10 +1,6 @@
 class_name Door
 extends Node2D
 
-const _DOOR_SPRITES = [
-	preload("res://assets/door/door_closed.tres"),
-	preload("res://assets/door/door_open.tres")
-]
 const UNLOCKED_MESSAGES = [
 	"Let's try using the [color=medium_blue]door key[/color].",
 	"The door is now unlocked!"
@@ -33,8 +29,9 @@ func _on_interact(player):
 		await closed # just await the signal first
 		# open the door
 		_animation_player.play("door_opening")
-		_is_open = true
 		_interactable_component.interacted.disconnect(_on_interact)
+		await _animation_player.animation_finished
+		_is_open = true
 		#_interactable_component.is_collidable = false
 		#_door_sprite.texture = _DOOR_SPRITES[1]
 		

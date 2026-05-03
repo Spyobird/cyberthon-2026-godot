@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://busfr44pv6x42"]
 
-[ext_resource type="Script" path="res://scenes/characters/enemies/slime_enemy.gd" id="1_26mhr"]
-[ext_resource type="Texture2D" uid="uid://djtbbcuxuvmbk" path="res://assets/slime/blob.png" id="2_26mhr"]
+[ext_resource type="Script" uid="uid://dj0c7l0pd0apk" path="res://scenes/characters/enemies/slime_enemy.gd" id="1_26mhr"]
+[ext_resource type="Texture2D" uid="uid://djtbbcuxuvmbk" path="res://assets/characters/slime/blob.png" id="2_26mhr"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_uwjrq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]

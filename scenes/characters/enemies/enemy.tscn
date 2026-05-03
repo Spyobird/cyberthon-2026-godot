@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4lbib0e1gyb7" path="res://scenes/characters/enemies/enemy.gd" id="1_f2e6v"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="2_cowpe"]
-[ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/magician/magician.png" id="2_nwhyh"]
+[ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/characters/magician/magician.png" id="2_nwhyh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
 size = Vector2(16, 16)
