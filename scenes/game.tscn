@@ -188,15 +188,12 @@ position = Vector2(29, 2)
 
 [node name="WeakEnemyRFID" parent="." unique_id=536498216 instance=ExtResource("5_7jktm")]
 position = Vector2(0, -128)
-scale = Vector2(0.5, 0.5)
 
 [node name="BossRFID" parent="." unique_id=1840221203 instance=ExtResource("5_7jktm")]
-position = Vector2(-256, -280)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-256, -288)
 
-[node name="BossRE" parent="." unique_id=1720283611 instance=ExtResource("7_gee14")]
-position = Vector2(428, 16)
-scale = Vector2(0.5, 0.5)
+[node name="BossRE" parent="." unique_id=1975856299 instance=ExtResource("5_7jktm")]
+position = Vector2(384, 24)
 
 [node name="DoorRFID" parent="." unique_id=1270764413 instance=ExtResource("6_ryrav")]
 position = Vector2(-16, -48)
