@@ -13,6 +13,9 @@ var _movement_locks: Array[StringName] = []
 
 # Movement related
 
+# Mesasge-box related
+const default_mb_pos = Vector2i(6, 4.25)
+
 var is_player_movement_disabled: bool:
 	get: return _movement_locks.size() > 0
 

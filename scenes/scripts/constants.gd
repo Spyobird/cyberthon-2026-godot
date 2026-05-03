@@ -5,5 +5,7 @@ enum Element {
 	FIRE,
 	LIGHTNING,
 	ANCIENT,
-	DARK
+	DARK,
+	ICE,
+	WATER
 }

@@ -22,6 +22,7 @@ func play_text(...messages):
 		return
 	
 	message_box_opened.emit()
+	
 	_messages.assign(messages.filter(func(x): return x is String))
 	scroll_text()
 
