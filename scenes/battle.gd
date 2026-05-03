@@ -69,11 +69,12 @@ func _setup_battle():
 	_change_state(State.PLAYER_TURN)
 
 func _play_move_animation(move: MoveData, defender: CharacterData) -> void:
-	if not move.move_animation:
+	if not move.anim_effect:
 		return
 	var defender_pos: Marker2D = _player_pos if defender == _player_data else _enemy_pos
-	_effect_sprite.position = defender_pos.position
-	_effect_sprite.sprite_frames = move.move_animation
+	_effect_sprite.position = defender_pos.position + move.anim_effect_pos_offset
+	_effect_sprite.scale = move.anim_effect_scale
+	_effect_sprite.sprite_frames = move.anim_effect
 	_effect_sprite.play("default")
 	_effect_sprite.visible = true
 	await _effect_sprite.animation_finished
