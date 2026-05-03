@@ -18,6 +18,7 @@ enum State {
 @onready var _enemy_sprite = $CharacterSprites/EnemyPos/EnemySprite
 @onready var _player_sprite = $CharacterSprites/PlayerPos/PlayerSprite
 @onready var _ui = $BattleUI
+@onready var _effect_sprite: AnimatedSprite2D = $CharacterSprites/EffectSprite
 
 var _player_data: CharacterData
 var _enemy_data: CharacterData
@@ -50,10 +51,10 @@ func _setup_battle():
 	# setup sprites
 	_player_sprite.texture = _player_data.sprite_back
 	_enemy_sprite.texture = _enemy_data.sprite_front
-	_player_sprite.position = Vector2.ZERO
-	_enemy_sprite.position = Vector2.ZERO
-	_player_sprite.apply_scale(Vector2(3, 3))
-	_enemy_sprite.apply_scale(Vector2(3, 3))
+	_player_sprite.position = _player_data.sprite_pos_offset
+	_enemy_sprite.position = _enemy_data.sprite_pos_offset
+	_player_sprite.apply_scale(_player_data.sprite_scale)
+	_enemy_sprite.apply_scale(_enemy_data.sprite_scale)
 	print("Loaded player and enemy sprites")
 	
 	# setup UI
@@ -66,6 +67,17 @@ func _setup_battle():
 	
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)
+
+func _play_move_animation(move: MoveData, defender: CharacterData) -> void:
+	if not move.move_animation:
+		return
+	var defender_pos: Marker2D = _player_pos if defender == _player_data else _enemy_pos
+	_effect_sprite.position = defender_pos.position
+	_effect_sprite.sprite_frames = move.move_animation
+	_effect_sprite.play("default")
+	_effect_sprite.visible = true
+	await _effect_sprite.animation_finished
+	_effect_sprite.visible = false
 
 func _start_player_turn():
 	_ui.show_options_menu()
@@ -103,6 +115,7 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
 	
 	# play animations
+	
 	
 	# calculate + apply dmg
 	var damage = _calculate_damage(attacker, defender, move)
