@@ -110,19 +110,15 @@ func use_move(move: MoveData):
 
 func _execute_action(attacker: CharacterData, defender: CharacterData, move: MoveData):
 	_change_state(State.ACTION)
-	
-	# show text
+
 	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
-	
-	# play animations
-	
-	
-	# calculate + apply dmg
+
+	await _play_move_animation(move, defender)
+
 	var damage = _calculate_damage(attacker, defender, move)
 	print("Damage: %d" % damage)
 	_apply_damage(damage, defender)
-	
-	# update UI
+
 	data_updated.emit(_player_data, _enemy_data)
 	
 	if _check_for_faint():
