@@ -20,6 +20,9 @@ enum State {
 @onready var _ui = $BattleUI
 @onready var _effect_sprite: AnimatedSprite2D = $CharacterSprites/EffectSprite
 @onready var _animation_player: AnimationPlayer = $AnimationPlayer
+@onready var _audio_player: AudioStreamPlayer = $AudioStreamPlayer
+
+const _HURT_SFX = preload("res://assets/audio/sfx/moves/Hit Normal Damage.mp3")
 
 var _player_data: CharacterData
 var _enemy_data: CharacterData
@@ -69,12 +72,33 @@ func _setup_battle():
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)
 
+func _play_hurt_animation(defender: CharacterData) -> void:
+	var sprite: Sprite2D = _player_sprite if defender == _player_data else _enemy_sprite
+	var original_pos := sprite.position
+
+	_audio_player.stream = _HURT_SFX
+	_audio_player.play()
+	var jerk_dir := Vector2(5, 0) if defender == _enemy_data else Vector2(-5, 0)
+
+	var jerk := create_tween()
+	jerk.tween_property(sprite, "position", original_pos + jerk_dir, 0.05)
+	jerk.tween_property(sprite, "position", original_pos - jerk_dir * 0.6, 0.05)
+	jerk.tween_property(sprite, "position", original_pos, 0.1)
+
+	var blink := create_tween()
+	for i in 5:
+		blink.tween_property(sprite, "modulate:a", 0.0, 0.05)
+		blink.tween_property(sprite, "modulate:a", 1.0, 0.05)
+
+	await blink.finished
+
 func _play_move_animation(move: MoveData, defender: CharacterData) -> void:
 	if move.anim_name.is_empty():
 		return
 	var defender_pos: Marker2D = _player_pos if defender == _player_data else _enemy_pos
 	_effect_sprite.position = defender_pos.position + move.anim_effect_pos_offset
 	_effect_sprite.sprite_frames = move.anim_effect
+	_effect_sprite.scale = move.anim_effect_scale
 	_animation_player.play(move.anim_name)
 	await _animation_player.animation_finished
 
@@ -113,12 +137,17 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
 
 	await _play_move_animation(move, defender)
-
 	var damage = _calculate_damage(attacker, defender, move)
 	print("Damage: %d" % damage)
+	if (damage != 0): 
+		await _play_hurt_animation(defender)
+
 	_apply_damage(damage, defender)
 
 	data_updated.emit(_player_data, _enemy_data)
+	
+	if (damage == 0):
+		await _ui.display_message("%s had no effect against %s..." % [move.name, defender.name])
 	
 	if _check_for_faint():
 		return
