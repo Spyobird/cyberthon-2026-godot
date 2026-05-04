@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://uh4i80ratblj" path="res://scenes/characters/player/player.gd" id="1_d5o5k"]
 [ext_resource type="Script" uid="uid://tvpaynvh3a4c" path="res://scenes/components/tile_based_movement_component.gd" id="2_pt8ch"]
-[ext_resource type="Texture2D" uid="uid://cugr1al6xjpir" path="res://assets/caelum_cat/caelum-idle-Sheet.png" id="4_hss88"]
+[ext_resource type="Texture2D" uid="uid://cugr1al6xjpir" path="res://assets/characters/player/player.png" id="4_hss88"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vqa02"]
 size = Vector2(16, 16)
@@ -143,6 +143,7 @@ animations = [{
 }]
 
 [node name="Player" type="Node2D" unique_id=714559960 groups=["player_group"]]
+z_index = 1
 script = ExtResource("1_d5o5k")
 
 [node name="TileBasedMovementComponent" type="CharacterBody2D" parent="." unique_id=926794285]

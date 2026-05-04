@@ -86,11 +86,9 @@ func _win():
 	await _ui.display_message("%s was defeated!" % _enemy_data.name)
 	_end_battle(true)
 
-func _end_battle(remove_enemy: bool = false):
+func _end_battle(won: bool = false):
 	# handle scene change + updates
-	if remove_enemy:
-		# Deletes enemy
-		GameManager.enemy_node.queue_free()
+	GameManager.battle_ended.emit(won)
 	GameManager.scene_controller.pop_2d_scene()
 
 # Called from BattleUI buttons
@@ -134,8 +132,10 @@ func _start_enemy_turn():
 	_change_state(State.PLAYER_TURN)
 
 func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: MoveData):
-	if attacker.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
+	if defender.type == Constants.Element.DARK && move.type != Constants.Element.ANCIENT:
 		return 0
+	if attacker.type == Constants.Element.DARK:
+		return max(int(move.power / 2 * randf_range(0.85, 1)), 1)
 	return max(int((6 * attacker.attack / defender.defense * move.power / 50 + 2) * randf_range(0.85, 1)), 1)
 
 func _apply_damage(damage: int, defender: CharacterData):

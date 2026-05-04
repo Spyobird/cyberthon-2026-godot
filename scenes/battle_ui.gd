@@ -59,7 +59,8 @@ func initialize(battle: Battle, player: CharacterData, enemy: CharacterData):
 func update_ui(player: CharacterData, enemy: CharacterData):
 	player_name.text = player.name
 	enemy_name.text = enemy.name
-	player_hp.text = "%d / %d" % [player.current_hp, player.max_hp]
+	var current_hp = max(player.current_hp, 0)
+	player_hp.text = "%d / %d" % [current_hp, player.max_hp]
 	player_bar.max_value = player.max_hp
 	player_bar.value = player.current_hp
 	enemy_bar.max_value = enemy.max_hp

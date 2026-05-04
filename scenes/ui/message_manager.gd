@@ -15,13 +15,14 @@ func _ready() -> void:
 	
 	_label.bbcode_enabled = true
 
-func play_text(... messages):
+func play_text(...messages):
 	if is_reading():
 		return
 	if len(messages) == 0:
 		return
 	
 	message_box_opened.emit()
+	
 	_messages.assign(messages.filter(func(x): return x is String))
 	scroll_text()
 

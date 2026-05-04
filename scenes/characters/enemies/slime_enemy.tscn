@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://busfr44pv6x42"]
+
+[ext_resource type="Script" uid="uid://dj0c7l0pd0apk" path="res://scenes/characters/enemies/slime_enemy.gd" id="1_26mhr"]
+[ext_resource type="Texture2D" uid="uid://djtbbcuxuvmbk" path="res://assets/characters/slime/blob.png" id="2_26mhr"]
+[ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_uwjrq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
+size = Vector2(16, 16)
+
+[node name="SlimeEnemy" type="Node2D" unique_id=536498216]
+process_mode = 3
+script = ExtResource("1_26mhr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_26mhr")
+centered = false
+hframes = 3
+
+[node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_uwjrq")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_7rgl3")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://fu3psysxtoym"]
+
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_h0xg2"]
+
+[resource]
+script = ExtResource("1_h0xg2")
+name = "Blizzard"
+power = 160
+accuracy = 95
+type = 5
+metadata/_custom_type_script = "uid://cr2etpgecorfn"

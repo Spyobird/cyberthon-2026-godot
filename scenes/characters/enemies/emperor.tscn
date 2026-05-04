@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dcosauxo7evs"]
+
+[ext_resource type="Script" uid="uid://4lbib0e1gyb7" path="res://scenes/characters/enemies/enemy.gd" id="1_m8prd"]
+[ext_resource type="Texture2D" uid="uid://bgtdfbkbh7adp" path="res://assets/characters/emperor/emperor.png" id="2_dvv3r"]
+[ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_x2msd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4b"]
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksqmq"]
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8e52f"]
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxrkf"]
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jmxl0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihb4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksqmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8e52f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxrkf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="Node2D" unique_id=536498216]
+script = ExtResource("1_m8prd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
+texture = ExtResource("2_dvv3r")
+centered = false
+hframes = 4
+
+[node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_x2msd")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_7rgl3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1635656032]
+position = Vector2(16, 16)
+sprite_frames = SubResource("SpriteFrames_jmxl0")
+autoplay = "default"
