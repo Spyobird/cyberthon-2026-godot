@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bey7g0yji6cpj"]
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_4v61d"]
+[ext_resource type="SpriteFrames" uid="uid://buvd24wm1l830" path="res://resources/data/moves/animations/inferno_effect.tres" id="1_8rkrx"]
 
 [resource]
 script = ExtResource("1_4v61d")
@@ -8,4 +9,8 @@ name = "Inferno"
 power = 160
 accuracy = 95
 type = 1
+anim_name = "inferno"
+anim_effect = ExtResource("1_8rkrx")
+anim_effect_pos_offset = Vector2(0, -40)
+anim_effect_scale = Vector2(0.3, 0.3)
 metadata/_custom_type_script = "uid://cr2etpgecorfn"

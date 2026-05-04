@@ -1,10 +1,15 @@
 [gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cshr2w5ba4q57"]
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_j4sbw"]
+[ext_resource type="SpriteFrames" uid="uid://ckcj2j41t54ci" path="res://resources/data/moves/animations/fireball_effect.tres" id="1_rkp0a"]
 
 [resource]
 script = ExtResource("1_j4sbw")
 name = "Fireball"
 accuracy = 95
 type = 1
+anim_name = "fireball"
+anim_effect = ExtResource("1_rkp0a")
+anim_effect_pos_offset = Vector2(0, -5)
+anim_effect_scale = Vector2(0.3, 0.3)
 metadata/_custom_type_script = "uid://cr2etpgecorfn"
