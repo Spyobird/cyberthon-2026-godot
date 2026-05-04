@@ -2,22 +2,58 @@
 
 [ext_resource type="Script" uid="uid://4lbib0e1gyb7" path="res://scenes/characters/enemies/enemy.gd" id="1_f2e6v"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="2_cowpe"]
-[ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/characters/magician/magician.png" id="2_nwhyh"]
+[ext_resource type="Texture2D" uid="uid://crrft7u5gxagw" path="res://assets/characters/slug/slug.png" id="4_qj54i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
 size = Vector2(16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4b"]
+atlas = ExtResource("4_qj54i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksqmq"]
+atlas = ExtResource("4_qj54i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8e52f"]
+atlas = ExtResource("4_qj54i")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxrkf"]
+atlas = ExtResource("4_qj54i")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jmxl0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihb4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksqmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8e52f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxrkf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Enemy" type="Node2D" unique_id=536498216]
 script = ExtResource("1_f2e6v")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_nwhyh")
-centered = false
-hframes = 4
 
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("2_cowpe")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
 position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_7rgl3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="InteractableComponent" unique_id=1292064210]
+position = Vector2(8, 8)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_jmxl0")
+autoplay = "default"

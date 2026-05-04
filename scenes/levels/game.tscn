@@ -135,7 +135,7 @@ tile_set = SubResource("TileSet_h2vnc")
 [node name="Entities" type="Node2D" parent="." unique_id=1857225231]
 
 [node name="Player" parent="Entities" unique_id=485389286 instance=ExtResource("4_bgnkb")]
-position = Vector2(32, 0)
+position = Vector2(33, 1)
 
 [node name="DoorRE" parent="Entities" unique_id=1242320148 instance=ExtResource("5_eiv1w")]
 position = Vector2(48, -48)
