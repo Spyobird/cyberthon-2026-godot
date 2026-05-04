@@ -6,6 +6,8 @@ extends Resource
 @export_group("Sprites")
 @export var sprite_front: Texture2D
 @export var sprite_back: Texture2D
+@export var sprite_scale: Vector2 = Vector2(1.0, 1.0)
+@export var sprite_pos_offset: Vector2 = Vector2.ZERO
 
 @export_group("Stats")
 @export var max_hp: int = 20

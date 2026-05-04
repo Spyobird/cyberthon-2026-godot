@@ -3,10 +3,12 @@
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_pq1g7"]
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_0qlpj"]
 [ext_resource type="Resource" uid="uid://wo7kg8p1m7h5" path="res://resources/data/moves/energy_drain.tres" id="2_t4tin"]
+[ext_resource type="Texture2D" uid="uid://rnj5wnqq484s" path="res://assets/turn_based_scenes/magician/magician_nobg.png" id="4_t4tin"]
 
 [resource]
 script = ExtResource("2_0qlpj")
 name = "Magician"
+sprite_front = ExtResource("4_t4tin")
 max_hp = 80
 current_hp = 80
 attack = 92
