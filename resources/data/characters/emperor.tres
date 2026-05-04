@@ -4,7 +4,9 @@
 [ext_resource type="Resource" uid="uid://bey7g0yji6cpj" path="res://resources/data/moves/inferno.tres" id="2_swxbd"]
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_vbono"]
 [ext_resource type="Resource" uid="uid://fu3psysxtoym" path="res://resources/data/moves/blizzard.tres" id="3_w3t2v"]
+[ext_resource type="Resource" uid="uid://c4r3n7er245yo" path="res://resources/data/moves/thunder_clap.tres" id="4_hlu4q"]
 [ext_resource type="Texture2D" uid="uid://cuvorf71nwp04" path="res://assets/turn_based_scenes/emperor/emperor.png" id="5_swxbd"]
+[ext_resource type="Resource" uid="uid://c2x8vpgl7p5ps" path="res://resources/data/moves/holy_smite.tres" id="5_uw3if"]
 
 [resource]
 script = ExtResource("2_vbono")
@@ -16,5 +18,5 @@ current_hp = 360
 attack = 160
 defense = 120
 type = 4
-moves = Array[ExtResource("1_1tx0k")]([ExtResource("2_swxbd"), ExtResource("3_w3t2v")])
+moves = Array[ExtResource("1_1tx0k")]([ExtResource("2_swxbd"), ExtResource("3_w3t2v"), ExtResource("4_hlu4q"), ExtResource("5_uw3if")])
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"
