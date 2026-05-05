@@ -15,12 +15,13 @@ enum State {
 
 @onready var _enemy_pos = $CharacterSprites/EnemyPos
 @onready var _player_pos = $CharacterSprites/PlayerPos
-@onready var _enemy_sprite = $CharacterSprites/EnemyPos/EnemySprite
-@onready var _player_sprite = $CharacterSprites/PlayerPos/PlayerSprite
+@onready var _enemy_sprite: AnimatedSprite2D = $CharacterSprites/EnemyPos/EnemySprite
+@onready var _player_sprite: AnimatedSprite2D = $CharacterSprites/PlayerPos/PlayerSprite
 @onready var _ui = $BattleUI
 @onready var _effect_sprite: AnimatedSprite2D = $CharacterSprites/EffectSprite
 @onready var _animation_player: AnimationPlayer = $AnimationPlayer
-@onready var _audio_player: AudioStreamPlayer = $AudioStreamPlayer
+@onready var _sfx_player: AudioStreamPlayer = $SoundFxPlayer
+@onready var _bg_player: AudioStreamPlayer = $BgPlayer
 
 const _HURT_SFX = preload("res://assets/audio/sfx/moves/Hit Normal Damage.mp3")
 
@@ -53,13 +54,21 @@ func _setup_battle():
 	print("Fetched player and enemy data from GameManager")
 	
 	# setup sprites
-	_player_sprite.texture = _player_data.sprite_back
-	_enemy_sprite.texture = _enemy_data.sprite_front
+	_player_sprite.sprite_frames = _player_data.sprite_back
+	_enemy_sprite.sprite_frames = _enemy_data.sprite_front
 	_player_sprite.position = _player_data.sprite_pos_offset
 	_enemy_sprite.position = _enemy_data.sprite_pos_offset
 	_player_sprite.apply_scale(_player_data.sprite_scale)
 	_enemy_sprite.apply_scale(_enemy_data.sprite_scale)
 	print("Loaded player and enemy sprites")
+	
+	# Play battle_start animation
+	_animation_player.play("battle_start")
+	await _animation_player.animation_finished
+	
+	# Play sprite idle animation (enemy)
+	_enemy_sprite.play(&"idle")
+	await _enemy_sprite.animation_finished
 	
 	# setup UI
 	_ui.initialize(self, _player_data, _enemy_data)
@@ -73,11 +82,11 @@ func _setup_battle():
 	_change_state(State.PLAYER_TURN)
 
 func _play_hurt_animation(defender: CharacterData) -> void:
-	var sprite: Sprite2D = _player_sprite if defender == _player_data else _enemy_sprite
+	var sprite: AnimatedSprite2D = _player_sprite if defender == _player_data else _enemy_sprite
 	var original_pos := sprite.position
 
-	_audio_player.stream = _HURT_SFX
-	_audio_player.play()
+	_sfx_player.stream = _HURT_SFX
+	_sfx_player.play()
 	var jerk_dir := Vector2(5, 0) if defender == _enemy_data else Vector2(-5, 0)
 
 	var jerk := create_tween()
@@ -158,7 +167,7 @@ func _start_enemy_turn():
 	_ui.hide_all_menus()
 	
 	# choose move (requires at least 1 move)
-	var chosen_move = _enemy_data.moves[0]
+	var chosen_move = _enemy_data.moves.pick_random()
 	
 	# wait a bit
 	await get_tree().create_timer(2.0).timeout

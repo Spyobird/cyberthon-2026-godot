@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://jgcvikljc45j" path="res://scenes/battle_ui.tscn" id="2_p1qf1"]
 [ext_resource type="AudioStream" uid="uid://b50d6ygfisobo" path="res://assets/audio/sfx/moves/Sheer Cold.mp3" id="4_6vh42"]
 [ext_resource type="AudioStream" uid="uid://ciist7vwmx8k6" path="res://assets/audio/sfx/moves/Flame Burst.mp3" id="4_a12nh"]
+[ext_resource type="Texture2D" uid="uid://bs6cdu1jxxjuu" path="res://assets/battle/player_platform_transparent_bg.png" id="4_yahae"]
 [ext_resource type="AudioStream" uid="uid://d1fc3epbdqgdw" path="res://assets/audio/sfx/moves/Thunder Shock.mp3" id="5_lpir7"]
 [ext_resource type="AudioStream" uid="uid://brj8hs1ujrnj6" path="res://assets/audio/sfx/moves/Roar of Time part2.mp3" id="6_f4pi3"]
 [ext_resource type="AudioStream" uid="uid://doa1bq1svfuia" path="res://assets/audio/sfx/moves/Thunderbolt.mp3" id="7_4k1nj"]
@@ -14,7 +15,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AudioStreamPlayer:stream")
+tracks/0/path = NodePath("SoundFxPlayer:stream")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -23,10 +24,134 @@ tracks/0/keys = {
 "update": 1,
 "values": [null]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterSprites/PlayerPos:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(108, 104)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterSprites/EnemyPos:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(193, 48)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CharacterSprites/EnemyPos/EnemySprite:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_66ngm"]
+resource_name = "battle_start"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterSprites/PlayerPos:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(280, 104), Vector2(108, 104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterSprites/EnemyPos:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(107, 48), Vector2(193, 48)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterSprites/EnemyPos/EnemySprite:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.07450981, 0.07450981, 0.07450981, 1), Color(0.07450981, 0.07450981, 0.07450981, 1), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterSprites/EnemyPos/EnemyPlatform:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.0333333, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.07450981, 0.07450981, 0.07450981, 1), Color(0.07450981, 0.07450981, 0.07450981, 1), Color(0.39215687, 0.23137255, 0.654902, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.033333335, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.19215687, 0.19215687, 0.19215687, 1), Color(0.19215687, 0.19215687, 0.19215687, 1), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = false
+tracks/5/path = NodePath("CharacterSprites/PlayerPos/PlayerPlatform:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.033333335, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.19066708, 0.19066708, 0.19066708, 1), Color(0.2509804, 0.2509804, 0.2509804, 1), Color(0.39215687, 0.23137255, 0.654902, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_f4pi3"]
 resource_name = "blizzard"
-length = 1.4
+length = 1.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -56,7 +181,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -68,7 +193,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -79,10 +204,22 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_6vh42"]
 resource_name = "fireball"
-length = 2.0
+length = 2.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -112,7 +249,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -124,7 +261,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -135,10 +272,22 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 2, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.4712499, 0.4712499, 0.4712499, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_v7i3o"]
 resource_name = "holy_smite"
-length = 2.7
+length = 2.9
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -168,7 +317,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -180,7 +329,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -191,10 +340,22 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 2.7, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_4k1nj"]
 resource_name = "inferno"
-length = 1.4
+length = 1.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -224,7 +385,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -236,7 +397,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -247,10 +408,22 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_yahae"]
 resource_name = "thunder_clap"
-length = 2.4
+length = 2.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -280,7 +453,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -292,7 +465,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -303,9 +476,22 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 2.4, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_a12nh"]
 resource_name = "zap_bolt"
+length = 1.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -335,7 +521,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AudioStreamPlayer:stream")
+tracks/2/path = NodePath("SoundFxPlayer:stream")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -347,7 +533,7 @@ tracks/2/keys = {
 tracks/3/type = "method"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/path = NodePath("SoundFxPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -358,10 +544,23 @@ tracks/3/keys = {
 "method": &"play"
 }]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4k1nj"]
 _data = {
 &"RESET": SubResource("Animation_lpir7"),
+&"battle_start": SubResource("Animation_66ngm"),
 &"blizzard": SubResource("Animation_f4pi3"),
 &"fireball": SubResource("Animation_6vh42"),
 &"holy_smite": SubResource("Animation_v7i3o"),
@@ -387,6 +586,8 @@ expand_mode = 2
 stretch_mode = 1
 
 [node name="BattleUI" parent="." unique_id=1692606746 instance=ExtResource("2_p1qf1")]
+layer = 3
+visible = false
 
 [node name="CharacterSprites" type="CanvasLayer" parent="." unique_id=1338227438]
 layer = 0
@@ -394,14 +595,32 @@ layer = 0
 [node name="EnemyPos" type="Marker2D" parent="CharacterSprites" unique_id=656607851]
 position = Vector2(193, 48)
 
-[node name="EnemySprite" type="Sprite2D" parent="CharacterSprites/EnemyPos" unique_id=2125380655]
+[node name="EnemySprite" type="AnimatedSprite2D" parent="CharacterSprites/EnemyPos" unique_id=2074249454]
+z_index = 2
+animation = &""
+
+[node name="EnemyPlatform" type="Sprite2D" parent="CharacterSprites/EnemyPos" unique_id=525791384]
+modulate = Color(0.07450981, 0.07450981, 0.07450981, 1)
+z_index = 1
+position = Vector2(4.0595703, 24.375)
+scale = Vector2(0.04579888, 0.04579889)
+texture = ExtResource("4_yahae")
 
 [node name="PlayerPos" type="Marker2D" parent="CharacterSprites" unique_id=1584348503]
 position = Vector2(108, 104)
 
-[node name="PlayerSprite" type="Sprite2D" parent="CharacterSprites/PlayerPos" unique_id=1209670183]
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="CharacterSprites/PlayerPos" unique_id=1748483759]
+z_index = 2
+
+[node name="PlayerPlatform" type="Sprite2D" parent="CharacterSprites/PlayerPos" unique_id=1470040672]
+modulate = Color(0.39215687, 0.23137255, 0.654902, 1)
+z_index = 1
+position = Vector2(0, 20)
+scale = Vector2(0.06198346, 0.06198346)
+texture = ExtResource("4_yahae")
 
 [node name="EffectSprite" type="AnimatedSprite2D" parent="CharacterSprites" unique_id=435909928]
+z_index = 2
 scale = Vector2(0.3, 0.3)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944846935]
@@ -410,4 +629,6 @@ position = Vector2(160, 91)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=153885053]
 libraries/ = SubResource("AnimationLibrary_4k1nj")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=284619473]
+[node name="SoundFxPlayer" type="AudioStreamPlayer" parent="." unique_id=284619473]
+
+[node name="BgPlayer" type="AudioStreamPlayer" parent="." unique_id=1664888867]
