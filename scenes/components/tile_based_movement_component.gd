@@ -82,7 +82,9 @@ func _snap_position_to_grid():
 func _animate(delta):
 
 	# Read 2D input
-	var input_vector := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_vector := Vector2.ZERO
+	if not GameManager.is_player_movement_disabled:
+		input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 		
 	# Choose animation
 	if input_vector != Vector2.ZERO:
