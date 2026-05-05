@@ -30,6 +30,10 @@ var _messages: Array[String] = []
 
 func initialize(battle: Battle, player: CharacterData, enemy: CharacterData):
 	print("Initializing Battle UI...")
+	
+	# Make UI elements visible
+	self.visible = true
+	
 	_battle = battle
 	battle.data_updated.connect(update_ui)
 	

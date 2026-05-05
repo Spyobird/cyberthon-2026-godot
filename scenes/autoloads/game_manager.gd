@@ -4,6 +4,7 @@ signal battle_ended(won: bool)
 
 var _message_manager: MessageManager
 var scene_controller: SceneController # Initialised in node
+var transition_controller: TransitionController
 var player_data: CharacterData
 var enemy_data: CharacterData
 var enemy_node: Node
