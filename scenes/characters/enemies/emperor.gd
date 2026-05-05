@@ -24,4 +24,19 @@ func _on_interacted(collider):
 	GameManager.enemy_data = _enemy_data
 	GameManager.enemy_node = self
 	
-	GameManager.scene_controller.overlay_2d_scene("res://scenes/battle.tscn")
+	GameManager.battle_ended.connect(_on_battle_ended, CONNECT_ONE_SHOT)
+	
+	# Lock player movement
+	GameManager.lock_movement(&"battle")
+	# Play scene transition effect
+	GameManager.transition_controller.scene_transition_request_started.emit("res://scenes/battle.tscn", TransitionController.TransitionEffect.DIAGONAL_POPPING_SQUARES, 2.5)
+
+
+func _on_battle_ended(defeated: bool):
+	GameManager.unlock_movement(&"battle")
+	#if defeated:
+		#print("Emperor defeated")
+		#var instance = KEY_SCENE.instantiate()
+		#get_parent().add_child(instance)
+		#instance.position = position
+		#queue_free()

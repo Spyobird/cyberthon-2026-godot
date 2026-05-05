@@ -19,9 +19,13 @@ func _on_interacted(collider):
 	GameManager.enemy_node = self
 	
 	GameManager.battle_ended.connect(_on_battle_ended, CONNECT_ONE_SHOT)
-	GameManager.scene_controller.overlay_2d_scene("res://scenes/battle.tscn")
+	# Lock player movement 
+	GameManager.lock_movement(&"battle")
+	# Play scene transition effect
+	GameManager.transition_controller.scene_transition_request_started.emit("res://scenes/battle.tscn", TransitionController.TransitionEffect.CROSS_SHAPED, 1.5)
 
 func _on_battle_ended(defeated: bool):
+	GameManager.unlock_movement(&"battle")
 	if defeated:
 		print("Enemy defeated")
 		var instance = KEY_SCENE.instantiate()

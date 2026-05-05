@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://2x71pc4tx65t"]
+[gd_scene format=3 uid="uid://ddbg8eynnah0r"]
 
-[ext_resource type="Script" uid="uid://btnj3uqrwokgu" path="res://scenes/characters/enemies/magician.gd" id="1_ljksn"]
+[ext_resource type="Script" path="res://scenes/characters/enemies/magician.gd" id="1_ljksn"]
 [ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/characters/magician/magician.png" id="2_ljksn"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_7vxj3"]
 
