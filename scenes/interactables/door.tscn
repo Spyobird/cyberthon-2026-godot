@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhu5316ep8gkp" path="res://scenes/interactables/door.gd" id="1_18pbm"]
 [ext_resource type="Script" uid="uid://cl013yx1tmuuv" path="res://scenes/components/interactable_component.gd" id="4_t58dd"]
+[ext_resource type="AudioStream" uid="uid://en1ov86bd2qw" path="res://assets/audio/sfx/misc/heavy_door_unlock.mp3" id="5_8lim4"]
 [ext_resource type="Texture2D" uid="uid://dvdntq16fxtye" path="res://assets/door/door_sides.png" id="5_q5w8r"]
 [ext_resource type="Texture2D" uid="uid://b6mwdh2jcju2m" path="res://assets/door/door.png" id="6_t58dd"]
 [ext_resource type="Texture2D" uid="uid://ctfek2i0lo2uv" path="res://assets/door/door_open.png" id="7_ju5n0"]
@@ -102,6 +103,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AudioStreamPlayer2D:stream")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
 
 [sub_resource type="Animation" id="Animation_t58dd"]
 resource_name = "door_opening"
@@ -140,6 +153,32 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AudioStreamPlayer2D:stream")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_8lim4")]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../AudioStreamPlayer2D")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ju5n0"]
@@ -200,3 +239,5 @@ shape = SubResource("RectangleShape2D_4ayau")
 [node name="RightCollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=353575867]
 position = Vector2(40, 24)
 shape = SubResource("RectangleShape2D_41c0y")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1564640647]
