@@ -23,3 +23,5 @@ extends Resource
 
 @export_group("Audio")
 @export var battle_music: AudioStream = null
+@export var battle_music_volume: float = 1.0
+@export var battle_music_pos_offset = 0.0
