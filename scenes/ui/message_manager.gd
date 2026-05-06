@@ -31,6 +31,8 @@ func is_reading() -> bool:
 
 func scroll_text():
 	if is_scrolling:
+		is_scrolling = false 
+		_label.visible_characters = _label.get_total_character_count()
 		return
 	if not is_reading():
 		_box.visible = true
@@ -45,6 +47,9 @@ func scroll_text():
 	
 	var total_chars = _label.get_total_character_count()
 	for i in range(total_chars):
+		# when an interrupt happens
+		if not is_scrolling:
+			break
 		_label.visible_characters += 1
 		await get_tree().create_timer(delay_ms/1000).timeout
 	

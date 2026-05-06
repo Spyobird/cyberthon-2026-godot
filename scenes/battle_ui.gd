@@ -120,6 +120,8 @@ func is_message_reading() -> bool:
 
 func scroll_text():
 	if is_message_box_scrolling:
+		is_message_box_scrolling = false 
+		message_label.visible_characters = message_label.get_total_character_count()
 		return
 	if not is_message_reading():
 		message_label.visible = true
@@ -134,6 +136,9 @@ func scroll_text():
 	
 	var total_chars = message_label.get_total_character_count()
 	for i in range(total_chars):
+		# when an interrupt happens
+		if not is_message_box_scrolling:
+			break
 		message_label.visible_characters += 1
 		await get_tree().create_timer(delay_ms/1000).timeout
 	
