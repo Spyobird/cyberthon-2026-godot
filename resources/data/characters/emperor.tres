@@ -1,12 +1,54 @@
 [gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://mgwl1dc4764n"]
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_1tx0k"]
+[ext_resource type="AudioStream" uid="uid://ca8wjsx2jw7ue" path="res://assets/audio/battle/emperor.mp3" id="1_uw3if"]
 [ext_resource type="Resource" uid="uid://bey7g0yji6cpj" path="res://resources/data/moves/inferno.tres" id="2_swxbd"]
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_vbono"]
 [ext_resource type="Resource" uid="uid://fu3psysxtoym" path="res://resources/data/moves/blizzard.tres" id="3_w3t2v"]
 [ext_resource type="Resource" uid="uid://c4r3n7er245yo" path="res://resources/data/moves/thunder_clap.tres" id="4_hlu4q"]
 [ext_resource type="Resource" uid="uid://c2x8vpgl7p5ps" path="res://resources/data/moves/holy_smite.tres" id="5_uw3if"]
 [ext_resource type="Texture2D" uid="uid://bd8xxalalkgqp" path="res://assets/turn_based_scenes/emperor/idle.png" id="7_hlu4q"]
+[ext_resource type="Texture2D" uid="uid://bmtvo62fn7wo1" path="res://assets/turn_based_scenes/emperor/hurt.png" id="8_v8d3v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gxgs"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ukpi"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3emv"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj454"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g41fa"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fe7o"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nixa"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok81o"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jq88"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snrb5"]
+atlas = ExtResource("8_v8d3v")
+region = Rect2(64, 64, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uw3if"]
 atlas = ExtResource("7_hlu4q")
@@ -44,8 +86,66 @@ region = Rect2(64, 128, 64, 64)
 atlas = ExtResource("7_hlu4q")
 region = Rect2(128, 128, 64, 64)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_8fe7o"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_jauxf"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ukpi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3emv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bj454")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g41fa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g41fa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g41fa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g41fa")
+}],
+"loop": false,
+"name": &"defeat",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fe7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nixa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok81o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jq88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snrb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok81o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nixa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fe7o")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 8.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_uw3if")
@@ -75,19 +175,19 @@ animations = [{
 "texture": SubResource("AtlasTexture_m512p")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m512p")
+"texture": SubResource("AtlasTexture_yd5tr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m512p")
+"texture": SubResource("AtlasTexture_v8d3v")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m512p")
+"texture": SubResource("AtlasTexture_uw3if")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m512p")
+"texture": SubResource("AtlasTexture_uw3if")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m512p")
+"texture": SubResource("AtlasTexture_uw3if")
 }],
 "loop": false,
 "name": &"idle",
@@ -97,12 +197,16 @@ animations = [{
 [resource]
 script = ExtResource("2_vbono")
 name = "Emperor"
-sprite_front = SubResource("SpriteFrames_8fe7o")
+sprite_front = SubResource("SpriteFrames_jauxf")
 sprite_scale = Vector2(1.2, 1.2)
+sprite_pos_offset = Vector2(0, -3)
 max_hp = 360
 current_hp = 360
-attack = 160
-defense = 120
+attack = 9001
+defense = 9001
 type = 4
 moves = Array[ExtResource("1_1tx0k")]([ExtResource("2_swxbd"), ExtResource("3_w3t2v"), ExtResource("4_hlu4q"), ExtResource("5_uw3if")])
+battle_music = ExtResource("1_uw3if")
+battle_music_volume = 0.5
+battle_music_pos_offset = 0.6
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"
