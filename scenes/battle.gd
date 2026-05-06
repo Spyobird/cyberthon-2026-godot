@@ -186,6 +186,8 @@ func _calculate_damage(attacker: CharacterData, defender: CharacterData, move: M
 		return 0
 	if attacker.type == Constants.Element.DARK:
 		return max(int(move.power / 2 * randf_range(0.85, 1)), 1)
+	if move.name == "Avada Kedavra":
+		return max(int(defender.max_hp * 0.67), 1)
 	return max(int((6 * attacker.attack / defender.defense * move.power / 50 + 2) * randf_range(0.85, 1)), 1)
 
 func _apply_damage(damage: int, defender: CharacterData):
