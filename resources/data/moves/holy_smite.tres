@@ -6,6 +6,8 @@
 [resource]
 script = ExtResource("1_oo0py")
 name = "Holy Smite"
+power = 160
+accuracy = 95
 anim_name = "holy_smite"
 anim_effect = ExtResource("1_lj53v")
 anim_effect_scale = Vector2(0.3, 0.3)

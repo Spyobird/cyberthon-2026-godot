@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c41wpotidkolm"]
+
+[ext_resource type="SpriteFrames" uid="uid://6e8ssr07xmvp" path="res://resources/data/moves/animations/avada_kedavra.tres" id="1_xk63k"]
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="2_iy6ic"]
+
+[resource]
+script = ExtResource("2_iy6ic")
+name = "Avada Kedavra"
+power = 20
+accuracy = 50
+type = 3
+anim_name = "avada_kedavra"
+anim_effect = ExtResource("1_xk63k")
+anim_effect_pos_offset = Vector2(0, -55)
+anim_effect_scale = Vector2(0.3, 0.3)
+metadata/_custom_type_script = "uid://cr2etpgecorfn"

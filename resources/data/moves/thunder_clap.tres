@@ -6,6 +6,8 @@
 [resource]
 script = ExtResource("1_05tr8")
 name = "Thunder Clap"
+power = 160
+accuracy = 95
 type = 2
 anim_name = "thunder_clap"
 anim_effect = ExtResource("1_uwgvy")
