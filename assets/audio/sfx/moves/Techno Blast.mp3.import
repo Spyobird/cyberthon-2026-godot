@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwrgsrxrxef6r"
+path="res://.godot/imported/Techno Blast.mp3-9c4324b1235a8f8f79c3c7bf03264f0b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Techno Blast.mp3"
+dest_files=["res://.godot/imported/Techno Blast.mp3-9c4324b1235a8f8f79c3c7bf03264f0b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

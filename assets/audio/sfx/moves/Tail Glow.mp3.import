@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://caqcq6dln4q5o"
+path="res://.godot/imported/Tail Glow.mp3-c1bc4d4b32f3a3d412dc49b6e16a9fb7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Tail Glow.mp3"
+dest_files=["res://.godot/imported/Tail Glow.mp3-c1bc4d4b32f3a3d412dc49b6e16a9fb7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bderf8ly14qtp"
+path="res://.godot/imported/Magnet Bomb.mp3-71216947a1be0a764b4f77b23ab9ec77.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Magnet Bomb.mp3"
+dest_files=["res://.godot/imported/Magnet Bomb.mp3-71216947a1be0a764b4f77b23ab9ec77.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

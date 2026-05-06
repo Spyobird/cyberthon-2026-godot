@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m8u47r1yj56"
+path="res://.godot/imported/Metal Sound.mp3-6d411f66017f55de94682ac7519291d0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Metal Sound.mp3"
+dest_files=["res://.godot/imported/Metal Sound.mp3-6d411f66017f55de94682ac7519291d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

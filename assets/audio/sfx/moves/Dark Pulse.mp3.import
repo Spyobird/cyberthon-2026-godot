@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k7ysdw2ccs7"
+path="res://.godot/imported/Dark Pulse.mp3-3985ebf01c3e159406de586d546c8a6d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Dark Pulse.mp3"
+dest_files=["res://.godot/imported/Dark Pulse.mp3-3985ebf01c3e159406de586d546c8a6d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6q8rxr1fo2ab"
+path="res://.godot/imported/Work Up.mp3-4223fba112d06727b764f52ef6c559f9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Work Up.mp3"
+dest_files=["res://.godot/imported/Work Up.mp3-4223fba112d06727b764f52ef6c559f9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

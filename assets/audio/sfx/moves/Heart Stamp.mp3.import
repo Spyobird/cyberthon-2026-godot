@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hw5xn3a4s7ox"
+path="res://.godot/imported/Heart Stamp.mp3-10bc88906ec7285094d15e27f543ff40.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Heart Stamp.mp3"
+dest_files=["res://.godot/imported/Heart Stamp.mp3-10bc88906ec7285094d15e27f543ff40.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0i41dry87a4x"
+path="res://.godot/imported/Wake Up Slap.mp3-e419fcd5aa7b7ede50ba1fed4c8daa7a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Wake Up Slap.mp3"
+dest_files=["res://.godot/imported/Wake Up Slap.mp3-e419fcd5aa7b7ede50ba1fed4c8daa7a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

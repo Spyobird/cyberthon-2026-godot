@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxnyeca70t8tj"
+path="res://.godot/imported/Psycho Boost.mp3-b157d9deec633cf3d555d5382cb43c02.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Psycho Boost.mp3"
+dest_files=["res://.godot/imported/Psycho Boost.mp3-b157d9deec633cf3d555d5382cb43c02.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

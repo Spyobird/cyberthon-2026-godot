@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2623bhx4haw5"
+path="res://.godot/imported/Force Palm.mp3-bd8fc1a46b5a6f6d1aa2d5235b7b0f49.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Force Palm.mp3"
+dest_files=["res://.godot/imported/Force Palm.mp3-bd8fc1a46b5a6f6d1aa2d5235b7b0f49.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

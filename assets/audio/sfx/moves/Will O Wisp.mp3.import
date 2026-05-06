@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvd4dqwb7vrsp"
+path="res://.godot/imported/Will O Wisp.mp3-5306c8c394b8be4598a32d10ecad265f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Will O Wisp.mp3"
+dest_files=["res://.godot/imported/Will O Wisp.mp3-5306c8c394b8be4598a32d10ecad265f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

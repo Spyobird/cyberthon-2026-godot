@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://86svt46hbaxs"
+path="res://.godot/imported/Water Pulse.mp3-638e148c146363a8d375a9e60c70b415.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Water Pulse.mp3"
+dest_files=["res://.godot/imported/Water Pulse.mp3-638e148c146363a8d375a9e60c70b415.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

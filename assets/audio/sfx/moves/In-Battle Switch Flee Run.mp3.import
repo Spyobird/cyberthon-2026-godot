@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bb254e4j7nq2o"
+path="res://.godot/imported/In-Battle Switch Flee Run.mp3-c40c79fb83219df2347e7e1133d66567.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/In-Battle Switch Flee Run.mp3"
+dest_files=["res://.godot/imported/In-Battle Switch Flee Run.mp3-c40c79fb83219df2347e7e1133d66567.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://du7myvobt8g3c"
+path="res://.godot/imported/Bone Rush 2hits.mp3-6d2129f71fc03c4964cfd195eff2c219.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bone Rush 2hits.mp3"
+dest_files=["res://.godot/imported/Bone Rush 2hits.mp3-6d2129f71fc03c4964cfd195eff2c219.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

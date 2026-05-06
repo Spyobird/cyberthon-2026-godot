@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjjmdedyi2lsh"
+path="res://.godot/imported/Zen Headbutt.mp3-0e91ca4ccfa043971c3b55eca8e9321a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Zen Headbutt.mp3"
+dest_files=["res://.godot/imported/Zen Headbutt.mp3-0e91ca4ccfa043971c3b55eca8e9321a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

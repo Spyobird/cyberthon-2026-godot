@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1hv50e4hn74r"
+path="res://.godot/imported/Drill Run.mp3-56fe720011aec3cb9cf87d902c2bbfa6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Drill Run.mp3"
+dest_files=["res://.godot/imported/Drill Run.mp3-56fe720011aec3cb9cf87d902c2bbfa6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

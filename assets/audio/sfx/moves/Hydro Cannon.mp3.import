@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br840dkhxvm72"
+path="res://.godot/imported/Hydro Cannon.mp3-a576ea125f5cbb70b0b5e9cd86b816c6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hydro Cannon.mp3"
+dest_files=["res://.godot/imported/Hydro Cannon.mp3-a576ea125f5cbb70b0b5e9cd86b816c6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

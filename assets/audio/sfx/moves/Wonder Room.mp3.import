@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmblha58gcqce"
+path="res://.godot/imported/Wonder Room.mp3-296a5207b21a360c821c630ef6c07c3c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Wonder Room.mp3"
+dest_files=["res://.godot/imported/Wonder Room.mp3-296a5207b21a360c821c630ef6c07c3c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

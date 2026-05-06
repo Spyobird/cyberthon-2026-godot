@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbpswcrcmrp1n"
+path="res://.godot/imported/Bug Buzz.mp3-70a123d1316f26f9355496e95637cadb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bug Buzz.mp3"
+dest_files=["res://.godot/imported/Bug Buzz.mp3-70a123d1316f26f9355496e95637cadb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

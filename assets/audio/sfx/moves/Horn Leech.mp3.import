@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ylpew8nkmdyo"
+path="res://.godot/imported/Horn Leech.mp3-a36cfdfcc57c7fe0db1c1f617ea6b5ff.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Horn Leech.mp3"
+dest_files=["res://.godot/imported/Horn Leech.mp3-a36cfdfcc57c7fe0db1c1f617ea6b5ff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

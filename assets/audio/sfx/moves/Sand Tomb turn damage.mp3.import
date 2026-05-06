@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7ybdtl6atfcu"
+path="res://.godot/imported/Sand Tomb turn damage.mp3-19f0c484c4ff9876ed46716c715be774.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sand Tomb turn damage.mp3"
+dest_files=["res://.godot/imported/Sand Tomb turn damage.mp3-19f0c484c4ff9876ed46716c715be774.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

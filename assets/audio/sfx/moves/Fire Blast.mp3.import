@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bemtwymodrk3p"
+path="res://.godot/imported/Fire Blast.mp3-853615f00b37e9faeaaad6f766cf8b89.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Fire Blast.mp3"
+dest_files=["res://.godot/imported/Fire Blast.mp3-853615f00b37e9faeaaad6f766cf8b89.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

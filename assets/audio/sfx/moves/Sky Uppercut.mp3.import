@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckq8q74h0m1n3"
+path="res://.godot/imported/Sky Uppercut.mp3-f0d3a86fc2cea96559bd86db8a14be58.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sky Uppercut.mp3"
+dest_files=["res://.godot/imported/Sky Uppercut.mp3-f0d3a86fc2cea96559bd86db8a14be58.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

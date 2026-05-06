@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3mmblfslyqid"
+path="res://.godot/imported/Ice Punch.mp3-3388cbf4c5b1d2d2849cf11faab7a54b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Ice Punch.mp3"
+dest_files=["res://.godot/imported/Ice Punch.mp3-3388cbf4c5b1d2d2849cf11faab7a54b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

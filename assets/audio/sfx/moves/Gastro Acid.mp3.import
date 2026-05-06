@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btc0ciujjdbyw"
+path="res://.godot/imported/Gastro Acid.mp3-f2fb419ce453dc091744cc241ee54926.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Gastro Acid.mp3"
+dest_files=["res://.godot/imported/Gastro Acid.mp3-f2fb419ce453dc091744cc241ee54926.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

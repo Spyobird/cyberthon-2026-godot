@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y363cw356oj4"
+path="res://.godot/imported/Double Hit 2hits.mp3-d13e6655958d10a0771eca01bc636412.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Double Hit 2hits.mp3"
+dest_files=["res://.godot/imported/Double Hit 2hits.mp3-d13e6655958d10a0771eca01bc636412.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

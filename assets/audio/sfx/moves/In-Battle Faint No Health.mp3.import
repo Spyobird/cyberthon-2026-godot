@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5wr7twqa4feu"
+path="res://.godot/imported/In-Battle Faint No Health.mp3-232aaf00e3f3ecd5560d005979573adf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/In-Battle Faint No Health.mp3"
+dest_files=["res://.godot/imported/In-Battle Faint No Health.mp3-232aaf00e3f3ecd5560d005979573adf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

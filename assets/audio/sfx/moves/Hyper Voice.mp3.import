@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2ynpspj8lqob"
+path="res://.godot/imported/Hyper Voice.mp3-ac1359ccdf1387204c7740a3cf0a1626.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hyper Voice.mp3"
+dest_files=["res://.godot/imported/Hyper Voice.mp3-ac1359ccdf1387204c7740a3cf0a1626.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

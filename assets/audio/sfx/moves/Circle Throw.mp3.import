@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dm3onjsryvsya"
+path="res://.godot/imported/Circle Throw.mp3-e36f3b4a5ff70b61c4eef37652eca484.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Circle Throw.mp3"
+dest_files=["res://.godot/imported/Circle Throw.mp3-e36f3b4a5ff70b61c4eef37652eca484.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

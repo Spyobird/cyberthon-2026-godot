@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://52x1ng5hjqhs"
+path="res://.godot/imported/Bind turn damage.mp3-4783ff83c2f7d86029779a61bd2f5783.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bind turn damage.mp3"
+dest_files=["res://.godot/imported/Bind turn damage.mp3-4783ff83c2f7d86029779a61bd2f5783.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

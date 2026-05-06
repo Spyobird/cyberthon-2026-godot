@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj45ypa5op8s0"
+path="res://.godot/imported/Miracle Eye.mp3-f8fdf5b931a732d04539be2e297d3350.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Miracle Eye.mp3"
+dest_files=["res://.godot/imported/Miracle Eye.mp3-f8fdf5b931a732d04539be2e297d3350.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

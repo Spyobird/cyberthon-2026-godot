@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vwwg2673lm18"
+path="res://.godot/imported/Dragon Rage.mp3-2f7e21775fe467c221f6e2d15d0fea73.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Dragon Rage.mp3"
+dest_files=["res://.godot/imported/Dragon Rage.mp3-2f7e21775fe467c221f6e2d15d0fea73.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

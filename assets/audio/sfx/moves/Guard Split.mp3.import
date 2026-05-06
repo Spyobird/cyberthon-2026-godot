@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bo5lch0rxsoan"
+path="res://.godot/imported/Guard Split.mp3-cb97e8e1dc1dd4b45cdfcafb7368e2ca.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Guard Split.mp3"
+dest_files=["res://.godot/imported/Guard Split.mp3-cb97e8e1dc1dd4b45cdfcafb7368e2ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

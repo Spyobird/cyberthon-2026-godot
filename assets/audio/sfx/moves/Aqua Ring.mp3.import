@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://s5ylstohxt6y"
+path="res://.godot/imported/Aqua Ring.mp3-9b1a07785c6a37a15083d19b03204905.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Aqua Ring.mp3"
+dest_files=["res://.godot/imported/Aqua Ring.mp3-9b1a07785c6a37a15083d19b03204905.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

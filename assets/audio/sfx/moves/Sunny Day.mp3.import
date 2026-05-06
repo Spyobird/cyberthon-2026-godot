@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcyj3fc28a1n4"
+path="res://.godot/imported/Sunny Day.mp3-b3d66b4e2f904db8264c04935abed13b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sunny Day.mp3"
+dest_files=["res://.godot/imported/Sunny Day.mp3-b3d66b4e2f904db8264c04935abed13b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

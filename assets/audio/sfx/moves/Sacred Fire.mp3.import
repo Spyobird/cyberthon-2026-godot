@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3uvaw685w8g6"
+path="res://.godot/imported/Sacred Fire.mp3-07d720980916c123290e2225b4d0a3ac.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sacred Fire.mp3"
+dest_files=["res://.godot/imported/Sacred Fire.mp3-07d720980916c123290e2225b4d0a3ac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d10p5cwk3l7gl"
+path="res://.godot/imported/Magnet Rise.mp3-5d8e269c59a8c340a88e5a1a4c1c51f3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Magnet Rise.mp3"
+dest_files=["res://.godot/imported/Magnet Rise.mp3-5d8e269c59a8c340a88e5a1a4c1c51f3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

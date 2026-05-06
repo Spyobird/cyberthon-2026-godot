@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duwa1e6iirmyy"
+path="res://.godot/imported/Flare Blitz.mp3-afa4db34a59f3718f9973aef383236ff.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Flare Blitz.mp3"
+dest_files=["res://.godot/imported/Flare Blitz.mp3-afa4db34a59f3718f9973aef383236ff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dey3wgbvn4emm"
+path="res://.godot/imported/Echoed Voice.mp3-7f75371eac2c734d58f69f9147fd43c1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Echoed Voice.mp3"
+dest_files=["res://.godot/imported/Echoed Voice.mp3-7f75371eac2c734d58f69f9147fd43c1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

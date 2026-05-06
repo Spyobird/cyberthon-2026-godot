@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ct3bwkkmrjubk"
+path="res://.godot/imported/Sleep Powder.mp3-e12ab0f60998d36487adb07e1fbbdb32.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sleep Powder.mp3"
+dest_files=["res://.godot/imported/Sleep Powder.mp3-e12ab0f60998d36487adb07e1fbbdb32.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

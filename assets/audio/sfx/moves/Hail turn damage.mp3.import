@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4cycyuisxys8"
+path="res://.godot/imported/Hail turn damage.mp3-94ada24bace9db386be187bd8d74f722.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hail turn damage.mp3"
+dest_files=["res://.godot/imported/Hail turn damage.mp3-94ada24bace9db386be187bd8d74f722.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

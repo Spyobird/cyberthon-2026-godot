@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdfx2du05fr5m"
+path="res://.godot/imported/Aqua Tail.mp3-245c447bde182b2cc941bd3c446b26c5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Aqua Tail.mp3"
+dest_files=["res://.godot/imported/Aqua Tail.mp3-245c447bde182b2cc941bd3c446b26c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

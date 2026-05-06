@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk2pfe0f1slfl"
+path="res://.godot/imported/Double Slap 1hit.mp3-967b37e473d3d8d5be396c354e91671c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Double Slap 1hit.mp3"
+dest_files=["res://.godot/imported/Double Slap 1hit.mp3-967b37e473d3d8d5be396c354e91671c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

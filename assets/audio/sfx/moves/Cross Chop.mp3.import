@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5naungik0jav"
+path="res://.godot/imported/Cross Chop.mp3-0ce98d0294d74ea181081a87f99f69ba.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Cross Chop.mp3"
+dest_files=["res://.godot/imported/Cross Chop.mp3-0ce98d0294d74ea181081a87f99f69ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

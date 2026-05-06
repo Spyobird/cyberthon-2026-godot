@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfsavide847il"
+path="res://.godot/imported/Sweet Scent.mp3-2a5c61dc0c0da53615e22683a6ebd99c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sweet Scent.mp3"
+dest_files=["res://.godot/imported/Sweet Scent.mp3-2a5c61dc0c0da53615e22683a6ebd99c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

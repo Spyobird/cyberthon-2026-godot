@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://30vgq2l8737l"
+path="res://.godot/imported/Hydro Pump.mp3-98b042adf19c1d107d6c4723506d1c30.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hydro Pump.mp3"
+dest_files=["res://.godot/imported/Hydro Pump.mp3-98b042adf19c1d107d6c4723506d1c30.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

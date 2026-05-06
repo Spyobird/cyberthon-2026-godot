@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3uk7se2mx6d1"
+path="res://.godot/imported/Thunder Fang.mp3-a4b4b7d574f4cbc4e625ff39cfa6c995.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Thunder Fang.mp3"
+dest_files=["res://.godot/imported/Thunder Fang.mp3-a4b4b7d574f4cbc4e625ff39cfa6c995.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

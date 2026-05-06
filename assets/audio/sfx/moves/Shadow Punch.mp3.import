@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://tlwqr7tdrvxg"
+path="res://.godot/imported/Shadow Punch.mp3-261e0e26f2507768c878c16db203a514.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Shadow Punch.mp3"
+dest_files=["res://.godot/imported/Shadow Punch.mp3-261e0e26f2507768c878c16db203a514.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

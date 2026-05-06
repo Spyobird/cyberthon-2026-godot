@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4xwsqtwsgatm"
+path="res://.godot/imported/Sucker Punch.mp3-a685832809a7a440c594b8d26a2bdaac.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sucker Punch.mp3"
+dest_files=["res://.godot/imported/Sucker Punch.mp3-a685832809a7a440c594b8d26a2bdaac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

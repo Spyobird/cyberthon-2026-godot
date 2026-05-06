@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4dhcf7u8ifav"
+path="res://.godot/imported/Bonemerang 1hit.mp3-b82096d38a09e6495371c509411eefcd.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bonemerang 1hit.mp3"
+dest_files=["res://.godot/imported/Bonemerang 1hit.mp3-b82096d38a09e6495371c509411eefcd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

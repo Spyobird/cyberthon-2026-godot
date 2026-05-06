@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clpqiwfonnt7y"
+path="res://.godot/imported/Heat Wave.mp3-ac26808b91cfcaea88f12a032f57db40.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Heat Wave.mp3"
+dest_files=["res://.godot/imported/Heat Wave.mp3-ac26808b91cfcaea88f12a032f57db40.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

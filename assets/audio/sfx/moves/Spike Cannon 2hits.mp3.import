@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccsywj3hvqc74"
+path="res://.godot/imported/Spike Cannon 2hits.mp3-2bd6bd95506bbf077833f82c3a787092.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Spike Cannon 2hits.mp3"
+dest_files=["res://.godot/imported/Spike Cannon 2hits.mp3-2bd6bd95506bbf077833f82c3a787092.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

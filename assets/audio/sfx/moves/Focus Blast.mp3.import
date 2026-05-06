@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4riiynirpqvr"
+path="res://.godot/imported/Focus Blast.mp3-2902beaf60540b61339ba008fd7188be.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Focus Blast.mp3"
+dest_files=["res://.godot/imported/Focus Blast.mp3-2902beaf60540b61339ba008fd7188be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

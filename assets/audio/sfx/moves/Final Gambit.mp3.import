@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2c48u7lk3lgt"
+path="res://.godot/imported/Final Gambit.mp3-cc5a5c8dfb2380b56d7fd6bf13e5bf1a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Final Gambit.mp3"
+dest_files=["res://.godot/imported/Final Gambit.mp3-cc5a5c8dfb2380b56d7fd6bf13e5bf1a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

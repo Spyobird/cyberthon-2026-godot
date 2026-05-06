@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxc4tgqugn8h3"
+path="res://.godot/imported/Iron Tail.mp3-71d07d3ab1052fdc670022eacc25dbda.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Iron Tail.mp3"
+dest_files=["res://.godot/imported/Iron Tail.mp3-71d07d3ab1052fdc670022eacc25dbda.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

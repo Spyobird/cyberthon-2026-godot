@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btyw38j7qi125"
+path="res://.godot/imported/Heal Bell.mp3-d36e2b388b7bde5c50de68bda864ff3f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Heal Bell.mp3"
+dest_files=["res://.godot/imported/Heal Bell.mp3-d36e2b388b7bde5c50de68bda864ff3f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

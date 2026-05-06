@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o02xgoo3wd11"
+path="res://.godot/imported/Thunder Wave.mp3-e5ffef256f7d580ca8b8da0326e40bbc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Thunder Wave.mp3"
+dest_files=["res://.godot/imported/Thunder Wave.mp3-e5ffef256f7d580ca8b8da0326e40bbc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

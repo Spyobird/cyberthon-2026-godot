@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwpj2wjwtrkm8"
+path="res://.godot/imported/Cotton Guard.mp3-61a0d27bb1f9d0c110af7aa4e42b2568.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Cotton Guard.mp3"
+dest_files=["res://.godot/imported/Cotton Guard.mp3-61a0d27bb1f9d0c110af7aa4e42b2568.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

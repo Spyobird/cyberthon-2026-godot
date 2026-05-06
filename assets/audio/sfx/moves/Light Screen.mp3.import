@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgylsftvh01u"
+path="res://.godot/imported/Light Screen.mp3-8d04df6adb64b055c1ad0f00a59677fc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Light Screen.mp3"
+dest_files=["res://.godot/imported/Light Screen.mp3-8d04df6adb64b055c1ad0f00a59677fc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

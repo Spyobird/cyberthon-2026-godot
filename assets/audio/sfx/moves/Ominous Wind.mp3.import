@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpiel71f3o60s"
+path="res://.godot/imported/Ominous Wind.mp3-27c0bd1380c5b3e33b45b571d16a3bff.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Ominous Wind.mp3"
+dest_files=["res://.godot/imported/Ominous Wind.mp3-27c0bd1380c5b3e33b45b571d16a3bff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

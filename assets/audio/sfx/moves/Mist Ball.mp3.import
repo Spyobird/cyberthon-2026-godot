@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsqxst7hvl6dd"
+path="res://.godot/imported/Mist Ball.mp3-acfce2a25c47cf4209fdfa109fde19ae.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Mist Ball.mp3"
+dest_files=["res://.godot/imported/Mist Ball.mp3-acfce2a25c47cf4209fdfa109fde19ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

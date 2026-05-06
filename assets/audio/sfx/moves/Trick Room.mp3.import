@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5wpufr6bxryo"
+path="res://.godot/imported/Trick Room.mp3-07792be14d8f7ca21ab717548acc0561.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Trick Room.mp3"
+dest_files=["res://.godot/imported/Trick Room.mp3-07792be14d8f7ca21ab717548acc0561.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

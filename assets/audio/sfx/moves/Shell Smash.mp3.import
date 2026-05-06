@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgsln11icpjhj"
+path="res://.godot/imported/Shell Smash.mp3-881720a80e020fd902ef54c6a180e80b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Shell Smash.mp3"
+dest_files=["res://.godot/imported/Shell Smash.mp3-881720a80e020fd902ef54c6a180e80b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

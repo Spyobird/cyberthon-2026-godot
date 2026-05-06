@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmw5b7bnwq383"
+path="res://.godot/imported/Sand Tomb part1.mp3-8a43e3787b601aae1347813d4f80bd84.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sand Tomb part1.mp3"
+dest_files=["res://.godot/imported/Sand Tomb part1.mp3-8a43e3787b601aae1347813d4f80bd84.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

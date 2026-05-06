@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwg6jqbfet3w6"
+path="res://.godot/imported/Fire Spin turn damage.mp3-2b269e851a971d5640d99d00b2c3874b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Fire Spin turn damage.mp3"
+dest_files=["res://.godot/imported/Fire Spin turn damage.mp3-2b269e851a971d5640d99d00b2c3874b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

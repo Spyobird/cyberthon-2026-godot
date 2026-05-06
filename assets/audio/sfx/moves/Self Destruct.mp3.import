@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://524ldxyg8ijc"
+path="res://.godot/imported/Self Destruct.mp3-9512fdce910b3ce17ab06405d0181545.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Self Destruct.mp3"
+dest_files=["res://.godot/imported/Self Destruct.mp3-9512fdce910b3ce17ab06405d0181545.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

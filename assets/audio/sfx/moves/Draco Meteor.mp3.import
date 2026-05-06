@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbn850uy70djr"
+path="res://.godot/imported/Draco Meteor.mp3-e945ef2251cb87dc615c9c05c4bc84bf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Draco Meteor.mp3"
+dest_files=["res://.godot/imported/Draco Meteor.mp3-e945ef2251cb87dc615c9c05c4bc84bf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

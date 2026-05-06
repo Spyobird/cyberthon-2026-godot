@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0ehrfb4qm3ki"
+path="res://.godot/imported/Poison Tail.mp3-f42dc4cb6c653cc3703318f4c0d38e05.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Poison Tail.mp3"
+dest_files=["res://.godot/imported/Poison Tail.mp3-f42dc4cb6c653cc3703318f4c0d38e05.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

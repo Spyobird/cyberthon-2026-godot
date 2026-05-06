@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmw0pgeflrs5o"
+path="res://.godot/imported/Mud Bomb.mp3-52e603f68d4c5bb8faf728cc17b33bd3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Mud Bomb.mp3"
+dest_files=["res://.godot/imported/Mud Bomb.mp3-52e603f68d4c5bb8faf728cc17b33bd3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

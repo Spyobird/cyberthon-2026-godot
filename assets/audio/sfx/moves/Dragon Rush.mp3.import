@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvorhn2iklvt5"
+path="res://.godot/imported/Dragon Rush.mp3-cbfa123fe837723d42c7c28c4af55846.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Dragon Rush.mp3"
+dest_files=["res://.godot/imported/Dragon Rush.mp3-cbfa123fe837723d42c7c28c4af55846.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

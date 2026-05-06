@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfevk684ercqt"
+path="res://.godot/imported/Arm Thrust 1hit.mp3-18e1ab9fb4d4344d398bd2d781c7a4e5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Arm Thrust 1hit.mp3"
+dest_files=["res://.godot/imported/Arm Thrust 1hit.mp3-18e1ab9fb4d4344d398bd2d781c7a4e5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

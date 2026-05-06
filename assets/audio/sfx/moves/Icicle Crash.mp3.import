@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwgfpqforn1v2"
+path="res://.godot/imported/Icicle Crash.mp3-49a7443800ce0620b548ba4d0d6f9e47.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Icicle Crash.mp3"
+dest_files=["res://.godot/imported/Icicle Crash.mp3-49a7443800ce0620b548ba4d0d6f9e47.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

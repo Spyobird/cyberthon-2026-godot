@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biufxcxp4obgs"
+path="res://.godot/imported/Fire Spin part1.mp3-95dc9de38280bfbb59b5089e8862757b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Fire Spin part1.mp3"
+dest_files=["res://.godot/imported/Fire Spin part1.mp3-95dc9de38280bfbb59b5089e8862757b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

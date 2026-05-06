@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw4lc5nx8ujnb"
+path="res://.godot/imported/Wood Hammer.mp3-2cce4bda656d01a006205c3b9075cb9e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Wood Hammer.mp3"
+dest_files=["res://.godot/imported/Wood Hammer.mp3-2cce4bda656d01a006205c3b9075cb9e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
