@@ -46,11 +46,6 @@ animations = [{
 [node name="Enemy" type="Node2D" unique_id=536498216]
 script = ExtResource("1_m8prd")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
-texture = ExtResource("2_dvv3r")
-centered = false
-hframes = 4
-
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_x2msd")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1022671631]
