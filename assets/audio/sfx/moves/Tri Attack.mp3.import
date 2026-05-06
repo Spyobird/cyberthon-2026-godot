@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjl20n02lb5uq"
+path="res://.godot/imported/Tri Attack.mp3-b1fc5c55b34280fe93e92cc37930ee5b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Tri Attack.mp3"
+dest_files=["res://.godot/imported/Tri Attack.mp3-b1fc5c55b34280fe93e92cc37930ee5b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

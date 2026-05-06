@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctonaf7d8cfdf"
+path="res://.godot/imported/Knock Off.mp3-c0af0ce32f27b92d447322a22c1c0a27.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Knock Off.mp3"
+dest_files=["res://.godot/imported/Knock Off.mp3-c0af0ce32f27b92d447322a22c1c0a27.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr7o1da7cfwo4"
+path="res://.godot/imported/Vice Grip.mp3-61c286c6daa0069a149500b34f29d87a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Vice Grip.mp3"
+dest_files=["res://.godot/imported/Vice Grip.mp3-61c286c6daa0069a149500b34f29d87a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

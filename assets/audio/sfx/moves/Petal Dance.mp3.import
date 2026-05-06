@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v8ck8gvqyvaa"
+path="res://.godot/imported/Petal Dance.mp3-32f9d16541aa7d90b3ca8ffd19665d50.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Petal Dance.mp3"
+dest_files=["res://.godot/imported/Petal Dance.mp3-32f9d16541aa7d90b3ca8ffd19665d50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1io2cr6guo6c"
+path="res://.godot/imported/Magic Room.mp3-f90a54ad22f66347f3a58949b4b6a124.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Magic Room.mp3"
+dest_files=["res://.godot/imported/Magic Room.mp3-f90a54ad22f66347f3a58949b4b6a124.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bl130edvuxbmm"
+path="res://.godot/imported/Steel Wing.mp3-8031ea58638e899ae5b722687725f3d8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Steel Wing.mp3"
+dest_files=["res://.godot/imported/Steel Wing.mp3-8031ea58638e899ae5b722687725f3d8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

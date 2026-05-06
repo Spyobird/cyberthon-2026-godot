@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnxt5h8th3ngl"
+path="res://.godot/imported/Hidden Power.mp3-043f938edffd803e2ebd231f772acb4e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hidden Power.mp3"
+dest_files=["res://.godot/imported/Hidden Power.mp3-043f938edffd803e2ebd231f772acb4e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

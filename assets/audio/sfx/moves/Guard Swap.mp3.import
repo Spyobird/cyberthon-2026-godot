@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db3gu8ghfjivf"
+path="res://.godot/imported/Guard Swap.mp3-e3f7169d6740a6340ca3499c2925eebc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Guard Swap.mp3"
+dest_files=["res://.godot/imported/Guard Swap.mp3-e3f7169d6740a6340ca3499c2925eebc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

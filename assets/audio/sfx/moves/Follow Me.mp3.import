@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dndb6gsa2401s"
+path="res://.godot/imported/Follow Me.mp3-58985567bf15b9f6481e08c918013490.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Follow Me.mp3"
+dest_files=["res://.godot/imported/Follow Me.mp3-58985567bf15b9f6481e08c918013490.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

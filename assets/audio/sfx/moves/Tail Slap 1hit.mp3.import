@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bynhskqth6cns"
+path="res://.godot/imported/Tail Slap 1hit.mp3-a275b629cc878c433d78cf42ad3a9f09.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Tail Slap 1hit.mp3"
+dest_files=["res://.godot/imported/Tail Slap 1hit.mp3-a275b629cc878c433d78cf42ad3a9f09.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

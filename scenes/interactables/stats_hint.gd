@@ -12,11 +12,13 @@ func _ready() -> void:
 	_canvas.visible = false
 
 func _on_interacted(collider):
+	GameManager.lock_movement(&"hint")
 	await GameManager.create_message_popup("What does this read?")
 	
 	_canvas.visible = true
 	await _hint_closed
 	_canvas.visible = false
+	GameManager.unlock_movement(&"hint")
 
 func _input(event):
 	if _canvas.visible:

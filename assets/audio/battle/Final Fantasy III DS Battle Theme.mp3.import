@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wbi2kqskpxj"
+path="res://.godot/imported/Final Fantasy III DS Battle Theme.mp3-643a4785ca4131160a34f40501bf20ab.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/battle/Final Fantasy III DS Battle Theme.mp3"
+dest_files=["res://.godot/imported/Final Fantasy III DS Battle Theme.mp3-643a4785ca4131160a34f40501bf20ab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvws314glnuu5"
+path="res://.godot/imported/Heavy Slam.mp3-8e65180b80231c70f443f5e6a9adbcdc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Heavy Slam.mp3"
+dest_files=["res://.godot/imported/Heavy Slam.mp3-8e65180b80231c70f443f5e6a9adbcdc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

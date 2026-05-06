@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1mt4n62twiiv"
+path="res://.godot/imported/Chip Away.mp3-ef41c14418e4042cde09a3f62aa8acbe.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Chip Away.mp3"
+dest_files=["res://.godot/imported/Chip Away.mp3-ef41c14418e4042cde09a3f62aa8acbe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

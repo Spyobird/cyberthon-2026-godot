@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ttyjgpcony4w"
+path="res://.godot/imported/Freeze Shock.mp3-88fad94dc222f7c7609990054b3c3eeb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Freeze Shock.mp3"
+dest_files=["res://.godot/imported/Freeze Shock.mp3-88fad94dc222f7c7609990054b3c3eeb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

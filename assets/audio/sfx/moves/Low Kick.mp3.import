@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uk0abe5im4ru"
+path="res://.godot/imported/Low Kick.mp3-6e7e63216a9357150f28578954134c57.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Low Kick.mp3"
+dest_files=["res://.godot/imported/Low Kick.mp3-6e7e63216a9357150f28578954134c57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

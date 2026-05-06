@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm8fbyd0tmqoj"
+path="res://.godot/imported/Calm Mind.mp3-0368d1f1701988c3ac737155dd6b3186.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Calm Mind.mp3"
+dest_files=["res://.godot/imported/Calm Mind.mp3-0368d1f1701988c3ac737155dd6b3186.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

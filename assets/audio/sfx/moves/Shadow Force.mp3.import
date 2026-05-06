@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsidlsgordgl1"
+path="res://.godot/imported/Shadow Force.mp3-fd2c7cb80743a067fb38b9fdbb3f1ea9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Shadow Force.mp3"
+dest_files=["res://.godot/imported/Shadow Force.mp3-fd2c7cb80743a067fb38b9fdbb3f1ea9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

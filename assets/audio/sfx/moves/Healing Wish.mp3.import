@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g36g8aprjy7w"
+path="res://.godot/imported/Healing Wish.mp3-e1c40da2f61c613108446693f81c30fa.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Healing Wish.mp3"
+dest_files=["res://.godot/imported/Healing Wish.mp3-e1c40da2f61c613108446693f81c30fa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

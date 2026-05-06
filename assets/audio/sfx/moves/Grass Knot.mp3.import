@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlxc3561nff1t"
+path="res://.godot/imported/Grass Knot.mp3-ab1edabd8b7a62326e845b38f910418f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Grass Knot.mp3"
+dest_files=["res://.godot/imported/Grass Knot.mp3-ab1edabd8b7a62326e845b38f910418f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://fu3psysxtoym"]
 
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_h0xg2"]
+[ext_resource type="SpriteFrames" uid="uid://1ssx5e06wea4" path="res://resources/data/moves/animations/blizzard.tres" id="1_kw8km"]
 
 [resource]
 script = ExtResource("1_h0xg2")
@@ -8,4 +9,7 @@ name = "Blizzard"
 power = 160
 accuracy = 95
 type = 5
+anim_name = "blizzard"
+anim_effect = ExtResource("1_kw8km")
+anim_effect_scale = Vector2(0.25, 0.25)
 metadata/_custom_type_script = "uid://cr2etpgecorfn"

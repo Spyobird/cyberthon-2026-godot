@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cegguv1q1bmm1"]
 
+[ext_resource type="SpriteFrames" uid="uid://chjinueyw5ut7" path="res://resources/data/moves/animations/zap_bolt_effect.tres" id="1_d6wua"]
 [ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_t8foc"]
 
 [resource]
@@ -7,4 +8,8 @@ script = ExtResource("1_t8foc")
 name = "Zap Bolt"
 power = 30
 type = 2
+anim_name = "zap_bolt"
+anim_effect = ExtResource("1_d6wua")
+anim_effect_pos_offset = Vector2(0, -20)
+anim_effect_scale = Vector2(0.2, 0.2)
 metadata/_custom_type_script = "uid://cr2etpgecorfn"

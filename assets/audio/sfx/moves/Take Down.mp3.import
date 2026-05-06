@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://swna7xxu5j2e"
+path="res://.godot/imported/Take Down.mp3-981778bdd18c392cf0bac905e3b8b7d5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Take Down.mp3"
+dest_files=["res://.godot/imported/Take Down.mp3-981778bdd18c392cf0bac905e3b8b7d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

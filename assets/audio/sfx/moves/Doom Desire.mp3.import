@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dog75y5ndj06b"
+path="res://.godot/imported/Doom Desire.mp3-aebf1a5c1156c4204d972be80d2e6e0a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Doom Desire.mp3"
+dest_files=["res://.godot/imported/Doom Desire.mp3-aebf1a5c1156c4204d972be80d2e6e0a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bov5mqwaqy7fg"
+path="res://.godot/imported/Fiery Dance.mp3-4bc8f9b9f7483822aa246c4d8de8c287.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Fiery Dance.mp3"
+dest_files=["res://.godot/imported/Fiery Dance.mp3-4bc8f9b9f7483822aa246c4d8de8c287.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

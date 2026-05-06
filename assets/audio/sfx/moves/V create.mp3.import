@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdest1ltnajg3"
+path="res://.godot/imported/V create.mp3-66df9fc9263fe89793baaee033dc5387.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/V create.mp3"
+dest_files=["res://.godot/imported/V create.mp3-66df9fc9263fe89793baaee033dc5387.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

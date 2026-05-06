@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1gq8api8fhpy"
+path="res://.godot/imported/Ice Fang.mp3-4efc04df91a926e12f22989d754f6a00.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Ice Fang.mp3"
+dest_files=["res://.godot/imported/Ice Fang.mp3-4efc04df91a926e12f22989d754f6a00.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

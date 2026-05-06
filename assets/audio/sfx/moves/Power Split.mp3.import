@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhcyd7hll7eop"
+path="res://.godot/imported/Power Split.mp3-08fd2dcb0582a70a005c8c93a2ed7b77.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Power Split.mp3"
+dest_files=["res://.godot/imported/Power Split.mp3-08fd2dcb0582a70a005c8c93a2ed7b77.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

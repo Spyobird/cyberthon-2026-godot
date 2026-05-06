@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c4r3n7er245yo"]
+
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_05tr8"]
+[ext_resource type="SpriteFrames" uid="uid://dni1qlcpms1hs" path="res://resources/data/moves/animations/thunder_clap.tres" id="1_uwgvy"]
+
+[resource]
+script = ExtResource("1_05tr8")
+name = "Thunder Clap"
+power = 160
+accuracy = 95
+type = 2
+anim_name = "thunder_clap"
+anim_effect = ExtResource("1_uwgvy")
+anim_effect_scale = Vector2(0.3, 0.3)
+metadata/_custom_type_script = "uid://cr2etpgecorfn"

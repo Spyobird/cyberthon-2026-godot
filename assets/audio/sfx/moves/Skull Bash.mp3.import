@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqh0nhdf54l2s"
+path="res://.godot/imported/Skull Bash.mp3-4a73038299eb78d3c1984b3c65087791.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Skull Bash.mp3"
+dest_files=["res://.godot/imported/Skull Bash.mp3-4a73038299eb78d3c1984b3c65087791.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

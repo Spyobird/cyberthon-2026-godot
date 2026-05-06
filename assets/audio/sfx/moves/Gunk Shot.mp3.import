@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn817pyoue3g1"
+path="res://.godot/imported/Gunk Shot.mp3-cc457703c75033035d8e5428b519f110.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Gunk Shot.mp3"
+dest_files=["res://.godot/imported/Gunk Shot.mp3-cc457703c75033035d8e5428b519f110.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

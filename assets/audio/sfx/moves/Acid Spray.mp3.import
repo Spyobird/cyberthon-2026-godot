@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3f2ktp736bhf"
+path="res://.godot/imported/Acid Spray.mp3-0df6eb42b51727cb8df6cf0bcdde37bd.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Acid Spray.mp3"
+dest_files=["res://.godot/imported/Acid Spray.mp3-0df6eb42b51727cb8df6cf0bcdde37bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

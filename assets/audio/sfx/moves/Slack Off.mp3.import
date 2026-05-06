@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b05xnxpmdm7js"
+path="res://.godot/imported/Slack Off.mp3-7d1561aece94b377f579c1a2ca1e8799.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Slack Off.mp3"
+dest_files=["res://.godot/imported/Slack Off.mp3-7d1561aece94b377f579c1a2ca1e8799.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

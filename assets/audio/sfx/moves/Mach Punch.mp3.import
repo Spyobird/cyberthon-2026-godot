@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b326ca515eu5"
+path="res://.godot/imported/Mach Punch.mp3-d4932bab83d242f447d692c18b9c9030.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Mach Punch.mp3"
+dest_files=["res://.godot/imported/Mach Punch.mp3-d4932bab83d242f447d692c18b9c9030.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

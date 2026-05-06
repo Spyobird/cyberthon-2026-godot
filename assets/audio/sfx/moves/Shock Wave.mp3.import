@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b41hmcp7emiyg"
+path="res://.godot/imported/Shock Wave.mp3-75bb78ff14164a0ad48954637684feab.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Shock Wave.mp3"
+dest_files=["res://.godot/imported/Shock Wave.mp3-75bb78ff14164a0ad48954637684feab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

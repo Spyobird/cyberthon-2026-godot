@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqejv66u8jroh"
+path="res://.godot/imported/Sky Drop.mp3-ae9349b914591e14e4144c1c6ae95577.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sky Drop.mp3"
+dest_files=["res://.godot/imported/Sky Drop.mp3-ae9349b914591e14e4144c1c6ae95577.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

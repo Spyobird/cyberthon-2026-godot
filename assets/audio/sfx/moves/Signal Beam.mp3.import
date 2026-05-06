@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjn3w6lm61g74"
+path="res://.godot/imported/Signal Beam.mp3-8c7d51b34672fb8b89c4a71d546cc2d6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Signal Beam.mp3"
+dest_files=["res://.godot/imported/Signal Beam.mp3-8c7d51b34672fb8b89c4a71d546cc2d6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

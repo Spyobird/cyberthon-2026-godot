@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5uk6jyegl8sh"
+path="res://.godot/imported/Bug Bite.mp3-ce7a8094b5d3eb793a61653d8232c208.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bug Bite.mp3"
+dest_files=["res://.godot/imported/Bug Bite.mp3-ce7a8094b5d3eb793a61653d8232c208.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

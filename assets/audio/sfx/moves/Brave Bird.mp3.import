@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v0vul6egpqtl"
+path="res://.godot/imported/Brave Bird.mp3-4abe6b22b684c8208ad63b57268fbf00.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Brave Bird.mp3"
+dest_files=["res://.godot/imported/Brave Bird.mp3-4abe6b22b684c8208ad63b57268fbf00.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

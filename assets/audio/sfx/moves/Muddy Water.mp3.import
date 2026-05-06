@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7uri7hvhb2rs"
+path="res://.godot/imported/Muddy Water.mp3-4bc2dee8e3741d5b9c44dcc3d662c68b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Muddy Water.mp3"
+dest_files=["res://.godot/imported/Muddy Water.mp3-4bc2dee8e3741d5b9c44dcc3d662c68b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

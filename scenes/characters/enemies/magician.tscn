@@ -1,8 +1,44 @@
-[gd_scene format=3 uid="uid://2x71pc4tx65t"]
+[gd_scene format=3 uid="uid://ddbg8eynnah0r"]
 
 [ext_resource type="Script" uid="uid://btnj3uqrwokgu" path="res://scenes/characters/enemies/magician.gd" id="1_ljksn"]
 [ext_resource type="Texture2D" uid="uid://dvby4lbnl50l7" path="res://assets/characters/magician/magician.png" id="2_ljksn"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_7vxj3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljksn"]
+atlas = ExtResource("2_ljksn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6jyd"]
+atlas = ExtResource("2_ljksn")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vxj3"]
+atlas = ExtResource("2_ljksn")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iewva"]
+atlas = ExtResource("2_ljksn")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wi035"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljksn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6jyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vxj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iewva")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
 size = Vector2(16, 16)
@@ -10,11 +46,12 @@ size = Vector2(16, 16)
 [node name="Magician" type="Node2D" unique_id=536498216]
 script = ExtResource("1_ljksn")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1441310639]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_ljksn")
+sprite_frames = SubResource("SpriteFrames_wi035")
+autoplay = "default"
+frame_progress = 0.016948609
 centered = false
-hframes = 4
 
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_7vxj3")]
 

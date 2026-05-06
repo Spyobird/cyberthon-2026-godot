@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cj8xc7oe7sh23"
+path="res://.godot/imported/Present heal.mp3-3f3e91bda98a4da14e4b4e9324bf6e8c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Present heal.mp3"
+dest_files=["res://.godot/imported/Present heal.mp3-3f3e91bda98a4da14e4b4e9324bf6e8c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

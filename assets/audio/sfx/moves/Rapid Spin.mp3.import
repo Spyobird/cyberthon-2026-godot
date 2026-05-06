@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ye0x55cfo76s"
+path="res://.godot/imported/Rapid Spin.mp3-27f8bb662852ce10f9304139db68d21b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Rapid Spin.mp3"
+dest_files=["res://.godot/imported/Rapid Spin.mp3-27f8bb662852ce10f9304139db68d21b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

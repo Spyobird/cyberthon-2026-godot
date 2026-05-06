@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3urfe2v87g3g"
+path="res://.godot/imported/Mirror Shot.mp3-c08f398202dd3d5be3d3430e4909e4b3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Mirror Shot.mp3"
+dest_files=["res://.godot/imported/Mirror Shot.mp3-c08f398202dd3d5be3d3430e4909e4b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c2x8vpgl7p5ps"]
+
+[ext_resource type="SpriteFrames" uid="uid://d24iqjgd6l30c" path="res://resources/data/moves/animations/holy_smite.tres" id="1_lj53v"]
+[ext_resource type="Script" uid="uid://cr2etpgecorfn" path="res://resources/data/moves/move_data.gd" id="1_oo0py"]
+
+[resource]
+script = ExtResource("1_oo0py")
+name = "Holy Smite"
+power = 160
+accuracy = 95
+anim_name = "holy_smite"
+anim_effect = ExtResource("1_lj53v")
+anim_effect_scale = Vector2(0.3, 0.3)
+metadata/_custom_type_script = "uid://cr2etpgecorfn"

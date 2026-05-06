@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blqui8hd1f3c6"
+path="res://.godot/imported/In-Battle Ability Activate.mp3-3f60f8769c5a35e8c94c3c978a1883a8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/In-Battle Ability Activate.mp3"
+dest_files=["res://.godot/imported/In-Battle Ability Activate.mp3-3f60f8769c5a35e8c94c3c978a1883a8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

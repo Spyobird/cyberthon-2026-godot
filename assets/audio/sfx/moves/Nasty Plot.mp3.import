@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgppa26upvqv"
+path="res://.godot/imported/Nasty Plot.mp3-497bbd3c1c7cf90a8061b3a3e02baea7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Nasty Plot.mp3"
+dest_files=["res://.godot/imported/Nasty Plot.mp3-497bbd3c1c7cf90a8061b3a3e02baea7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxn4wob1d24t"
+path="res://.godot/imported/Psycho Shift.mp3-476421ff6b9993d15d4b22b4536b4efc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Psycho Shift.mp3"
+dest_files=["res://.godot/imported/Psycho Shift.mp3-476421ff6b9993d15d4b22b4536b4efc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

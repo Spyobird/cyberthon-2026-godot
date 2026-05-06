@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cb7en37via111"
+path="res://.godot/imported/In-Battle Recall Switch Pokeball.mp3-5bc3653b916bd8a73d37c9dab2e7064f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/In-Battle Recall Switch Pokeball.mp3"
+dest_files=["res://.godot/imported/In-Battle Recall Switch Pokeball.mp3-5bc3653b916bd8a73d37c9dab2e7064f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

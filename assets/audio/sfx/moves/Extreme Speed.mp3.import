@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c40aestjp7g0p"
+path="res://.godot/imported/Extreme Speed.mp3-95147c14e49c947d296e29cd8f73e3d3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Extreme Speed.mp3"
+dest_files=["res://.godot/imported/Extreme Speed.mp3-95147c14e49c947d296e29cd8f73e3d3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

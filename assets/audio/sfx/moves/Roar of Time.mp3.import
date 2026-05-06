@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o0vvp2yysqbb"
+path="res://.godot/imported/Roar of Time.mp3-b660245e8982b9565c9991d927b56183.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Roar of Time.mp3"
+dest_files=["res://.godot/imported/Roar of Time.mp3-b660245e8982b9565c9991d927b56183.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

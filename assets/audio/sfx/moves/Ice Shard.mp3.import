@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cj0v8qyotefrj"
+path="res://.godot/imported/Ice Shard.mp3-36c643b1ccf87807e4ec0e6e32b1a5ef.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Ice Shard.mp3"
+dest_files=["res://.godot/imported/Ice Shard.mp3-36c643b1ccf87807e4ec0e6e32b1a5ef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

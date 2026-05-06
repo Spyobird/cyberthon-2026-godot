@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cujrt717jmgjg"
+path="res://.godot/imported/Bullet Punch.mp3-2e53e82143de77c976c8cba2efe6875e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Bullet Punch.mp3"
+dest_files=["res://.godot/imported/Bullet Punch.mp3-2e53e82143de77c976c8cba2efe6875e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

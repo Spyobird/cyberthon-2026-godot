@@ -17,7 +17,7 @@ func _on_interact(player):
 	if not player is Player:
 		return
 	var closed = GameManager.create_message_popup(
-		["You sense an [color=red]intimidating presence[/color] up ahead.",
+		["You sense an [color=dark_red]intimidating presence[/color] up ahead.",
 		"Proceed with caution."]
 	)
 	await closed

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csyhnhipcsbsa"
+path="res://.godot/imported/Hammer Arm.mp3-b6c63a6889b3dd7f17329e011bac7f22.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hammer Arm.mp3"
+dest_files=["res://.godot/imported/Hammer Arm.mp3-b6c63a6889b3dd7f17329e011bac7f22.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

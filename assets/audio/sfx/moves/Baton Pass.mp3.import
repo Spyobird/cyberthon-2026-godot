@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://f73vgt2uvkec"
+path="res://.godot/imported/Baton Pass.mp3-cae0123d57ad31fc3017ae73fe462ecf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Baton Pass.mp3"
+dest_files=["res://.godot/imported/Baton Pass.mp3-cae0123d57ad31fc3017ae73fe462ecf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

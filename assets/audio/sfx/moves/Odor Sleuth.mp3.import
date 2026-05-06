@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bln8js3xp8pld"
+path="res://.godot/imported/Odor Sleuth.mp3-99e68c1cdb63b989cf9d53bfdafc9e77.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Odor Sleuth.mp3"
+dest_files=["res://.godot/imported/Odor Sleuth.mp3-99e68c1cdb63b989cf9d53bfdafc9e77.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

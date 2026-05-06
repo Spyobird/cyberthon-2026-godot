@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://h8gxygryfopk"
+path="res://.godot/imported/Struggle Bug.mp3-d1a06bbded749b1627eadf2e0fb84ab1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Struggle Bug.mp3"
+dest_files=["res://.godot/imported/Struggle Bug.mp3-d1a06bbded749b1627eadf2e0fb84ab1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

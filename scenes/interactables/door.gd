@@ -19,8 +19,6 @@ func _ready() -> void:
 	_interactable_component.is_collidable = true
 	_interactable_component.interacted.connect(_on_interact)
 	
-	#_door_sprite.texture = _DOOR_SPRITES[0]
-
 func _on_interact(player):
 	if not player is Player:
 		return
@@ -32,8 +30,5 @@ func _on_interact(player):
 		_interactable_component.interacted.disconnect(_on_interact)
 		await _animation_player.animation_finished
 		_is_open = true
-		#_interactable_component.is_collidable = false
-		#_door_sprite.texture = _DOOR_SPRITES[1]
-		
 	else:
 		GameManager.create_message_popup(LOCKED_MESSAGES)

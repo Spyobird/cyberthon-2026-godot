@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpcybbuidox5n"
+path="res://.godot/imported/Fire Pledge.mp3-63c188a4da16e1d1e2b6c4f1d68d59fb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Fire Pledge.mp3"
+dest_files=["res://.godot/imported/Fire Pledge.mp3-63c188a4da16e1d1e2b6c4f1d68d59fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

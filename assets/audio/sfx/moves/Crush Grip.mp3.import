@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3ks8mfos8fh5"
+path="res://.godot/imported/Crush Grip.mp3-0602cacc8adb9a599984df7a3aaab5d4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Crush Grip.mp3"
+dest_files=["res://.godot/imported/Crush Grip.mp3-0602cacc8adb9a599984df7a3aaab5d4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

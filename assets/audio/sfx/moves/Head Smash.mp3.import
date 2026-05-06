@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7b50s0wp6sf6"
+path="res://.godot/imported/Head Smash.mp3-246b06b2e029bbd72faf45877778ab00.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Head Smash.mp3"
+dest_files=["res://.godot/imported/Head Smash.mp3-246b06b2e029bbd72faf45877778ab00.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cn0qubpfhmqj7"
+path="res://.godot/imported/Status Poisoned.mp3-d48031a1dc5e77c556194ddb7d2847c9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Status Poisoned.mp3"
+dest_files=["res://.godot/imported/Status Poisoned.mp3-d48031a1dc5e77c556194ddb7d2847c9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wr8nsprtj52v"
+path="res://.godot/imported/String Shot.mp3-af3023196bdf0db2788e52facbd942b7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/String Shot.mp3"
+dest_files=["res://.godot/imported/String Shot.mp3-af3023196bdf0db2788e52facbd942b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

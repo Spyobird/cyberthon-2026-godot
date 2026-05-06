@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5b6de424skjr"
+path="res://.godot/imported/In-Battle Health Low.mp3-dc6df36904f7e40140f0e4621fa3a23e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/In-Battle Health Low.mp3"
+dest_files=["res://.godot/imported/In-Battle Health Low.mp3-dc6df36904f7e40140f0e4621fa3a23e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oeu857361il0"
+path="res://.godot/imported/Reflect Type.mp3-479bfb60a5390306e4f623e1ea8182e0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Reflect Type.mp3"
+dest_files=["res://.godot/imported/Reflect Type.mp3-479bfb60a5390306e4f623e1ea8182e0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,8 +1,37 @@
-[gd_scene format=3 uid="uid://busfr44pv6x42"]
+[gd_scene format=3 uid="uid://bof2glu20vahu"]
 
 [ext_resource type="Script" uid="uid://dj0c7l0pd0apk" path="res://scenes/characters/enemies/slime_enemy.gd" id="1_26mhr"]
 [ext_resource type="Texture2D" uid="uid://djtbbcuxuvmbk" path="res://assets/characters/slime/blob.png" id="2_26mhr"]
 [ext_resource type="PackedScene" uid="uid://td11c468jvlu" path="res://scenes/components/interactable_component.tscn" id="3_uwjrq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26mhr"]
+atlas = ExtResource("2_26mhr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osrgk"]
+atlas = ExtResource("2_26mhr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwjrq"]
+atlas = ExtResource("2_26mhr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iiyq1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26mhr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osrgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwjrq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rgl3"]
 size = Vector2(16, 16)
@@ -11,11 +40,12 @@ size = Vector2(16, 16)
 process_mode = 3
 script = ExtResource("1_26mhr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2012372711]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1661193988]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_26mhr")
+sprite_frames = SubResource("SpriteFrames_iiyq1")
+autoplay = "default"
+frame_progress = 0.5889268
 centered = false
-hframes = 3
 
 [node name="InteractableComponent" parent="." unique_id=1097145147 instance=ExtResource("3_uwjrq")]
 

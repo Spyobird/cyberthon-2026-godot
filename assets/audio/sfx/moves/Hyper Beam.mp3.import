@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://57xhfgrxptpo"
+path="res://.godot/imported/Hyper Beam.mp3-e898eb589df6686ff14e6a294aa2590f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hyper Beam.mp3"
+dest_files=["res://.godot/imported/Hyper Beam.mp3-e898eb589df6686ff14e6a294aa2590f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

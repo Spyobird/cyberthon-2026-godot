@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dkrs0dyfdecog"
+path="res://.godot/imported/Magical Leaf.mp3-5f5b1c09056ee754e0b321184c1bdec9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Magical Leaf.mp3"
+dest_files=["res://.godot/imported/Magical Leaf.mp3-5f5b1c09056ee754e0b321184c1bdec9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

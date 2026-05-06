@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjww0tw7cr04g"
+path="res://.godot/imported/Triple Kick 2hits.mp3-2a5922cdb53b4059ec81c9dd810528d7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Triple Kick 2hits.mp3"
+dest_files=["res://.godot/imported/Triple Kick 2hits.mp3-2a5922cdb53b4059ec81c9dd810528d7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

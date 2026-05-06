@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ngs8uj7dimw8"
+path="res://.godot/imported/Quiver Dance.mp3-c1f0be0afa0b3bf3db779c70b6f0e3ce.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Quiver Dance.mp3"
+dest_files=["res://.godot/imported/Quiver Dance.mp3-c1f0be0afa0b3bf3db779c70b6f0e3ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br80xv8namt2m"
+path="res://.godot/imported/Attack Order.mp3-92733e0293e4ca56f0148922b1507bdb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Attack Order.mp3"
+dest_files=["res://.godot/imported/Attack Order.mp3-92733e0293e4ca56f0148922b1507bdb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

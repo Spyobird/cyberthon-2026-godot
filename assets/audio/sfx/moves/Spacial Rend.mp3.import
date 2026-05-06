@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mcs4kyiviocj"
+path="res://.godot/imported/Spacial Rend.mp3-ee41149037a3b9572fa51cc455ae72ce.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Spacial Rend.mp3"
+dest_files=["res://.godot/imported/Spacial Rend.mp3-ee41149037a3b9572fa51cc455ae72ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

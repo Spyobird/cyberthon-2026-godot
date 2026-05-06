@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmmnv5tcd67v"
+path="res://.godot/imported/Wild Charge.mp3-6bf6ce612291553b2cdba00da30d1cd0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Wild Charge.mp3"
+dest_files=["res://.godot/imported/Wild Charge.mp3-6bf6ce612291553b2cdba00da30d1cd0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

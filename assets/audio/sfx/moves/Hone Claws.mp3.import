@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c26v7gl5wsn54"
+path="res://.godot/imported/Hone Claws.mp3-34592bf9ca9b2f319ec996cab6f404a3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Hone Claws.mp3"
+dest_files=["res://.godot/imported/Hone Claws.mp3-34592bf9ca9b2f319ec996cab6f404a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

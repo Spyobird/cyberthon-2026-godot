@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqo84nv23cssy"
+path="res://.godot/imported/Sonic Boom.mp3-1580db43c4437c3c96cfcb50c26c5b45.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Sonic Boom.mp3"
+dest_files=["res://.godot/imported/Sonic Boom.mp3-1580db43c4437c3c96cfcb50c26c5b45.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsgcjmdrq6xh"
+path="res://.godot/imported/Cosmic Power.mp3-c956b60506661a01969fbfc52edd06c3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sfx/moves/Cosmic Power.mp3"
+dest_files=["res://.godot/imported/Cosmic Power.mp3-c956b60506661a01969fbfc52edd06c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
