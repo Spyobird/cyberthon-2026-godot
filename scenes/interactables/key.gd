@@ -7,4 +7,4 @@ func _ready() -> void:
 	_interactable_component.interacted.connect(_on_interacted)
 
 func _on_interacted(collider):
-	GameManager.create_message_popup("Key: [color=firebrick]ABCDEF[/color]")
+	GameManager.create_message_popup(["Key: [color=firebrick]ARCANA[/color]", "[color=midnight_blue]CONGRATULATIONS! YOU HAVE COMPLETED THE RFID CHALLENGE![/color]"])
