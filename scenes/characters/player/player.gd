@@ -15,12 +15,12 @@ var _last_direction: Vector2
 var player_data: CharacterData
 
 func _ready() -> void:
-	_player_state_loader = MockPlayerStateLoader.new()
+	_player_state_loader = APIPlayerStateLoader.new()
 	add_child(_player_state_loader)
 	
 	_movement_component.init(self)
 	
-	update_player_state(PlayerState.new(["magic wand"], Vector3i(100, 45, 45), ["fireball", "zap_bolt"]))
+	update_player_state(PlayerState.new(["magic wand"], Vector3i(100, 20, 20), ["fireball", "zap_bolt"]))
 	print("Loaded default player state!")
 
 func _physics_process(delta) -> void:
