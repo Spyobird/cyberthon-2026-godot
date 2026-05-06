@@ -146,7 +146,6 @@ func use_move(move: MoveData):
 
 func _execute_action(attacker: CharacterData, defender: CharacterData, move: MoveData):
 	_change_state(State.ACTION)
-	var sprite: AnimatedSprite2D = _player_sprite if defender == _player_data else _enemy_sprite
 	
 	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
 
@@ -163,9 +162,7 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 	if (damage == 0):
 		await _ui.display_message("%s had no effect against %s..." % [move.name, defender.name])
 	
-	if _check_for_faint():
-		sprite.play(&"defeat")
-		await sprite.animation_finished
+	if await _check_for_faint():
 		return
 	
 	action_completed.emit()
@@ -197,10 +194,14 @@ func _apply_damage(damage: int, defender: CharacterData):
 func _check_for_faint() -> bool:
 	# player hp zero -> change to lose
 	if _player_data.current_hp <= 0:
+		_player_sprite.play(&"defeat")
+		await _player_sprite.animation_finished
 		_change_state(State.LOSE)
 		return true
 	# enemy hp zero -> change to win
 	if _enemy_data.current_hp <= 0:
+		_enemy_sprite.play(&"defeat")
+		await _enemy_sprite.animation_finished
 		_change_state(State.WIN)
 		return true
 	return false
