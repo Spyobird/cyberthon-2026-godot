@@ -12,6 +12,22 @@ animations = [{
 "texture": ExtResource("3_e8btl")
 }],
 "loop": false,
+"name": &"defeat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e8btl")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e8btl")
+}],
+"loop": false,
 "name": &"idle",
 "speed": 5.0
 }]
@@ -54,6 +70,22 @@ region = Rect2(128, 128, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o7bby"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e8btl")
+}],
+"loop": false,
+"name": &"defeat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e8btl")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ip78s")
