@@ -87,6 +87,10 @@ func _play_hurt_animation(defender: CharacterData) -> void:
 
 	_sfx_player.stream = _HURT_SFX
 	_sfx_player.play()
+	
+	# Play hurt animation
+	sprite.play(&"hurt")
+	
 	var jerk_dir := Vector2(5, 0) if defender == _enemy_data else Vector2(-5, 0)
 
 	var jerk := create_tween()
@@ -142,7 +146,8 @@ func use_move(move: MoveData):
 
 func _execute_action(attacker: CharacterData, defender: CharacterData, move: MoveData):
 	_change_state(State.ACTION)
-
+	var sprite: AnimatedSprite2D = _player_sprite if defender == _player_data else _enemy_sprite
+	
 	await _ui.display_message("%s used %s!" % [attacker.name, move.name])
 
 	await _play_move_animation(move, defender)
@@ -159,6 +164,8 @@ func _execute_action(attacker: CharacterData, defender: CharacterData, move: Mov
 		await _ui.display_message("%s had no effect against %s..." % [move.name, defender.name])
 	
 	if _check_for_faint():
+		sprite.play(&"defeat")
+		await sprite.animation_finished
 		return
 	
 	action_completed.emit()
@@ -170,7 +177,7 @@ func _start_enemy_turn():
 	var chosen_move = _enemy_data.moves.pick_random()
 	
 	# wait a bit
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(1.0).timeout
 	
 	_execute_action(_enemy_data, _player_data, chosen_move)
 	# on action -> action

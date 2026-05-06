@@ -7,8 +7,10 @@
 [ext_resource type="AudioStream" uid="uid://ciist7vwmx8k6" path="res://assets/audio/sfx/moves/Flame Burst.mp3" id="4_a12nh"]
 [ext_resource type="Texture2D" uid="uid://bs6cdu1jxxjuu" path="res://assets/battle/player_platform_transparent_bg.png" id="4_yahae"]
 [ext_resource type="AudioStream" uid="uid://d1fc3epbdqgdw" path="res://assets/audio/sfx/moves/Thunder Shock.mp3" id="5_lpir7"]
+[ext_resource type="AudioStream" uid="uid://dkksotunplb1g" path="res://assets/audio/sfx/moves/Inferno.mp3" id="5_v7i3o"]
 [ext_resource type="AudioStream" uid="uid://brj8hs1ujrnj6" path="res://assets/audio/sfx/moves/Roar of Time part2.mp3" id="6_f4pi3"]
 [ext_resource type="AudioStream" uid="uid://doa1bq1svfuia" path="res://assets/audio/sfx/moves/Thunderbolt.mp3" id="7_4k1nj"]
+[ext_resource type="AudioStream" uid="uid://bemtwymodrk3p" path="res://assets/audio/sfx/moves/Fire Blast.mp3" id="7_66ngm"]
 
 [sub_resource type="Animation" id="Animation_lpir7"]
 length = 0.001
@@ -73,6 +75,74 @@ tracks/4/keys = {
 "values": [Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_03edq"]
+resource_name = "avada_kedavra"
+length = 2.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterSprites/EffectSprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterSprites/EffectSprite")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"default", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SoundFxPlayer:stream")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_v7i3o")]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SoundFxPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackgroundLayer/Background:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 2.7, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(0.47058824, 0.47058824, 0.47058824, 1), Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_66ngm"]
 resource_name = "battle_start"
 length = 2.5
@@ -98,7 +168,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 2.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(107, 48), Vector2(193, 48)]
+"values": [Vector2(107, 48), Vector2(210, 48)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -256,7 +326,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_a12nh")]
+"values": [ExtResource("7_66ngm")]
 }
 tracks/3/type = "method"
 tracks/3/imported = false
@@ -268,7 +338,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "values": [{
-"args": [0.0],
+"args": [0.7],
 "method": &"play"
 }]
 }
@@ -560,6 +630,7 @@ tracks/4/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4k1nj"]
 _data = {
 &"RESET": SubResource("Animation_lpir7"),
+&"avada_kedavra": SubResource("Animation_03edq"),
 &"battle_start": SubResource("Animation_66ngm"),
 &"blizzard": SubResource("Animation_f4pi3"),
 &"fireball": SubResource("Animation_6vh42"),
@@ -600,7 +671,7 @@ z_index = 2
 animation = &""
 
 [node name="EnemyPlatform" type="Sprite2D" parent="CharacterSprites/EnemyPos" unique_id=525791384]
-modulate = Color(0.07450981, 0.07450981, 0.07450981, 1)
+modulate = Color(0.24921587, 0.1607844, 0.3937258, 1)
 z_index = 1
 position = Vector2(4.0595703, 24.375)
 scale = Vector2(0.04579888, 0.04579889)
