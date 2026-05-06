@@ -4,6 +4,5 @@
 
 [node name="SceneController" type="Node" unique_id=976134247]
 script = ExtResource("1_ywrif")
-game_stage = 1
 
 [node name="World2D" type="Node2D" parent="." unique_id=1616535049]

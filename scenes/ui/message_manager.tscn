@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://025ns8kiglbm" path="res://scenes/ui/message_manager.gd" id="1_84ee0"]
 [ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="1_gxlwh"]
+[ext_resource type="FontFile" uid="uid://c3vastyceruum" path="res://assets/menu/alagard.ttf" id="3_yl3ye"]
 
 [node name="MessageManager" type="CanvasLayer" unique_id=712240846]
 script = ExtResource("1_84ee0")
@@ -37,7 +38,8 @@ anchor_left = 0.029220778
 anchor_top = 0.118367344
 anchor_right = 0.97077924
 anchor_bottom = 0.8979592
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.19774938, 0.12700315, 0.08994557, 1)
+theme_override_fonts/normal_font = ExtResource("3_yl3ye")
 theme_override_font_sizes/normal_font_size = 10
 theme_override_font_sizes/bold_font_size = 10
 theme_override_font_sizes/bold_italics_font_size = 10

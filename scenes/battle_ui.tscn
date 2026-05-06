@@ -164,11 +164,13 @@ layout_mode = 2
 [node name="MovesLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=932083739]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_wvifm")
 text = "MOVES"
 
 [node name="RunLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=480607486]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_wvifm")
 text = "RUN"
 
 [node name="Moves" type="GridContainer" parent="Control/Menu/MarginContainer" unique_id=247301430]
@@ -180,6 +182,7 @@ columns = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
 text = "Move 1"
 
@@ -187,6 +190,7 @@ text = "Move 1"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
 text = "Move 2"
 
@@ -194,6 +198,7 @@ text = "Move 2"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
 text = "Move 3"
 
@@ -201,6 +206,7 @@ text = "Move 3"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
 text = "Move 4"
 
@@ -208,7 +214,8 @@ text = "Move 4"
 visible = false
 layout_mode = 2
 focus_mode = 0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.19607843, 0.1254902, 0.09019608, 1)
+theme_override_fonts/normal_font = ExtResource("2_wvifm")
 theme_override_font_sizes/normal_font_size = 12
 bbcode_enabled = true
 text = "TEST MESSAGE"
