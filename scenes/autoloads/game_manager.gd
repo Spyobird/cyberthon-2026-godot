@@ -32,7 +32,7 @@ func unlock_movement(id: StringName) -> void:
 func load_move(move: String) -> MoveData:
 	var file_name = move.to_lower().replace(" ", "_")
 	var path = "res://resources/data/moves/" + file_name + ".tres"
-	if FileAccess.file_exists(path):
+	if ResourceLoader.exists(path):
 		print("Loading move from path: %s" % path)
 		return load(path)
 	print("Error loading move")
