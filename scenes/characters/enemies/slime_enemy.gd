@@ -20,5 +20,5 @@ func _on_interacted(collider):
 	await GameManager.create_message_popup("[Tap ENTER to close]")
 	
 func _open_app():
-	OS.shell_open("http://localhost:3000")
+	OS.shell_open("http://localhost:8000")
 	print("Browser opened")
