@@ -66,3 +66,11 @@ func play_text_blocking(message: String) -> void:
 	_messages.assign([message])
 	scroll_text()       # starts the coroutine; is_scrolling = true before this returns
 	_is_blocking = true # set AFTER scroll_text() so the initial call is not blocked
+
+func release_blocking() -> void:
+	if not _is_blocking:
+		return
+	_is_blocking = false
+	is_scrolling = false  # breaks the for loop in any in-progress scroll_text() coroutine
+	_box.visible = false
+	message_box_closed.emit()
