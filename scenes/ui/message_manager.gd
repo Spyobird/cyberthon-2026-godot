@@ -58,3 +58,11 @@ func scroll_text():
 	
 	_messages.pop_front()
 	is_scrolling = false
+
+func play_text_blocking(message: String) -> void:
+	if is_reading():
+		return
+	message_box_opened.emit()
+	_messages.assign([message])
+	scroll_text()       # starts the coroutine; is_scrolling = true before this returns
+	_is_blocking = true # set AFTER scroll_text() so the initial call is not blocked
