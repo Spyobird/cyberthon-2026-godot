@@ -8,6 +8,7 @@ signal message_box_closed
 @onready var _box: NinePatchRect = $Control/NinePatchRect
 @onready var _label: RichTextLabel = $Control/NinePatchRect/RichTextLabel
 var is_scrolling: bool = false
+var _is_blocking: bool = false
 var _messages: Array[String] = []
 
 func _ready() -> void:
@@ -30,6 +31,8 @@ func is_reading() -> bool:
 	return _box.visible
 
 func scroll_text():
+	if _is_blocking:
+		return
 	if is_scrolling:
 		is_scrolling = false 
 		_label.visible_characters = _label.get_total_character_count()
