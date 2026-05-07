@@ -62,6 +62,15 @@ func create_message_popup(messages, ...args):
 			_message_manager.play_text.callv(messages)
 	return _message_manager.message_box_closed
 
+func create_blocking_message_popup(message: String) -> Signal:
+	if _message_manager:
+		_message_manager.play_text_blocking(message)
+	return _message_manager.message_box_closed
+
+func release_blocking_message_popup() -> void:
+	if _message_manager:
+		_message_manager.release_blocking()
+
 func _process(delta: float) -> void:
 	# handle scrolling of text
 	if _message_manager:
