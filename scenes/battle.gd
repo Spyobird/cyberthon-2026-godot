@@ -76,7 +76,7 @@ func _setup_battle():
 	print("Loaded Battle UI")
 	
 	# possibly play something with a message
-	await _ui.display_message("Battle with %s" % _enemy_data.name)
+	await _ui.display_message("Battle with %s." % _enemy_data.name)
 	
 	print("Battle setup complete")
 	_change_state(State.PLAYER_TURN)

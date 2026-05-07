@@ -1,6 +1,14 @@
 class_name Magician
 extends Node2D
 
+const DIALOGUES = [
+	"Alakazam!",
+	"Look who we have here! Your fate was sealed on arrival.",
+	"You amuse me!",
+	"Magic is not for the weak-minded. The arcane bends only to me.",
+	"Magic favors the master."
+]
+
 @onready var _interactable_component = $InteractableComponent
 var _enemy_data = preload("res://resources/data/characters/magician.tres")
 const KEY_SCENE = preload("res://scenes/interactables/key.tscn")
@@ -10,7 +18,8 @@ func _ready() -> void:
 	_interactable_component.interacted.connect(_on_interacted)
 
 func _on_interacted(collider):
-	await GameManager.create_message_popup("Alakazam!")
+	var message = DIALOGUES.pick_random()
+	await GameManager.create_message_popup(message)
 	
 	GameManager.player_data = collider.player_data
 	GameManager.enemy_data = _enemy_data
@@ -33,9 +42,10 @@ func _on_battle_ended(defeated: bool):
 	GameManager.bgm_controller.set_track(BGMController.TrackType.OVERWORLD)
 	GameManager.bgm_controller.resume_track()
 	GameManager.unlock_movement(&"battle")
-	if defeated:		
+	if defeated:	
 		print("Magician defeated")
 		var instance = KEY_SCENE.instantiate()
 		get_parent().add_child(instance)
 		instance.position = position
+		GameManager.create_message_popup("Look! The magician dropped something...")
 		queue_free()

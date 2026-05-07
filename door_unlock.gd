@@ -17,7 +17,7 @@ func _on_interact(player):
 	if not player is Player:
 		return
 	var closed = GameManager.create_message_popup(
-		["This door seems unlocked", "I wonder what's up ahead?"]
+		["This door seems unlocked...", "I wonder what's up ahead?"]
 	)
 	await closed
 

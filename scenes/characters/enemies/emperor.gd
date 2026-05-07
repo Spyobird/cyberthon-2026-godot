@@ -16,13 +16,19 @@ func _on_interacted(collider):
 		await GameManager.create_message_popup(
 			[
 				"...",
-				"You’ve carved a path through legends to stand before me",
+				"You’ve carved a path through legends to stand before me.",
 				"My generals. My champions. All fallen.",
 				"You've earned your right to stand before the throne.",
 				"Now prove that you're worthy of it."
 			]
 		)
 		dialogue_spoken = true
+	else:
+		await GameManager.create_message_popup(
+			[
+				"Here for another challenge?"
+			]
+		)
 	
 	GameManager.player_data = collider.player_data
 	GameManager.enemy_data = _enemy_data
