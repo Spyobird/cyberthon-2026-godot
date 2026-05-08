@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_4v61d")
 name = "Inferno"
-power = 160
+power = 240
 accuracy = 95
 type = 1
 anim_name = "inferno"
