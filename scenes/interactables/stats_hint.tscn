@@ -97,7 +97,9 @@ anchor_left = 0.029220778
 anchor_top = 0.04861111
 anchor_right = 0.97077924
 anchor_bottom = 0.95138884
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.70738214, 0.70738214, 0.70738214, 1)
+theme_override_constants/text_highlight_h_padding = 0
+theme_override_constants/text_highlight_v_padding = 0
 theme_override_fonts/normal_font = SubResource("SystemFont_6m8sp")
 theme_override_font_sizes/normal_font_size = 10
 theme_override_font_sizes/bold_font_size = 10
@@ -105,15 +107,18 @@ theme_override_font_sizes/bold_italics_font_size = 10
 theme_override_font_sizes/italics_font_size = 10
 theme_override_font_sizes/mono_font_size = 10
 bbcode_enabled = true
-text = "[color=dark_orange]struct[/color] [color=olive]stats_sector[/color] { [color=web_gray]// sector 2[/color]
-    [color=dark_orange]struct[/color] [color=olive]stat_block[/color] hp; [color=web_gray]// block 8[/color]
-    [color=dark_orange]struct[/color] [color=olive]stat_block[/color] attack; [color=web_gray]// block 9[/color]
-    [color=dark_orange]struct[/color] [color=olive]stat_block[/color] def; [color=web_gray]// block 10[/color]
-    [color=dark_orange]struct[/color] [color=olive]sector_trailer[/color] trailer; [color=web_gray]// block 11[/color]
-};
-
-[color=dark_orange]struct[/color] [color=olive]stat_block[/color] {
-    [color= rebecca_purple]uint16_le[/color] value; [color=web_gray]// little endian[/color]
-    [color= rebecca_purple]char[/color] padding[lb][color=crimson]14[/color][rb];
-};"
+text = "[bgcolor=black][color=orange]struct[/color] [color=green]stats_sector[/color] { [color=gold]             // sector 2[/color]  
+    [color=orange]struct[/color] [color=green]stat_block[/color] [color=cyan]hp[/color];[color=gold]          // block 8[/color]   
+    [color=orange]struct[/color] [color=green]stat_block[/color] [color=cyan]attack[/color]; [color=gold]     // block 9[/color]   
+    [color=orange]struct[/color] [color=green]stat_block[/color] [color=cyan]def[/color]; [color=gold]        // block 10[/color]  
+    [color=orange]struct[/color] [color=green]sector_trailer[/color] [color=cyan]trailer[/color]; [color=gold]// block 11[/color]  
+};                                              
+                                                
+[color=orange]struct[/color] [color=green]stat_block[/color] {                             
+    [color= magenta]uint16_le[/color] [color=cyan]value[/color];[color=gold] // little endian[/color]           
+    [color= magenta]char[/color] [color=cyan]padding[lb]14[rb][/color];                           
+};                                              
+                                                
+                                                
+[/bgcolor]"
 metadata/_edit_use_anchors_ = true

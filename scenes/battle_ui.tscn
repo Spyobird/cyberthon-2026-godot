@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b85sl8nav2vgn" path="res://assets/UI_Flat_Banner04a.png" id="2_gvrrm"]
 [ext_resource type="StyleBox" uid="uid://1grm2jbcixut" path="res://assets/menu/battle_menu_hp_box.tres" id="2_lgetq"]
 [ext_resource type="FontFile" uid="uid://c3vastyceruum" path="res://assets/menu/alagard.ttf" id="2_wvifm"]
+[ext_resource type="StyleBox" uid="uid://c3umm3cqdg3fb" path="res://assets/menu/battle_menu_button_style.tres" id="5_lgetq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dn72j"]
 font = ExtResource("2_wvifm")
@@ -165,12 +166,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("2_wvifm")
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "MOVES"
 
 [node name="RunLabel" type="Button" parent="Control/Menu/MarginContainer/Options" unique_id=480607486]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("2_wvifm")
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "RUN"
 
 [node name="Moves" type="GridContainer" parent="Control/Menu/MarginContainer" unique_id=247301430]
@@ -184,6 +187,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 6
 theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "Move 1"
 
 [node name="Move2" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=884195142]
@@ -192,6 +196,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 6
 theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "Move 2"
 
 [node name="Move3" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=863700977]
@@ -200,6 +205,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 6
 theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "Move 3"
 
 [node name="Move4" type="Button" parent="Control/Menu/MarginContainer/Moves" unique_id=256088684]
@@ -208,6 +214,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 6
 theme_override_fonts/font = ExtResource("2_wvifm")
 theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = ExtResource("5_lgetq")
 text = "Move 4"
 
 [node name="MessageLabel" type="RichTextLabel" parent="Control/Menu/MarginContainer" unique_id=614278991]

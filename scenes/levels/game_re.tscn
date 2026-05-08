@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c2rwri4onoggv" path="res://scenes/characters/player/player.tscn" id="3_ebea1"]
 [ext_resource type="PackedScene" uid="uid://btamts4mw3lhu" path="res://scenes/interactables/door.tscn" id="4_he1k8"]
 [ext_resource type="PackedScene" uid="uid://bof2glu20vahu" path="res://scenes/characters/enemies/slime_enemy.tscn" id="5_6by2p"]
-[ext_resource type="Script" uid="uid://bwprq35lktkw6" path="res://door_unlock.gd" id="5_ebea1"]
+[ext_resource type="Script" uid="uid://bwprq35lktkw6" path="res://scenes/interactables/door_unlock.gd" id="5_ebea1"]
 [ext_resource type="Script" uid="uid://bbbu2kr2elbyj" path="res://scenes/interactables/door_lock.gd" id="6_3i0b3"]
 [ext_resource type="PackedScene" uid="uid://ddbg8eynnah0r" path="res://scenes/characters/enemies/magician.tscn" id="6_klhc0"]
 [ext_resource type="PackedScene" uid="uid://bkhsslt7xoqe2" path="res://scenes/characters/enemies/enemy.tscn" id="7_scmeo"]

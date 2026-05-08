@@ -671,7 +671,7 @@ z_index = 2
 animation = &""
 
 [node name="EnemyPlatform" type="Sprite2D" parent="CharacterSprites/EnemyPos" unique_id=525791384]
-modulate = Color(0.24921587, 0.1607844, 0.3937258, 1)
+modulate = Color(0.13803914, 0.10588232, 0.19058812, 1)
 z_index = 1
 position = Vector2(4.0595703, 24.375)
 scale = Vector2(0.04579888, 0.04579889)
