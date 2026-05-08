@@ -42,8 +42,10 @@ func update_player_state(new_player_state: PlayerState) -> void:
 	player_data.current_hp = _current_player_state.stats.x
 
 func sync_player_state() -> void:
+	GameManager.create_blocking_message_popup("[color=midnight_blue]SYNCING...[/color]")
 	sync_player_started.emit()
 	var result = await _player_state_loader.load_player_state()
+	GameManager.release_blocking_message_popup()
 	if result == null:
 		sync_player_failed.emit()
 		GameManager.create_message_popup(["[color=dark_red]SYNC FAILED...[/color]", "Ensure your card is placed on the reader and try again."])
