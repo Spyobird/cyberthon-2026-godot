@@ -2,9 +2,9 @@ class_name SlimeEnemy
 extends Node2D
 
 const MESSAGES = [
-	"[i]*Squish*[/i]",
-	"[i]*Gloop*[/i]",
-	"[i]*Squelch*[/i]"
+	"*Squish*",
+	"*Gloop*",
+	"*Squelch*"
 ]
 
 @onready var _interactable_component = $InteractableComponent
