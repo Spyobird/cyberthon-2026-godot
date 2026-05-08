@@ -46,7 +46,7 @@ func sync_player_state() -> void:
 	var result = await _player_state_loader.load_player_state()
 	if result == null:
 		sync_player_failed.emit()
-		GameManager.create_message_popup(["[color=red]SYNC FAILED...[/color]", "Ensure your card is placed on the reader and try again."])
+		GameManager.create_message_popup(["[color=dark_red]SYNC FAILED...[/color]", "Ensure your card is placed on the reader and try again."])
 		return
 	update_player_state(result)
 	sync_player_completed.emit()
