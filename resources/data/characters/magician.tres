@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://c0orf3oqqw51l" path="res://resources/data/characters/character_data.gd" id="2_0qlpj"]
 [ext_resource type="Resource" uid="uid://fu3psysxtoym" path="res://resources/data/moves/blizzard.tres" id="3_lo834"]
 [ext_resource type="Resource" uid="uid://cegguv1q1bmm1" path="res://resources/data/moves/zap_bolt.tres" id="4_acb7g"]
+[ext_resource type="Resource" uid="uid://c4r3n7er245yo" path="res://resources/data/moves/thunder_clap.tres" id="4_h7g1t"]
 [ext_resource type="Texture2D" uid="uid://dhkrk25p2p3wc" path="res://assets/turn_based_scenes/magician/idle.png" id="4_t4tin"]
 [ext_resource type="Texture2D" uid="uid://bvpmekqkdbw08" path="res://assets/turn_based_scenes/magician/hurt.png" id="4_yuq61"]
 
@@ -209,11 +210,11 @@ script = ExtResource("2_0qlpj")
 name = "Magician"
 sprite_front = SubResource("SpriteFrames_od6be")
 sprite_scale = Vector2(0.9, 0.9)
-max_hp = 60000
-current_hp = 60000
-attack = 60000
-defense = 60000
-moves = Array[ExtResource("1_pq1g7")]([ExtResource("3_lo834"), ExtResource("4_acb7g")])
+max_hp = 100
+current_hp = 100
+attack = 40000
+defense = 40000
+moves = Array[ExtResource("1_pq1g7")]([ExtResource("3_lo834"), ExtResource("4_h7g1t"), ExtResource("4_acb7g")])
 battle_music = ExtResource("1_cirf3")
 battle_music_pos_offset = 0.4
 metadata/_custom_type_script = "uid://c0orf3oqqw51l"

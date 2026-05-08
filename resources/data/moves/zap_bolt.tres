@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_t8foc")
 name = "Zap Bolt"
-power = 30
+power = 75
 type = 2
 anim_name = "zap_bolt"
 anim_effect = ExtResource("1_d6wua")

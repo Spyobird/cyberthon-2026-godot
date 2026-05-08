@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource("1_j4sbw")
 name = "Fireball"
+power = 80
 accuracy = 95
 type = 1
 anim_name = "fireball"
